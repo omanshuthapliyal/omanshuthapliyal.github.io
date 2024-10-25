@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    
+    
+
+    <title>Omanshu Thapliyal | Technology Readiness Levels of AI methods</title>
+
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-1GN9J4R0RF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA\/G-1GN9J4R0RF');
+        }
+      </script>
+
+</head><body class="container d-flex flex-column min-vh-100">
+
+<div class="blog_nav_bar secondary_font ">
+    
+    
+    <a class="navbar-brand" href="../../">about</a>
+    
+    
+    
+    <a class="navbar-brand" href="../../blog">« all posts</a>
+    
+    
+</div>
+
+
+
+<h3>
+    <a class="title" href="../../blog/readiness/">Technology Readiness Levels of AI methods</a>
+</h3>
+
+<div class="reading_time secondary_font text-muted ">
+    <span>
+        Oct 15 2024 · 4 min read
+    </span>
+
+</div>
+
+
+
+
+<div class="tags_navigation">
+    
+    <a class="tag" href="../../tags/controls/">#controls</a>
+    
+    <a class="tag" href="../../tags/autonomy/">#autonomy</a>
+    
+    <a class="tag" href="../../tags/ml/">#ml</a>
+    
+    <a class="tag" href="../../tags/research/">#research</a>
+    
+</div>
+
+
+<p>Recent news of the SpaceX catching its Starship Super Heavy booster<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> is quite discussed and marveled upon in the media, and rightly so.
+Executing what was done can perhaps be explained as trying to catch a falling stick, then balancing it vertically, all while the stick is over 200 ft tall, weighs over 150 tonnes, spews fire, and costs over tens of millions of dollars.
+One cannot but feel a little giddy as a controls engineering enthusiast over this massive success.
+It makes me think why we are closer to automation in certain domains/problems than others? Why, for example, is your vacuum cleaning robot seemingly better at navigating in a cluttered environment than your possibly self-driving car? Why is the tremendous progress in machine learning &amp; AI not permeating outside of our web lives as much as we expected in the early 2000&rsquo;s?</p>
+<p>I will be impatient and spill the beans for my argument upfront: <em>there is a reason why black-box methods still have a way to go from finding wider applications (especially in safety critical components &amp; systems) when compared to their more mature cousins in `classical&rsquo; automation &amp; control &ndash;</em> <strong>technology readiness</strong> is one way to look at this apparent paradox of why learning-based methods find applications in our daily lives and almost all actions in the cyberspace, but not so much in human-machine teams of cyberphysical or physical spaces.</p>
+<p>There is this age-old adage in controls engineering that finds its way into the paper title<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> &ndash; Give us PID controllers and we can control the world.
+It comments on the interesting side of experience with industrial control systems, where most, if not all, automation is carried out by a moving slider that mixes a PID controller with model predictive control (MPC). But more importantly, it references the &ldquo;Dunning-Kruger of PID&rdquo; cartoon<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, which was also a topic of 
+
+<a href="../../blog/split">one of my other posts</a> on the ubiquity of PID &amp; MPC.
+Looking at automation from a technology readiness level (TRL) provides a systems-level view of technology maturity vs. user trust. Going from TRL 0 (concept level) through TRL 9 (production and productization) is a long journey from research labs to products on the shelf.
+Typical projects and technologies traverse this TRL journey as<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>:</p>
+<ul>
+<li>TRL 0 - first principles,</li>
+<li>TRL 1 - concept formulation,</li>
+<li>TRL 2 - proof-of-principle,</li>
+<li>TRL 3 - proof-of-concept,</li>
+<li>TRL 4 - (sub-)component development &amp; validation,</li>
+<li>TRL 5 - system development &amp; validation,</li>
+<li>TRL 6 - system/subsystem/application development in operating environment,</li>
+<li>TRL 7 - integration stage: prototype demonstration in operating environment,</li>
+<li>TRL 8 - test &amp; demonstration, and</li>
+<li>TRL 9 - deployment and being &ldquo;mission proven&rdquo;-ness.</li>
+</ul>
+<p>PID and MPC controls have proven to be remarkable in the TRL regard : tried and tested methods, that actuate most actuators around the world.
+The PID has had a 100 year history, and MPC has been around for 50 years, both finding eventual industry-wide acceptance. On the contrary, AI and machine learning methods have had a much shorter run from conceptualization (TRL 0) to promises of TRL 7-9 being around the corner.
+I highly recommend an enjoyable read on future of AI through TRL<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.
+TRL lets us compare at a technology level how AI seems to do exceedingly well in machine translation, object recognition, text &amp; speech recognition, while still having lots to achieve in self-driving, UAV autonomous flight, and context-aware recommendation.
+<em>It also makes sense how many AI/ML projects spend remarkably short durations in TRL 0-3, as most systems build upon existing proven algorithms/subsystems/pretrained models.</em>
+Physical space technologies do not translate well across applications, let alone across hardware.
+Many automation technologies need to start from TRL 0.</p>
+<p>This also presents an exceptional opportunity for budding researchers.</p>
+<p>Leveraging &lsquo;black-box&rsquo; methods (data-driven methods, AI/ML modules) for highly uncertain plants &amp; environments (e.g., self-driving) seems reasonable for black-box plants. Increasing introduction of ML methods into control systems space must not be seen as a perversion of a more analytical field. Instead, as an opportunity of skipping TRLs 0 through 3 to develop/prototype newer control schemes in our increasingly fuzzy operating environments.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>
+
+<a href="https://www.reuters.com/technology/space/spacex-launches-fifth-starship-test-eyes-novel-booster-catch-2024-10-13/" target="_blank" rel="noopener">https://www.reuters.com/technology/space/spacex-launches-fifth-starship-test-eyes-novel-booster-catch-2024-10-13/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>
+
+<a href="https://www.sciencedirect.com/science/article/pii/S2405896324007316" target="_blank" rel="noopener">https://www.sciencedirect.com/science/article/pii/S2405896324007316</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>
+
+<a href="https://engineeringmedia.com/comics/1" target="_blank" rel="noopener">https://engineeringmedia.com/comics/1</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>
+
+<a href="https://www.nature.com/articles/s41467-022-33128-9" target="_blank" rel="noopener">https://www.nature.com/articles/s41467-022-33128-9</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>
+
+<a href="https://www.sciencedirect.com/science/article/pii/S0736585320301842" target="_blank" rel="noopener">https://www.sciencedirect.com/science/article/pii/S0736585320301842</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
+    <span class="text-muted">Copyright (c) 2024, Omanshu Thapliyal, created using
+        <a class="text-muted" href="https://gohugo.io/" target="_blank"> Hugo</a> > 
+        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> Avicenna </a>
+    </span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]']],  
+      inlineMath: [['$$', '$$']]                  
+    }
+  };
+</script>
+    
+</body>
+
+</html>

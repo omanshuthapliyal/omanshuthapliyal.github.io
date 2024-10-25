@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    
+    
+
+    <title>Omanshu Thapliyal | MLP Approximation</title>
+
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-1GN9J4R0RF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA\/G-1GN9J4R0RF');
+        }
+      </script>
+
+</head><body class="container d-flex flex-column min-vh-100">
+
+<div class="blog_nav_bar secondary_font ">
+    
+    
+    <a class="navbar-brand" href="../../">about</a>
+    
+    
+    
+    <a class="navbar-brand" href="../../blog">« all posts</a>
+    
+    
+</div>
+
+
+
+<h3>
+    <a class="title" href="../../blog/mlp-approximation/">MLP Approximation</a>
+</h3>
+
+<div class="reading_time secondary_font text-muted ">
+    <span>
+        Sep 12 2019 · 2 min read
+    </span>
+
+</div>
+
+
+
+
+<div class="tags_navigation">
+    
+    <a class="tag" href="../../tags/ml/">#ml</a>
+    
+    <a class="tag" href="../../tags/maths/">#maths</a>
+    
+    <a class="tag" href="../../tags/analysis/">#analysis</a>
+    
+</div>
+
+
+<p>Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).
+Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator.
+Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc. are &lsquo;design problems&rsquo;.</p>
+<p>Herein comes the 
+
+<a href="https://en.wikipedia.org/wiki/Universal_approximation_theorem" target="_blank" rel="noopener">Universal Approximation Theorem</a>, which says that 
+
+<a href="../../mlp-approximation/1-hiddenlayer.png">MLPs with a single hidden layer</a> can approximate Borel measurable functions a finite set to arbitrary degrees of accuracy. That is, if you need an $$\epsilon$$ level of accuracy, there exists some finite number $$k$$ of units in the hidden layer that will be able to achieve the said accuracy.
+This looks awfully similar to Stone-Weierstrass theorem!
+And if we think of rectified lineaer unit (ReLU) activations {$$\sigma(z) = \max{\{0,z\}}$$}, it indeed is convincing.</p>
+<p>Think of just a 1-d function $$f(x)$$ that we want to approximate on $$[a,b]$$.
+We do so by usinga single hidden layer activated by ReLUs. That is, $$y(x)=\sum^k_{j=1}\sigma(w_jx+\theta_j)+b_j$$. In order to convince ourselves that $$f(x)$$ can indeed be written as a finite sum of ReLUs given some degree of accuracy, we can look at an individual ReLU unit&rsquo;s output as $$\sigma(w_jx+\theta_j)$$. This would have an intercept at $$\theta_j$$. Without any loss, let $$\varphi_j$$&rsquo;s be $$\theta_j$$&rsquo;s sorted on the real line. This way we can split the sum 
+
+<a href="../../mlp-approximation/relus.png">as shown</a>.</p>
+<p>Note that if we choose $$\varphi_1=a$$ and $$\varphi_k=b$$ for some $$k$$ that we would determine later, the sum of the activation functions is essentially of a piecewise linear on the interval $$[a,b]$$ where $$y(a)=f(a)$$ and $$y(b)=f(b)$$by designing the $$b_j$$&rsquo;s appropriately.
+That is, now we have $$k-$$segments of piecewise linear functions, for each of which, we still have appropriate flexibility to choose the slope and height from the x-axis by manipulating $$\w_j$$&rsquo;s and $$b_j$$&rsquo;s.
+The end result would be a 
+
+<a href="../../mlp-approximation/approx.png">piecewise linear function with $$k-$$ segments on $$[a,b]$$</a>. Recall that we can still manipulate individual segments to obtain an arbitrary level of accuracy, if we keep making $$k$$ large.
+That&rsquo;s it.
+This is a simple consequence of the Stone-Weierstrass theorem that we used to approximate a continuous function on $$[a,b]$$ to a fixed level of accuracy using a finite $$k$$ number of units in the single hidden layer.</p>
+<p>In reality, proving the actual universal approximation theorem is much more involved, <em>and</em> is proven for more general activation functions, <em>and</em> for inputs and parameters in a higher dimension, <em>and</em> for a wider class of functions.</p>
+
+
+<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
+    <span class="text-muted">Copyright (c) 2024, Omanshu Thapliyal, created using
+        <a class="text-muted" href="https://gohugo.io/" target="_blank"> Hugo</a> > 
+        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> Avicenna </a>
+    </span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]']],  
+      inlineMath: [['$$', '$$']]                  
+    }
+  };
+</script>
+    
+</body>
+
+</html>

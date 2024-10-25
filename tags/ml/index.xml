@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ml on Omanshu Thapliyal</title>
+    <link>https://omanshuthapliyal.github.io/tags/ml/</link>
+    <description>Recent content in Ml on Omanshu Thapliyal</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Oct 2024 11:07:46 -0700</lastBuildDate>
+    <atom:link href="https://omanshuthapliyal.github.io/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technology Readiness Levels of AI methods</title>
+      <link>https://omanshuthapliyal.github.io/blog/readiness/</link>
+      <pubDate>Tue, 15 Oct 2024 11:07:46 -0700</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/readiness/</guid>
+      <description>&lt;p&gt;Recent news of the SpaceX catching its Starship Super Heavy booster&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; is quite discussed and marveled upon in the media, and rightly so.&#xA;Executing what was done can perhaps be explained as trying to catch a falling stick, then balancing it vertically, all while the stick is over 200 ft tall, weighs over 150 tonnes, spews fire, and costs over tens of millions of dollars.&#xA;One cannot but feel a little giddy as a controls engineering enthusiast over this massive success.&#xA;It makes me think why we are closer to automation in certain domains/problems than others? Why, for example, is your vacuum cleaning robot seemingly better at navigating in a cluttered environment than your possibly self-driving car? Why is the tremendous progress in machine learning &amp;amp; AI not permeating outside of our web lives as much as we expected in the early 2000&amp;rsquo;s?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLP Approximation</title>
+      <link>https://omanshuthapliyal.github.io/blog/mlp-approximation/</link>
+      <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/mlp-approximation/</guid>
+      <description>&lt;p&gt;Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).&#xA;Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator.&#xA;Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc. are &amp;lsquo;design problems&amp;rsquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ML SoTA Resources</title>
+      <link>https://omanshuthapliyal.github.io/blog/ml-sota/</link>
+      <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/ml-sota/</guid>
+      <description>&lt;p&gt;The internet is filled with machine learning resources, and one of the most annoying things about them is the sheer volume.&#xA;There are many attempts at making compilations of papers, code, and current status quo in the vastly active, and fast paced field.&#xA;This post is to serve as a collection of my own where I will only post &lt;strong&gt;state of the art&lt;/strong&gt; in machine learning.&lt;/p&gt;&#xA;&lt;p&gt;Most of these links are updated frequently and maintained by the community, and I have collected these &lt;em&gt;only&lt;/em&gt; for reference. I am not trying to &#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;https://xkcd.com/927/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;create a new standard&lt;/a&gt;, but I will try to update the list if and when I come around doing that.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
