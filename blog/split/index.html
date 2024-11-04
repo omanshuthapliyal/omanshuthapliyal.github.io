@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    
+    
+
+    <title>Omanshu Thapliyal | The Industry-Academia split in Control Systems</title>
+
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-1GN9J4R0RF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA\/G-1GN9J4R0RF');
+        }
+      </script>
+
+</head><body class="container d-flex flex-column min-vh-100">
+
+<div class="blog_nav_bar secondary_font ">
+    
+    
+    <a class="navbar-brand" href="../../">about</a>
+    
+    
+    
+    <a class="navbar-brand" href="../../blog">« all posts</a>
+    
+    
+</div>
+
+
+
+<h3>
+    <a class="title" href="../../blog/split/">The Industry-Academia split in Control Systems</a>
+</h3>
+
+<div class="reading_time secondary_font text-muted ">
+    <span>
+        Sep 16 2019 · 2 min read
+    </span>
+
+</div>
+
+
+
+
+<div class="tags_navigation">
+    
+    <a class="tag" href="../../tags/controls/">#controls</a>
+    
+</div>
+
+
+<p>I often wonder why the &ldquo;cutting edge&rdquo; research that we read about in the foremost scientific journals &amp; conferences in Control Systems are never applied in the industry.
+Because whenever we read/write papers, Section-I always tries to ground itself to industry and/or practical applications. However, it&rsquo;s pretty well known that a majority of the controllers used in the industry are still tuned PIDs.
+Even though sub-fields of modern control &ndash; adaptive, and robust control are very mature and pretty old in their own rights, the real world&rsquo;s inertia against using modern control techniques bears substantial weight.</p>
+<p>This not very old paper<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> from IEEE control systems magazine presents a great, unsurprising account of researchers in controls community on which fields are most prevalent in the industry based on a survey conducted in 2014 IFAC.
+Based on the survey (addressed by 23 committee members of the IFAC committee, most affiliated with the industry), control technologies were ranked based on their industry impact ratings as: <em>PID</em> &gt; <em>MPC</em> &gt; <em>System Identification</em> &gt; <em>Process Data Analytics</em> &gt; <em>Soft Sensing</em> &gt; 50% ratings, while the list was wrapped up by <em>Nonlinear control</em> &gt; <em>Adaptive control</em> &gt; <em>Robust control</em> &gt; <em>Hybrid systems</em>.
+While researchers would agree that academia interests probably go the other wy around! From my own experience, most of my colleagues work in hybrid systems &gt; adaptive control &gt; robust control, etc. which is surprisingly the opposite of industry driven factors.</p>
+<p>The survey also attempted to find the causes for the said split in industry impact, and academia interests.
+I would very highly recommend reading the very short paper<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> itself, but of the causes outlined, the following resounded with me the most.
+Most responders agreed that:</p>
+<ul>
+<li>Controls students are unaware of industry driving problems</li>
+<li>A lot of emphasis is placed on advanced mathematics, and not on plant modeling or industry applications</li>
+</ul>
+<p>while most disagreed with the following statement:</p>
+<p>Advanced controls has little relevance to industry problems</p>
+<p>So, advanced problems that we work on definitely have industry relevance, but are still disjoint from industry acceptance as they, perhaps, are not represented well in papers and articles in a practically relevant light.
+While this is no epiphany, and stands true for most &ldquo;high-technology&rdquo; fields, it still shows an interesting view of the split between academia and the industry in control systems, where they both wish to work together, but somehow find their directions still misaligned.</p>
+<p>Exploring the causes of this split from an academia perspective would be a good follow up to [the work][1].</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>
+
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7823045" target="_blank" rel="noopener">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7823045</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
+    <span class="text-muted">Copyright (c) 2024, Omanshu Thapliyal, created using
+        <a class="text-muted" href="https://gohugo.io/" target="_blank"> Hugo</a> > 
+        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> Avicenna </a>
+    </span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]']],  
+      inlineMath: [['$$', '$$']]                  
+    }
+  };
+</script>
+    
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    
+    
+
+    <title>Omanshu Thapliyal | A Curious Topology</title>
+
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-1GN9J4R0RF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA\/G-1GN9J4R0RF');
+        }
+      </script>
+
+</head><body class="container d-flex flex-column min-vh-100">
+
+<div class="blog_nav_bar secondary_font ">
+    
+    
+    <a class="navbar-brand" href="../../">about</a>
+    
+    
+    
+    <a class="navbar-brand" href="../../blog">« all posts</a>
+    
+    
+</div>
+
+
+
+<h3>
+    <a class="title" href="../../blog/a-curious-topology/">A Curious Topology</a>
+</h3>
+
+<div class="reading_time secondary_font text-muted ">
+    <span>
+        Aug 21 2024 · 5 min read
+    </span>
+
+</div>
+
+
+
+
+<div class="tags_navigation">
+    
+    <a class="tag" href="../../tags/maths/">#maths</a>
+    
+    <a class="tag" href="../../tags/analysis/">#analysis</a>
+    
+</div>
+
+
+<p>When I took my first proper analysis course in undergrad, I always lacked of appreciation of the $$\varepsilon$$&rsquo;s and the $$\delta$$&rsquo;s in &ldquo;real life problems&rdquo;.
+Myself from a decade ago could have appreciated this post on how seemingly bizarre concepts can pop up in superficially unrelated applications.</p>
+<p>I will start with introducing/recalling some basic concepts from topology.
+Working with a space such as the Euclidean space $$\mathbb{R}^n$$, we define a generalization of an interval as some $$\mathcal B_{r,p}$$: a &ldquo;ball&rdquo; of radius $$r$$ around a point $$p\in \mathbb{R}^n$$. In 2D/3D ($$n=2$$, or $$3$$), this looks exactly how we expect it to be: a circle/sphere of radius $$r$$ centered around the point $$p$$. This simply generalizes the idea of an open interval $$(-r,r)$$ on the real line, which defines the set of all real numbers $$x$$ such that $$-r< x < r$$. Note that I have tactfully left the definition of <em>distance</em> undefined in this scenario. An <strong>open set</strong> is then one where no matter where you pick a point, I can find a ball of some radius $$r>0$$ such that the ball lies completely within the said set. Think of this as an orange which is &ldquo;peeled off&rdquo; and no matter how much you zoom in at the &ldquo;surface&rdquo;, you can not find a peel. In the absence of the peel, no matter how close to the surface a point you pick, I can find a ball of some positive radius around the point that fits entirely within the peeled orange. Sounds bizarre, but that is how we define an open set, which makes defining a closed set much easier. Some set $$E\subseteq \mathbb{R}^n$$ is closed, if its complement $$E^c$$ is open. An interesting result of this definition is that open sets (that are nonempty) have uncountably many points in them (this is a consequence of the fact that you can find a ball of some $$r>0$$ no matter where one picks the point in the set). So far so good.</p>
+<p>These open and closed sets form the building blocks of a <em>topology</em> on a set $$E$$. Let a family of subsets of $$E$$, say, $$\sigma$$ contain the empty set and the set $$E$$ itself, and aditionally, $$\sigma$$ is closed under finite union and possibly infinite intersections of sets. That is, if $$\sigma$$ is a family of sets in $$E$$, then in addition to $$\emptyset$$ and $$E$$ being in $$\sigma$$, the union of any number of sets in $$\sigma$$ is also in $$\sigma$$, and so is the itersection of any number of sets in $$\sigma$$. If so, then $$\sigma$$ is called a <em>topology on $$E$$</em>. <em>This simply allows us to study how points on $$E$$ are spatially related to each other.</em> If you push or pull or morf the set $$E$$, what happens to the points relatively? Seems like a useful thing, especially when dealing with distances, measures, and higher dimensional spaces. But wait, there&rsquo;s more. Wasn&rsquo;t this post supposed to be about topology arising in weird ways? Yes! Now that we know what is an open and a closed set and what comprises a topology, let us define an interesting topology on $$\mathbb{Z}$$, the set of all integers.
+This way, we will use topology to prove a seemingly uninteresting result in number theory!</p>
+<p>Define $$N_{a,b}=\{a+nb : n\in\mathbb{Z}\}$$, that is, the set of all integer multiples of $$b$$, shifted by $$a$$, for some integers $$a, b$$. In other words, $$N_{a,b}$$ is the double-sided arithmetic progression $$..., a-2b, a-b, a, a+b, a+2b, ...$$ with the common difference between successive terms being $$b$$. Some set $$O$$ is open in $$\mathbb{Z}$$ if it is nonempty, and for all $$a\in O$$, you can pick some integer $$b$$ such that $$N_{a,b}\subseteq O$$. That is, some arithmetic progression can always be found such that it lies entirely within the set $$O$$ for it to be open.
+Clearly, if $$O_1,O_2$$ are two such open sets, with their own common differences $$b_1$$ and $$b_2$$, then their union is also open.
+But what about their intersection $$O_1 \cap O_2$$?</p>
+<p>Let $$a$$ be some point that lies in the intersection of the two sets.
+Since $$N_{a,b_1}$$ lies in $$O_1$$ by definition (and similatly $$N_{a,b_2}\subseteq O_2$$), then of course taking the sub-progression $$N_{a, b_1b_2}\subseteq O_1, O_2$$. Simply because if I go in steps of $$b_1\cdot b_2$$, all terms would by default lie in the arithmetic progression that goes in steps of $$b_1$$ and also the progression with step $$b_2$$.
+This means that <strong>intersections of open sets is also open</strong> in this scheme. Note that nonempty open sets are also infinite here as well. Therefore, we are dealing with a bonafide topology on integers here.</p>
+<p>Now the curious open set $$N_{a,b}=\mathbb{Z} \setminus \cup_{i=1}^{b-1} N_{a+i, b}$$ is the complement of open sets in $$\mathbb{Z}$$, and so $$N+{a,b}$$ is a closed set as well (such sets are called <em>&ldquo;clopen&rdquo; sets</em>). And this is where the interesting result begins!</p>
+<p>Now any integer $$n$$ has at least one prime factor, say $$p$$, unless of course $$n=-1$$ or $$n=+1$$.
+This means that any arithmetic progression with $$a=0$$ and common difference $$p$$ would have the number $$n$$ at some position since $$p$$ divides $$n$$. That is, $$N_{0,p}$$ contains the number $$n$$.
+Also, this is true for any such number $$n\neq \pm 1$$. Therefore, we can construct all integers except $$\pm 1$$ this way as follows:
+</p>
+\[\mathbb{Z} \setminus \{-1,1\} = \bigcup_{p\in\mathbb{P}} N_{0,p}\]<p>
+where we are taking unions over all possible prime numbers, cutely contained in the set $$\mathbb{P}$$.</p>
+<p>Now if the set of all prime numbers $$\mathbb{P}$$ is finite, then the finite union $$\cup_{p\in\mathbb{P}} N_{0,p}$$ on the right hand side is closed $$\Rightarrow$$ the set $$\{-1,1\}$$ must be open (since its complement in $$\mathbb{Z}$$ is precisely the left hand side)!
+But that can not be the case as $$\{-1,1\}$$ is not open in this scheme.
+Therefore, <strong>there must be infinitely many prime numbers</strong>!</p>
+<p>This proof of infinitely many primes using tpology is the fifth proof in the Chapter &ldquo;Six Proofs of Inifinity Primes&rdquo; from the wonderful book called &ldquo;Proofs from the Book<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>&rdquo;.</p>
+<p>It&rsquo;s a lovely reminder of how we mathematics provides us tools that we can choose to use in wonderfully unique and artistic ways. The tools themselves are not holding you down or limiting you, but rather an adept carpenter would find truly unique ways to work their chisel.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>
+
+<a href="https://www.goodreads.com/book/show/696238.Proofs_from_the_Book" target="_blank" rel="noopener">https://www.goodreads.com/book/show/696238.Proofs_from_the_Book</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
+    <span class="text-muted">Copyright (c) 2024, Omanshu Thapliyal, created using
+        <a class="text-muted" href="https://gohugo.io/" target="_blank"> Hugo</a> > 
+        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> Avicenna </a>
+    </span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]']],  
+      inlineMath: [['$$', '$$']]                  
+    }
+  };
+</script>
+    
+</body>
+
+</html>

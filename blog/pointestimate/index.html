@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    
+    
+
+    <title>Omanshu Thapliyal | Point Estimation Problem</title>
+
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-1GN9J4R0RF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA\/G-1GN9J4R0RF');
+        }
+      </script>
+
+</head><body class="container d-flex flex-column min-vh-100">
+
+<div class="blog_nav_bar secondary_font ">
+    
+    
+    <a class="navbar-brand" href="../../">about</a>
+    
+    
+    
+    <a class="navbar-brand" href="../../blog">« all posts</a>
+    
+    
+</div>
+
+
+
+<h3>
+    <a class="title" href="../../blog/pointestimate/">Point Estimation Problem</a>
+</h3>
+
+<div class="reading_time secondary_font text-muted ">
+    <span>
+        Jul 24 2019 · 5 min read
+    </span>
+
+</div>
+
+
+
+
+<div class="tags_navigation">
+    
+    <a class="tag" href="../../tags/maths/">#maths</a>
+    
+    <a class="tag" href="../../tags/statistics/">#statistics</a>
+    
+</div>
+
+
+<p>It might seem out of place that in the world of big data, finding a singular parameter&rsquo;s estimate could be interesting. Quite the contrary &ndash; <strong>point estimation problems</strong> are one of the most ubiquitous parametric estimation problems that arise whether you are doing your Stat Inference 101 assignments, or dealing with $$10^8$$ rows in a parquet file. And so, I thought of making this post to look further into the point estimation problems, and when might one want to use which method.</p>
+<h4 id="point-estimation-problem">Point estimation problem</h4>
+<p>A generic point estimation problem goes like this:
+Consider a random variable $$x\sim f(x;\theta)$$ with the parameter $$\theta\in\Omega$$. Here $$f(x;\theta)$$ corresponds to a <em>family of distributions</em> rather than a single probability distribution. We are interested in finding a <em>point</em> estimate to the parameter $$\theta$$. In order to do that, we draw a random sample with $$n$$ realizations of the random variable $$x$$ as $$\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}$$. In shorthand, this realization from the $$n$$ experiments of the given family of distribution is also written as simply $$\{X_1,X_2,\cdots,X_n\}$$.</p>
+<h4 id="solution-strategies">Solution strategies</h4>
+<p>Our point estimate, in order to capture the information in the realization $$\tilde{X}$$, has to depend on another statistic $$Y=u(\tilde{X})$$, such that our point estimate is:
+$$\hat{\theta}=u(\tilde{X})$$
+This is a key point and is intuitive to the problem of point estimation.</p>
+<h5 id="maximum-likelihood">Maximum likelihood</h5>
+<p>One of the ways to go about finding $$\hat{\theta}$$ is to find <em>what value of parameter</em> $$\theta$$ <em>makes the current realization</em> $$\tilde{X}$$ <em>most likely</em>. In order to do this, observe that the joint-distribution of the observed data is given by
+$$f(\theta;x_1=X_1,x_2=X_2,\cdots,x_n=X_n)=\prod_{i=1}^{n} f(x_i;\theta):=L(\theta)$$
+This is the likelihood function. An intuitive estimate to the parameter would now be the value that makes the data points observed <em>most likely</em> ; simply given by
+$$\hat{\theta}_{\mathrm{MLE}}=\underset{\theta}{\mathrm{argmax\,}} L(\theta) = \mathrm{arg}\left\{\frac{dL}{d\theta}=0\right\}$$
+Notice that this requires the likelihood function to be differentiable in order to be maximized; and often a log-likelihood is maximized instead of the likelihood function instead.
+The Maximum likelihood estimator is 
+
+<a href="https://en.wikipedia.org/wiki/Consistent_estimator" target="_blank" rel="noopener">consistent</a>, and often [unbiased] (
+
+<a href="https://en.wikipedia.org/wiki/Bias_of_an_estimator%29" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Bias_of_an_estimator)</a>. Then the obvious question is:</p>
+<h6 id="why-do-mom-or-some-other-estimator">Why do MoM? (or some other estimator)</h6>
+<p>For this, consider a family of Gamma distribution with parameters $$\theta_1=\alpha, \theta_2=\beta$$ such that $$\theta_1,\theta_2>0$$, be given by:
+$$f(x;\theta_1,\theta_2)=\frac{1}{\Gamma(\theta_1)\theta_2^{\theta_1}}x^{\theta_1-1}e^{-\frac{x}{\theta_2}}$$
+For a particular sample of data $$\tilde{X}$$ from this family, we get the likelihood function as</p>
+<p>$$L(\theta_1,\theta_2;x_1,\cdots,x_n)=\left[\frac{1}{\Gamma(\theta_1)\theta_2^{\theta_1}}\right]^n(x_1 x_2\cdots x_n)^{\theta_1-1}\mathrm{exp}(-\sum_{i=1}^{n} x_i/\theta_2)$$</p>
+<p>Not so easy to find the MLE now, is it!
+<em>The gamma function in the likelihood makes it hard to find the MLE in a closed form in this example, and in general.</em></p>
+<h5 id="mom">MoM</h5>
+<p>MoM is another intuitive way to proceed in such problems where MLE either does not exist, or is hard to calculate.
+The underlying principle of an MLE, which is very easy to follow, is:
+Equate $$\frac{1}{n}\sum_{i=1}^{n}X_i^k$$ to the expectation $$\mathbb{E}[x^k]$$ for $$k = 1,2,\cdots$$ until you have enough equations to solve for parameters $$\theta$$.
+Pretty easy, right!
+Then why do we need other estimators?</p>
+<h5 id="why-do-mle">Why do MLE?</h5>
+<p>Suppose, in the very same example of the gamma-family, you need to find the parameters $$\theta_1$$ and let $$\theta_2=\beta$$ be given, for simplicity.
+The likelihood of the observed sample is:</p>
+<p>$$L(\theta_1;x_1,\cdots,x_n)=\left[\frac{1}{\Gamma(\theta_1)\beta^{\theta_1}}\right]^n(x_1 x_2\cdots x_n)^{\theta_1-1}\mathrm{exp}(-\sum_{i=1}^{n} x_i/\beta)$$</p>
+<p>$$= \left(\left[\frac{1}{\Gamma(\theta_1)\beta^{\theta_1}}\right]^n \mathrm{exp}(-\sum_{i=1}^{n} x_i/\beta)\right) \cdot (\mathrm{exp}\{(\theta_1-1)\sum^n_1 \mathrm{log}(x_i)\})$$</p>
+<p>Let me digress for a moment and recall the reader’s attention to the concept of a 
+
+<a href="https://en.wikipedia.org/wiki/Sufficient_statistic" target="_blank" rel="noopener">sufficient statistic</a>. In a broad manner, the sufficient statistic encompasses <em>all the information</em> that could possibly be conveyed about the parameter to be estimated $$\theta\in\Omega$$ by the observed data $$\tilde{X}$$. Therefore, it is always great to use this information in our estimate $$\hat{\theta}$$.
+By using Factorization theorem on the likelihood expression above, the sufficient statistic for $\theta_1$ is given by some $$Y=u(\tilde{X})=\sum^n_1\mathrm{log}\,x_i$$.
+Note that if you use MoM to estimate the parameters here, the estimate $$\hat{\theta}$$ would *not be a function of *$$Y$$; it would always be a function of the sample moments $$\frac{1}{n}\sum_{i=1}^{n}X_i^k$$ (sample mean, sample variance, etc.).
+We can conclusively say from this, that</p>
+<p><strong>MoM estimate need not be a function of the sufficient statistic; an MLE, if it exists, is ALWAYS a function of the sufficient statistic</strong>.
+This is where MLE shines, and this is why it is used; if it is useful to a problem!
+However, MoM estimates are good starting point for numerically complex point estimation problems and can iteratively lead to a good estimate and are consistent estimates.</p>
+<h5 id="why-map">Why MAP?</h5>
+<p>Coming back to the definition of the point estimation problem, suppose in addition to $$\theta\in\Omega$$, we have some more knowledge about where it could be in $$\Omega$$; this is usually in the form of some <em>prior knowledge about</em> $$\theta\sim g(\theta|\theta\in\Omega)$$; hence called the prior.
+The MAP estimate is a way to include this knowledge in our estimation as
+$$\hat{\theta}_{\mathrm{MAP}}=\underset{\theta}{\mathrm{argmax\,}} f(x;\theta)g(\theta)$$
+This is just using the fact that <em>using more information to find</em> $$\hat{\theta}$$ <em>wouldn’t hurt!</em></p>
+<h4 id="so-">So &hellip;</h4>
+<p>Now that we know about what is going on, I would answer the questions asked here.
+What is the difference between MAP, MLE, MoM?
+I have already answered in terms of the differences. So I would rather answer “When to use MoM, MLE or MAP?” based on my observations:</p>
+<ol>
+<li>Do you have a prior knowledge about $\theta$?</li>
+<li>If yes, is your prior uniform?
+<ul>
+<li>No  <strong>MAP estimator</strong></li>
+<li>Yes; Does a closed form MLE exist?
+Yes $$\rightarrow$$ <strong>MLE estimator</strong>
+No $$\rightarrow$$ <strong>MoM estimator</strong></li>
+</ul>
+</li>
+<li>If No, go to 2. (ii) ; use MLE/MoM
+This is only to help choose among the given 3 methods.
+Are there instances where the MOM and MLE are exactly the same?
+Yes.
+If your MoM estimate is a function of the sufficient statistic, the two estimates <em>could</em> be the same.
+If MoM estimate is <em>not</em> a function of the sufficient statistic, the two are <em>definitely</em> different estimates.
+Interestingly enough, as we observed, MoM estimates need not be a function of the sufficient statistic and the estimate need not even lie in the region $$\Omega$$!
+Further, the MAP estimate would coincide with the MLE estimate iff $$g(\theta)=\mathrm{Uniform}(\Omega)$$.</li>
+</ol>
+<p>Most of the stuff comes from 
+
+<a href="https://www.pearsonhighered.com/program/Hogg-Introduction-to-Mathematical-Statistics-7th-Edition/PGM49624.html" target="_blank" rel="noopener">Introduction to Mathematical Statistics, 7th Edition</a>, which is a great introductory (and almost standard) text on statistics.</p>
+
+
+<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
+    <span class="text-muted">Copyright (c) 2024, Omanshu Thapliyal, created using
+        <a class="text-muted" href="https://gohugo.io/" target="_blank"> Hugo</a> > 
+        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> Avicenna </a>
+    </span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]']],  
+      inlineMath: [['$$', '$$']]                  
+    }
+  };
+</script>
+    
+</body>
+
+</html>

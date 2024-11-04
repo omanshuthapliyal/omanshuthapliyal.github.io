@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Omanshu Thapliyal</title>
+    <link>https://omanshuthapliyal.github.io/blog/</link>
+    <description>Recent content in Blogs on Omanshu Thapliyal</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Oct 2024 11:07:46 -0700</lastBuildDate>
+    <atom:link href="https://omanshuthapliyal.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technology Readiness Levels of AI methods</title>
+      <link>https://omanshuthapliyal.github.io/blog/readiness/</link>
+      <pubDate>Tue, 15 Oct 2024 11:07:46 -0700</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/readiness/</guid>
+      <description>&lt;p&gt;Recent news of the SpaceX catching its Starship Super Heavy booster&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; is quite discussed and marveled upon in the media, and rightly so.&#xA;Executing what was done can perhaps be explained as trying to catch a falling stick, then balancing it vertically, all while the stick is over 200 ft tall, weighs over 150 tonnes, spews fire, and costs over tens of millions of dollars.&#xA;One cannot but feel a little giddy as a controls engineering enthusiast over this massive success.&#xA;It makes me think why we are closer to automation in certain domains/problems than others? Why, for example, is your vacuum cleaning robot seemingly better at navigating in a cluttered environment than your possibly self-driving car? Why is the tremendous progress in machine learning &amp;amp; AI not permeating outside of our web lives as much as we expected in the early 2000&amp;rsquo;s?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Curious Topology</title>
+      <link>https://omanshuthapliyal.github.io/blog/a-curious-topology/</link>
+      <pubDate>Wed, 21 Aug 2024 14:17:19 -0700</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/a-curious-topology/</guid>
+      <description>&lt;p&gt;When I took my first proper analysis course in undergrad, I always lacked of appreciation of the $$\varepsilon$$&amp;rsquo;s and the $$\delta$$&amp;rsquo;s in &amp;ldquo;real life problems&amp;rdquo;.&#xA;Myself from a decade ago could have appreciated this post on how seemingly bizarre concepts can pop up in superficially unrelated applications.&lt;/p&gt;&#xA;&lt;p&gt;I will start with introducing/recalling some basic concepts from topology.&#xA;Working with a space such as the Euclidean space $$\mathbb{R}^n$$, we define a generalization of an interval as some $$\mathcal B_{r,p}$$: a &amp;ldquo;ball&amp;rdquo; of radius $$r$$ around a point $$p\in \mathbb{R}^n$$. In 2D/3D ($$n=2$$, or $$3$$), this looks exactly how we expect it to be: a circle/sphere of radius $$r$$ centered around the point $$p$$. This simply generalizes the idea of an open interval $$(-r,r)$$ on the real line, which defines the set of all real numbers $$x$$ such that $$-r&lt; x &lt; r$$. Note that I have tactfully left the definition of &lt;em&gt;distance&lt;/em&gt; undefined in this scenario. An &lt;strong&gt;open set&lt;/strong&gt; is then one where no matter where you pick a point, I can find a ball of some radius $$r&gt;0$$ such that the ball lies completely within the said set. Think of this as an orange which is &amp;ldquo;peeled off&amp;rdquo; and no matter how much you zoom in at the &amp;ldquo;surface&amp;rdquo;, you can not find a peel. In the absence of the peel, no matter how close to the surface a point you pick, I can find a ball of some positive radius around the point that fits entirely within the peeled orange. Sounds bizarre, but that is how we define an open set, which makes defining a closed set much easier. Some set $$E\subseteq \mathbb{R}^n$$ is closed, if its complement $$E^c$$ is open. An interesting result of this definition is that open sets (that are nonempty) have uncountably many points in them (this is a consequence of the fact that you can find a ball of some $$r&gt;0$$ no matter where one picks the point in the set). So far so good.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why I am studying this: Data Driven Safety</title>
+      <link>https://omanshuthapliyal.github.io/blog/data-driven-safety/</link>
+      <pubDate>Wed, 16 Mar 2022 12:32:31 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/data-driven-safety/</guid>
+      <description>&lt;p&gt;This is my attempt to try to motivate and justify why I am studying what I study, and to try to justify the title of my dissertation.&lt;/p&gt;&#xA;&lt;p&gt;While most emphasis on safety has been provided from a model-driven perspective, data-driven approaches present a novel semi model-driven method by employing model-discovery. As data becomes more inexpensive, and system capabilities highly nonlinear, and often subject to parameter variations during mission, data-driven approaches are utilized more and more in controls engineering. Further, online and real-time applications increasingly require unknown models and nonlinear interactions to be learned for control synthesis. To this end, more established fields of system identification are increasingly utilizing data-driven models by using neural networks, autoregressive models, and other machine learning techniques. Due to the expressive nature of such machine learning techniques, they are  utilized to learn models of unknown dynamical systems from observed data sequences. In such approaches, a `discovered model&amp;rsquo; is arrived at using data, and employed to perform control design. Even though purely model-driven are slowly getting harder to apply to more recent, realistic, and complex scenarios, they provide a strong basis to study extensions of similar approaches to data-driven techniques for estimation and control. As a result, I attempt to utilize model-driven techniques and extend them to study safety and security properties of cyberphysical systems using data. Therefore, &lt;em&gt;my primary aim is to study data-driven approaches to safety, and data-driven vulnerabilities against cyberattacks, of complex control systems.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Industry-Academia split in Control Systems</title>
+      <link>https://omanshuthapliyal.github.io/blog/split/</link>
+      <pubDate>Mon, 16 Sep 2019 12:32:31 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/split/</guid>
+      <description>&lt;p&gt;I often wonder why the &amp;ldquo;cutting edge&amp;rdquo; research that we read about in the foremost scientific journals &amp;amp; conferences in Control Systems are never applied in the industry.&#xA;Because whenever we read/write papers, Section-I always tries to ground itself to industry and/or practical applications. However, it&amp;rsquo;s pretty well known that a majority of the controllers used in the industry are still tuned PIDs.&#xA;Even though sub-fields of modern control &amp;ndash; adaptive, and robust control are very mature and pretty old in their own rights, the real world&amp;rsquo;s inertia against using modern control techniques bears substantial weight.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLP Approximation</title>
+      <link>https://omanshuthapliyal.github.io/blog/mlp-approximation/</link>
+      <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/mlp-approximation/</guid>
+      <description>&lt;p&gt;Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).&#xA;Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator.&#xA;Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc. are &amp;lsquo;design problems&amp;rsquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Birds and Frogs in Science</title>
+      <link>https://omanshuthapliyal.github.io/blog/birds-and-frogs/</link>
+      <pubDate>Sun, 25 Aug 2019 20:20:44 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/birds-and-frogs/</guid>
+      <description>&lt;p&gt;One of my fellow grad students shared a paper with me that turned out to be a great read. It was Professor Freeman Dyson&amp;rsquo;s article titled &#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;https://www.ams.org/notices/200902/rtx090200212p.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Birds and Frogs&lt;/a&gt;, that was the invited Einstein lecture at the American Mathematical Society.&#xA;Dyson talks about two categories of mathematicians (researchers) &amp;ndash; &lt;em&gt;birds&lt;/em&gt;, and &lt;em&gt;frogs&lt;/em&gt;.&#xA;While birds soar high, and get a view of the entire landscape, frogs tread tread deep, looking for details.&#xA;Dyson argues how both kinds are equally important for mathematics in particular, and science in general. He does not make a case for either being superior to the other, merely pointing out the differences between the research approach of the two.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Real Analysis Notes</title>
+      <link>https://omanshuthapliyal.github.io/blog/my-real-notes/</link>
+      <pubDate>Sat, 24 Aug 2019 23:38:20 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/my-real-notes/</guid>
+      <description>&lt;p&gt;When I took the course on Real Analysis, it made me very nervous. I was having fever dreams from the past when I took undergraduate real analysis and the epsilon-delta definitions just did not make a lot of sense. In retrospect, taking MA504 has been one of the best academic decisions, especially as an engineer.&lt;/p&gt;&#xA;&lt;p&gt;It has helped me a lot in how to concretely formulate definitions, and what &amp;lsquo;approaching&amp;rsquo;, &amp;rsquo;tending&amp;rsquo;, &amp;rsquo;limiting&amp;rsquo;, and other weasel words mean in a mathematical sense.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ML SoTA Resources</title>
+      <link>https://omanshuthapliyal.github.io/blog/ml-sota/</link>
+      <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/ml-sota/</guid>
+      <description>&lt;p&gt;The internet is filled with machine learning resources, and one of the most annoying things about them is the sheer volume.&#xA;There are many attempts at making compilations of papers, code, and current status quo in the vastly active, and fast paced field.&#xA;This post is to serve as a collection of my own where I will only post &lt;strong&gt;state of the art&lt;/strong&gt; in machine learning.&lt;/p&gt;&#xA;&lt;p&gt;Most of these links are updated frequently and maintained by the community, and I have collected these &lt;em&gt;only&lt;/em&gt; for reference. I am not trying to &#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;https://xkcd.com/927/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;create a new standard&lt;/a&gt;, but I will try to update the list if and when I come around doing that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>But why is Compactness important?</title>
+      <link>https://omanshuthapliyal.github.io/blog/compactness2/</link>
+      <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/compactness2/</guid>
+      <description>&lt;p&gt;In my &#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;../blog/compactness&#34;&gt;last post&lt;/a&gt; I touched upon the intuition behind topological compactness. We as engineers often hear about the word &amp;lsquo;compact&amp;rsquo; as a soft gatekeeping tool from doing serious mathematics. In this post we see why the understanding is very important for doing any mathematics, &lt;em&gt;especially&lt;/em&gt; as engineers.&lt;/p&gt;&#xA;&lt;p&gt;Recall the open cover definition of a compact set as the existence of a finite open subcover for any given open cover of the set. Note that the key words here are that the subcover is going to be finite, no matter which infinite cover we begin with. Let us keep that in mind. Now we often hear about compactness being a more subtle form of finiteness, or compactness abstracting the idea of being finite, or the two being related. The open cover definition lets us understand that slightly better. Open sets, being the building blocks of topology, give us a way to interact with &lt;em&gt;a specific class of sets in a finite manner&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is this class of sets that we call compact.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compactness</title>
+      <link>https://omanshuthapliyal.github.io/blog/compactness/</link>
+      <pubDate>Sat, 10 Aug 2019 15:44:20 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/compactness/</guid>
+      <description>&lt;p&gt;This is a non-mathematical note on what I understand about compactness and what it means for a set or a space to be compact.&#xA;The open cover definition is one that can be found in any textbook, but what does it &lt;em&gt;mean&lt;/em&gt; for a set to be &lt;em&gt;compact?&lt;/em&gt; Why are such sets called compact? And how do compact sets differ from those which are not?&lt;/p&gt;&#xA;&lt;p&gt;I think the terminology here is very carefully chosen. For once, mathematicians came up with a term that paints a succinct, abstract picture. To understand compactness,let us look at two other  properties: &lt;em&gt;limit points&lt;/em&gt;, and &lt;em&gt;closed sets&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Instrumentals v/s Vocal Music</title>
+      <link>https://omanshuthapliyal.github.io/blog/instrumental/</link>
+      <pubDate>Sun, 28 Jul 2019 16:02:49 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/instrumental/</guid>
+      <description>&lt;p&gt;I often talk to friends about music and musical preferences. This post is inspired by one such theme which often finds its way in most of these conversations: instrumental music v/s vocal music.&#xA;Or more precisely, &lt;em&gt;why listen to instrumental, or plain music, when you can have vocals accompanying the music&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This post is not from a musical perspective, but rather to emphasize on the entirely separate form of beauty inherent in instrumental music.&#xA;Personally, I think the term &lt;em&gt;instrumental&lt;/em&gt; music is somewhat a misnomer for this discussion. Let&amp;rsquo;s just call the two lyrical music, and lyric-less music.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Point Estimation Problem</title>
+      <link>https://omanshuthapliyal.github.io/blog/pointestimate/</link>
+      <pubDate>Wed, 24 Jul 2019 01:34:25 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/pointestimate/</guid>
+      <description>&lt;p&gt;It might seem out of place that in the world of big data, finding a singular parameter&amp;rsquo;s estimate could be interesting. Quite the contrary &amp;ndash; &lt;strong&gt;point estimation problems&lt;/strong&gt; are one of the most ubiquitous parametric estimation problems that arise whether you are doing your Stat Inference 101 assignments, or dealing with $$10^8$$ rows in a parquet file. And so, I thought of making this post to look further into the point estimation problems, and when might one want to use which method.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

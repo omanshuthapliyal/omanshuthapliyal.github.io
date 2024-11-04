@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis on Omanshu Thapliyal</title>
+    <link>https://omanshuthapliyal.github.io/tags/analysis/</link>
+    <description>Recent content in Analysis on Omanshu Thapliyal</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Aug 2024 14:17:19 -0700</lastBuildDate>
+    <atom:link href="https://omanshuthapliyal.github.io/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Curious Topology</title>
+      <link>https://omanshuthapliyal.github.io/blog/a-curious-topology/</link>
+      <pubDate>Wed, 21 Aug 2024 14:17:19 -0700</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/a-curious-topology/</guid>
+      <description>&lt;p&gt;When I took my first proper analysis course in undergrad, I always lacked of appreciation of the $$\varepsilon$$&amp;rsquo;s and the $$\delta$$&amp;rsquo;s in &amp;ldquo;real life problems&amp;rdquo;.&#xA;Myself from a decade ago could have appreciated this post on how seemingly bizarre concepts can pop up in superficially unrelated applications.&lt;/p&gt;&#xA;&lt;p&gt;I will start with introducing/recalling some basic concepts from topology.&#xA;Working with a space such as the Euclidean space $$\mathbb{R}^n$$, we define a generalization of an interval as some $$\mathcal B_{r,p}$$: a &amp;ldquo;ball&amp;rdquo; of radius $$r$$ around a point $$p\in \mathbb{R}^n$$. In 2D/3D ($$n=2$$, or $$3$$), this looks exactly how we expect it to be: a circle/sphere of radius $$r$$ centered around the point $$p$$. This simply generalizes the idea of an open interval $$(-r,r)$$ on the real line, which defines the set of all real numbers $$x$$ such that $$-r&lt; x &lt; r$$. Note that I have tactfully left the definition of &lt;em&gt;distance&lt;/em&gt; undefined in this scenario. An &lt;strong&gt;open set&lt;/strong&gt; is then one where no matter where you pick a point, I can find a ball of some radius $$r&gt;0$$ such that the ball lies completely within the said set. Think of this as an orange which is &amp;ldquo;peeled off&amp;rdquo; and no matter how much you zoom in at the &amp;ldquo;surface&amp;rdquo;, you can not find a peel. In the absence of the peel, no matter how close to the surface a point you pick, I can find a ball of some positive radius around the point that fits entirely within the peeled orange. Sounds bizarre, but that is how we define an open set, which makes defining a closed set much easier. Some set $$E\subseteq \mathbb{R}^n$$ is closed, if its complement $$E^c$$ is open. An interesting result of this definition is that open sets (that are nonempty) have uncountably many points in them (this is a consequence of the fact that you can find a ball of some $$r&gt;0$$ no matter where one picks the point in the set). So far so good.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLP Approximation</title>
+      <link>https://omanshuthapliyal.github.io/blog/mlp-approximation/</link>
+      <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/mlp-approximation/</guid>
+      <description>&lt;p&gt;Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).&#xA;Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator.&#xA;Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc. are &amp;lsquo;design problems&amp;rsquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Real Analysis Notes</title>
+      <link>https://omanshuthapliyal.github.io/blog/my-real-notes/</link>
+      <pubDate>Sat, 24 Aug 2019 23:38:20 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/my-real-notes/</guid>
+      <description>&lt;p&gt;When I took the course on Real Analysis, it made me very nervous. I was having fever dreams from the past when I took undergraduate real analysis and the epsilon-delta definitions just did not make a lot of sense. In retrospect, taking MA504 has been one of the best academic decisions, especially as an engineer.&lt;/p&gt;&#xA;&lt;p&gt;It has helped me a lot in how to concretely formulate definitions, and what &amp;lsquo;approaching&amp;rsquo;, &amp;rsquo;tending&amp;rsquo;, &amp;rsquo;limiting&amp;rsquo;, and other weasel words mean in a mathematical sense.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>But why is Compactness important?</title>
+      <link>https://omanshuthapliyal.github.io/blog/compactness2/</link>
+      <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/compactness2/</guid>
+      <description>&lt;p&gt;In my &#xD;&#xA;&#xD;&#xA;&lt;a href=&#34;../../blog/compactness&#34;&gt;last post&lt;/a&gt; I touched upon the intuition behind topological compactness. We as engineers often hear about the word &amp;lsquo;compact&amp;rsquo; as a soft gatekeeping tool from doing serious mathematics. In this post we see why the understanding is very important for doing any mathematics, &lt;em&gt;especially&lt;/em&gt; as engineers.&lt;/p&gt;&#xA;&lt;p&gt;Recall the open cover definition of a compact set as the existence of a finite open subcover for any given open cover of the set. Note that the key words here are that the subcover is going to be finite, no matter which infinite cover we begin with. Let us keep that in mind. Now we often hear about compactness being a more subtle form of finiteness, or compactness abstracting the idea of being finite, or the two being related. The open cover definition lets us understand that slightly better. Open sets, being the building blocks of topology, give us a way to interact with &lt;em&gt;a specific class of sets in a finite manner&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is this class of sets that we call compact.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compactness</title>
+      <link>https://omanshuthapliyal.github.io/blog/compactness/</link>
+      <pubDate>Sat, 10 Aug 2019 15:44:20 +0530</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/compactness/</guid>
+      <description>&lt;p&gt;This is a non-mathematical note on what I understand about compactness and what it means for a set or a space to be compact.&#xA;The open cover definition is one that can be found in any textbook, but what does it &lt;em&gt;mean&lt;/em&gt; for a set to be &lt;em&gt;compact?&lt;/em&gt; Why are such sets called compact? And how do compact sets differ from those which are not?&lt;/p&gt;&#xA;&lt;p&gt;I think the terminology here is very carefully chosen. For once, mathematicians came up with a term that paints a succinct, abstract picture. To understand compactness,let us look at two other  properties: &lt;em&gt;limit points&lt;/em&gt;, and &lt;em&gt;closed sets&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
