@@ -6,8 +6,15 @@
     <description>Recent content on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Oct 2025 11:57:21 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 11:09:02 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why are Gaussian distributions present Everywhere?</title>
+      <link>http://localhost:1313/blog/gaussians-everywhere/</link>
+      <pubDate>Sun, 11 Jan 2026 11:09:02 -0700</pubDate>
+      <guid>http://localhost:1313/blog/gaussians-everywhere/</guid>
+      <description>&lt;p&gt;Well, if one were to cut to the chase, it appears to be because of the Central Limit Theorem (CLT). However, there is more underlying structure under the hood as to why the Gaussians seem to be the &amp;lsquo;chosen&amp;rsquo; distributions. In this post we will go through some in-depth analysis beyond the typical textbook to try to get some juice worth the squeeze. And hopefully it would demystify the ubiquity &amp;ndash; from statistics, to thermodynamics, to measurement errors &amp;ndash; of Gauss&amp;rsquo;s eponymous distributions. To this end, this write up is a shallow dive into Gaussian ubiquity from a few different angles.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Case for Abstraction</title>
       <link>http://localhost:1313/blog/abstraction/</link>
