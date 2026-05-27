@@ -6,8 +6,15 @@
     <description>Recent content in Statistics on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Jan 2026 11:09:02 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 11:09:02 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Hankel Spectra Reveal About Memory</title>
+      <link>http://localhost:1313/blog/hankel-singular-values/</link>
+      <pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate>
+      <guid>http://localhost:1313/blog/hankel-singular-values/</guid>
+      <description>&lt;p&gt;Suppose we are given a linear dynamical system $$G=(A,B,C,D)$$ (recall that a linear system is an input $$x$$ to output $$y$$ map such that $$y_k = Cx_k + Du_k, x_{k+1}=Ax_k+Bu_k$$), and $$G$$ has some dimension $$d$$.&#xA;Often times one has to find an &amp;ldquo;equivalent&amp;rdquo; system $$\hat{G}$$&amp;ndash; one that has an input-output behavior as close to $$G$$ as possible, while ideally having a lower dimension $$\hat{d}$$.&#xA;This very vital demand from the new system $$\hat{G}$$ to model the original (higher dimensional) system as closely as possible has many applications:  building smaller plants for controller synthesis, reduced order system modeling, compressing fluid or other PDE-derived dynamical systems into manageable surrogate models, etc.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why are Gaussian distributions present Everywhere?</title>
       <link>http://localhost:1313/blog/gaussians-everywhere/</link>
