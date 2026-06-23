@@ -16,14 +16,14 @@ socials:
     google_scholar: "citations?user=UJOzb5MAAAAJ"
 
 interests:
-    - Safe Autonomy & Safe RL
-    - Data-driven Controls
-    - Distributed & Networked Control Systems
+    - Control theoretic-ML & AI Safety
+    - Data-driven Controls & Safe Autonomy 
+    - Distributed / Networked Control Systems
     - System-of-Systems Engineering
 
 affiliations:
     - affiliation:
-        title: "Urban Air Mobility Researcher"
+        title: "Sr. AI/ML Researcher"
         name: "Strategic Data Solutions Lab,\n Hitachi America Ltd."
         #email: "[firstname].[lastname]@hal.hitachi.com"
     - affiliation:
@@ -68,7 +68,7 @@ hobbies:
 ## Hello!
 
 
-I am an Urban Air Mobility (UAM) Researcher at Hitachi America Ltd., working on problems relating to Safe Control Synthesis and Data-Driven Control.
+I am a Senior AI / ML Researcher at Hitachi America Ltd., working on problems relating to Control Theory Applications in ML, Safe Control Synthesis, Data-Driven Control.
 
 I hold a Ph.D. in Aeronautics & Astronautics Engineering, from Purdue University, West Lafayette with a concentration in **Autonomy & Controls**. 
 I was advised by [Prof. Inseok Hwang](https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=1403) and [Prof. Arthur Frazho](https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=1339). Prior to that, I worked with the [MathWorks Inc.](https://www.mathworks.com) at Natick, Massachusetts, before which, I did my M.S. in Aeronautics & Astronautics Engineering from Purdue University, and B.Tech. in Aerospace Engineering from [IIT Kanpur](https://www.iitk.ac.in/aero/).
