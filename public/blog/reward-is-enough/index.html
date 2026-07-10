@@ -1,15 +1,196 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css integrity=sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2 crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto"><link rel=stylesheet type=text/css href=/css/style.css><title>Omanshu Thapliyal | Reward is enough — when can we "reinforce" the learning?</title><script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-1GN9J4R0RF"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA/G-1GN9J4R0RF")}</script></head><body class="container d-flex flex-column min-vh-100"><div class="blog_nav_bar secondary_font"><a class=navbar-brand href=/>about</a>
-<a class=navbar-brand href=/blog>« all posts</a></div><h3><a class=title href=/blog/reward-is-enough/>Reward is enough — when can we "reinforce" the learning?</a></h3><div class="reading_time secondary_font text-muted"><span>Aug 13 2025 · 4 min read</span></div><div class=tags_navigation><a class=tag href=/tags/rl/>#rl</a>
-<a class=tag href=/tags/ml/>#ml</a>
-<a class=tag href=/tags/research/>#research</a></div><p><em>This blog post summarizes the papers <strong>Settling the Reward Hypothesis</strong><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> and <strong>Utility Theory for Sequential Decision Making</strong> <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</em></p><p>The <strong>reward hypothesis</strong> is at the core of Reinforcement Learning (RL) in that whether sequential action problems can be posed as some sort of a reward maximization. One of the founders of modern RL, Richard S. Sutton, puts it as<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>:</p><blockquote><p>&ldquo;That all of what we mean by goals and purposes can be well thought of as maximization of the expected value of the cumulative sum of a received scalar signal (reward).&rdquo;</p></blockquote><p>In some ways, it conveys sufficiency of RL&rsquo;s capabilities, especially in modeling decision problems. It is often even called <em>the reinforcement learning hypothesis</em>. The conceptual basis of the hypothesis can be traced to von Neumann-Morgenstern (vNM) utility axioms from the foundational work for modern game theory: Theory of Games and Economic Behavior<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>. While vNM deals with when can an agent&rsquo;s rational behavior can be a result of maximizing the expectation of some utility function (the utility function must exhibit Completeness, Transitivity, Continuity, and Independence), vNM does not impose any structure to the said utility function.</p><p>So to understand the reward hypothesis, it doesn&rsquo;t hurt to first revisit the necessary and sufficient conditions that vNM provides for some policy preference to be expressible as some value function:</p><ul><li><strong>Completeness</strong>: some preference can be made when presented with 2 choices, i.e., either $$apple$$ is preferred over $$banana$$, vice versa, or both preferred equally.</li><li><strong>Transitivity</strong>: if $$apple$$ is preferred over $$banana$$, and $$banana$$ preferred over $$coconut$$, then $$apple$$ is preferred over $$coconut$$.</li><li><strong>Continuity</strong>: if $$apple$$ and $$banana$$ are two options, then one can form more options as some mixture as $$x\% apple$$ and $$(1-x)\% banana$$.</li><li><strong>Independence</strong>: suppose you are indifferent among $$apple$$, $$banana$$ and $$coconut$$. Further suppose that there are two coins with equal weights that when flipped give $$\{H: apple, T:banana\}$$ and $$\{H: coconut, T:banana\}$$. Then answer to &ldquo;Do you prefer $$apple$$ over $$banana$$?&rdquo;, and &ldquo;Which coin do you prefer to flip?&rdquo; must be the same.</li></ul><p>Completeness and Transitivity simply allow you to compare between presented options. A consequence of continuity being that if you prefer $$apple$$ over $$banana$$, then there would be some $$\alpha\in[0,1]$$ for which your preference would flip. This is important. Independence implies, if both your options are truly equally preferred, then how the procurement between the two choices is carried out should not matter to your preference. In this way, if your preference relations satisfy the 4 properties above, you can make rational choices after maximizing some (scalar valued) utility function. RL simply imposes a specific structure of the utility function in this regard: the well known (discounted-)cumulative sum.</p><p>However, this extension is non-trivial. vNM does not offer structures on policies that depend on past sequences and state transitions. That is, without additional structure to the problem, each trajectory would end up being assigned a different utility function, and no state transition (Controlled Markov Process) information would end up being incorporated. Shakerinava & Ravanbakhsh<sup id=fnref1:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> propose an additional property to be satisfied for vNM to extend to sequential decision making in Markovian settings: <strong>memorylessness</strong>. Memorylessness encodes exactly what it would seem to mean in Markovian settings. Suppose the decision making process has some underlying transition structure, e.g., choosing $$apple$$ moves state $$s_0$$ to $$s_a$$, choosing $$banana$$ moves state $$s_0$$ to $$s_b$$, choosing $$coconut$$ moves state $$s_0$$ to $$s_c$$, etc. Then if you are presented with a choice to choose among the 3 when you started from state $$s_0$$, and are now in state $$s_*$$, then you need not consider your past trajectory to make the optimal choice.</p><p>RL problems are often more complicated than simple controlled Markov processes. One way in which RL differs is that, parts of your trajectory might need learning, and other parts might be know, so no optimization takes place of parts of the trajectory. Here, a final tweak to memorylessness is presented as <strong>additivity</strong> property in policies. It is difficult to present additivity as a sequential choice among $$\{apple, banana, coconut\}$$, but I will make an attempt. Suppose a sequential policy that is a mixture of $$apple, banana$$ strategy is preferred over a sequential policy that is a mixture of $$coconut, durian$$ in a trajectory $$T_1$$ where policy choices $$apple, coconut$$ start at state $$s$$ over $$T_1$$. Then, the same mixture preference holds over other trajectories $$T_2$$ leading to $$s$$ where policy choices $$apple, coconut$$ start at state $$s$$ (and vice versa &ndash; it is an if and only if relation). More importantly for us, a consequence of additivity is that the known parts of a trajectory can be ignored, and the unknown parts optimized independently. If this reminds you of the Bellman optimality principle, then additivity (in conjunction with all other properties above), allow us to apply dynamic programming to RL, and allows agents to act optimally according to some expected cumulative sum of reward function in Markov decision processes.</p><blockquote><blockquote><p><em>Written with
-<a href=https://stackedit.io/ target=_blank rel=noopener>StackEdit</a>.</em></p></blockquote></blockquote><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>Bowling, Michael, et al. &ldquo;
-<a href=https://arxiv.org/abs/2212.10420 target=_blank rel=noopener>Settling the Reward Hypothesis</a>&rdquo;, <em>International Conference on Machine Learning</em>. PMLR, 2023.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>Shakerinava, Mehran, and Siamak Ravanbakhsh. &ldquo;
-<a href=https://arxiv.org/abs/2206.13637 target=_blank rel=noopener>Utility theory for sequential decision making</a>.&rdquo; <em>International Conference on Machine Learning</em>. PMLR, 2022.&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a>&#160;<a href=#fnref1:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p>Richard Sutton,
-<a href=http://incompleteideas.net/rlai.cs.ualberta.ca/RLAI/rewardhypothesis.html target=_blank rel=noopener>The Reward Hypothesis</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4><p><a href=https://press.princeton.edu/books/paperback/9780691130613/theory-of-games-and-economic-behavior target=_blank rel=noopener>Theory of Games and Economic Behavior</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div><script src=https://giscus.app/client.js data-repo=omanshuthapliyal/omanshuthapliyal.github.io data-repo-id=R_kgDONF_1xg data-category=General data-category-id=DIC_kwDONF_1xs4CvyeG data-mapping=pathname data-strict=1 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=catppuccin_latte data-lang=en crossorigin=anonymous async></script><div class=share-buttons><a href="https://twitter.com/intent/tweet?text=Reward%20is%20enough%20%e2%80%94%20when%20can%20we%20%22reinforce%22%20the%20learning%3f&url=https%3a%2f%2fomanshuthapliyal.github.io%2fblog%2freward-is-enough%2f" target=_blank rel="noopener noreferrer" title="Share on X"><span>Share:</span>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg>
-</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fomanshuthapliyal.github.io%2fblog%2freward-is-enough%2f" target=_blank rel="noopener noreferrer" title="Share on Facebook"><span>Share:</span>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fomanshuthapliyal.github.io%2fblog%2freward-is-enough%2f" target=_blank rel="noopener noreferrer" title="Share on LinkedIn"><span>Share:</span>
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><footer class="mt-auto d-flex justify-content-center text-muted small secondary_font"><span class=text-muted>Copyright (c) 2026, Omanshu Thapliyal, created using
-<a class=text-muted href=https://gohugo.io/ target=_blank>Hugo</a> >
-<a class=text-muted href=https://github.com/hadisinaee/avicenna target=_blank>Avicenna</a></span></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js></script><script>feather.replace()</script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"]],inlineMath:[["$$","$$"]]}}</script></body></html>
+<!DOCTYPE html>
+
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    
+    
+
+    <title>Omanshu Thapliyal | Reward is enough — when can we &#34;reinforce&#34; the learning?</title>
+
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-1GN9J4R0RF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA\/G-1GN9J4R0RF');
+        }
+      </script>
+
+</head><body class="container d-flex flex-column min-vh-100">
+
+<div class="blog_nav_bar secondary_font ">
+    
+    
+    <a class="navbar-brand" href="/">about</a>
+    
+    
+    
+    <a class="navbar-brand" href="/blog">« all posts</a>
+    
+    
+</div>
+
+
+
+<h3>
+    <a class="title" href="/blog/reward-is-enough/">Reward is enough — when can we &#34;reinforce&#34; the learning?</a>
+</h3>
+
+<div class="reading_time secondary_font text-muted ">
+    <span>
+        Aug 13 2025 · 4 min read
+    </span>
+
+</div>
+
+
+
+
+<div class="tags_navigation">
+    
+    <a class="tag" href="/tags/rl/">#rl</a>
+    
+    <a class="tag" href="/tags/ml/">#ml</a>
+    
+    <a class="tag" href="/tags/research/">#research</a>
+    
+</div>
+
+
+<p><em>This blog post summarizes the papers <strong>Settling the Reward Hypothesis</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and <strong>Utility Theory for Sequential Decision Making</strong> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</em></p>
+<p>The <strong>reward hypothesis</strong> is at the core of Reinforcement Learning (RL) in that whether sequential action problems can be posed as some sort of a reward maximization.  One of the founders of modern RL, Richard S. Sutton, puts it as<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>:</p>
+<blockquote>
+<p>&ldquo;That all of what we mean by goals and purposes can be well thought of as maximization of the expected value of the cumulative sum of a received scalar signal (reward).&rdquo;</p></blockquote>
+<p>In some ways, it conveys sufficiency of RL&rsquo;s capabilities, especially in modeling decision problems. It is often even called <em>the reinforcement learning hypothesis</em>. The conceptual basis of the hypothesis can be traced to von Neumann-Morgenstern (vNM) utility axioms from the foundational work for modern game theory: Theory of Games and Economic Behavior<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. While vNM deals with when can an agent&rsquo;s rational behavior can be a result of maximizing the expectation of some utility function (the utility function must exhibit Completeness, Transitivity, Continuity, and Independence), vNM does not impose any structure to the said utility function.</p>
+<p>So to understand the reward hypothesis, it doesn&rsquo;t hurt to first revisit the necessary and sufficient conditions that vNM provides for some policy preference to be expressible as some value function:</p>
+<ul>
+<li><strong>Completeness</strong>: some preference can be made when presented with 2 choices, i.e., either $$apple$$ is preferred over $$banana$$, vice versa, or both preferred equally.</li>
+<li><strong>Transitivity</strong>: if $$apple$$ is preferred over $$banana$$, and $$banana$$ preferred over $$coconut$$, then $$apple$$ is preferred over $$coconut$$.</li>
+<li><strong>Continuity</strong>: if $$apple$$ and $$banana$$ are two options, then one can form more options as some mixture as $$x\% apple$$ and $$(1-x)\% banana$$.</li>
+<li><strong>Independence</strong>: suppose you are indifferent among $$apple$$, $$banana$$ and $$coconut$$. Further suppose that there are two coins with equal weights that when flipped give $$\{H: apple, T:banana\}$$ and $$\{H: coconut, T:banana\}$$. Then answer to &ldquo;Do you prefer $$apple$$ over $$banana$$?&rdquo;, and &ldquo;Which coin do you prefer to flip?&rdquo; must be the same.</li>
+</ul>
+<p>Completeness and Transitivity simply allow you to compare between presented options. A consequence of continuity being that if you prefer $$apple$$ over $$banana$$, then there would be some $$\alpha\in[0,1]$$ for which your preference would flip. This is important. Independence implies, if both your options are truly equally preferred, then how the procurement between the two choices is carried out should not matter to your preference. In this way, if your preference relations satisfy the 4 properties above, you can make rational choices after maximizing some (scalar valued) utility function. RL simply imposes a specific structure of the utility function in this regard: the well known (discounted-)cumulative sum.</p>
+<p>However, this extension is non-trivial. vNM does not offer structures on policies that depend on past sequences and state transitions. That is, without additional structure to the problem, each trajectory would end up being assigned a different utility function, and no state transition (Controlled Markov Process) information would end up being incorporated. Shakerinava &amp; Ravanbakhsh<sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> propose an additional property to be satisfied for vNM to extend to sequential decision making in Markovian settings: <strong>memorylessness</strong>. Memorylessness encodes exactly what it would seem to mean in Markovian settings. Suppose the decision making process has some underlying transition structure, e.g., choosing $$apple$$ moves state $$s_0$$ to $$s_a$$, choosing $$banana$$ moves state $$s_0$$ to $$s_b$$, choosing $$coconut$$ moves state $$s_0$$ to $$s_c$$, etc. Then if you are presented with a choice to choose among the 3 when you started from state $$s_0$$, and are now in state $$s_*$$, then you need not consider your past trajectory to make the optimal choice.</p>
+<p>RL problems are often more complicated than simple controlled Markov processes. One way in which RL differs is that, parts of your trajectory might need learning, and other parts might be know, so no optimization takes place of parts of the trajectory. Here, a final tweak to memorylessness is presented as <strong>additivity</strong> property in policies. It is difficult to present additivity as a sequential choice among $$\{apple, banana, coconut\}$$, but I will make an attempt. Suppose a sequential policy that is a mixture of $$apple, banana$$ strategy is preferred over a sequential policy that is a mixture of $$coconut, durian$$ in a trajectory $$T_1$$ where policy choices $$apple, coconut$$ start at state $$s$$ over $$T_1$$. Then, the same mixture preference holds over other trajectories $$T_2$$ leading to $$s$$ where policy choices $$apple, coconut$$ start at state $$s$$ (and vice versa &ndash; it is an if and only if relation). More importantly for us, a consequence of additivity is that the known parts of a trajectory can be ignored, and the unknown parts optimized independently. If this reminds you of the Bellman optimality principle, then additivity (in conjunction with all other properties above), allow us to apply dynamic programming to RL, and allows agents to act optimally according to some expected cumulative sum of reward function in Markov decision processes.</p>
+<blockquote>
+<blockquote>
+<p><em>Written with 
+
+<a href="https://stackedit.io/" target="_blank" rel="noopener">StackEdit</a>.</em></p></blockquote></blockquote>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Bowling, Michael, et al. &ldquo;
+
+<a href="https://arxiv.org/abs/2212.10420" target="_blank" rel="noopener">Settling the Reward Hypothesis</a>&rdquo;, <em>International Conference on Machine Learning</em>. PMLR, 2023.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Shakerinava, Mehran, and Siamak Ravanbakhsh. &ldquo;
+
+<a href="https://arxiv.org/abs/2206.13637" target="_blank" rel="noopener">Utility theory for sequential decision making</a>.&rdquo; <em>International Conference on Machine Learning</em>. PMLR, 2022.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Richard Sutton, 
+
+<a href="http://incompleteideas.net/rlai.cs.ualberta.ca/RLAI/rewardhypothesis.html" target="_blank" rel="noopener">The Reward Hypothesis</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>
+
+<a href="https://press.princeton.edu/books/paperback/9780691130613/theory-of-games-and-economic-behavior" target="_blank" rel="noopener">Theory of Games and Economic Behavior</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="omanshuthapliyal/omanshuthapliyal.github.io"
+        data-repo-id="R_kgDONF_1xg"
+        data-category="General"
+        data-category-id="DIC_kwDONF_1xs4CvyeG"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="catppuccin_latte"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+<div class="share-buttons">
+  <a href="https://twitter.com/intent/tweet?text=Reward%20is%20enough%20%e2%80%94%20when%20can%20we%20%22reinforce%22%20the%20learning%3f&url=http%3a%2f%2flocalhost%3a1313%2fblog%2freward-is-enough%2f" target="_blank" rel="noopener noreferrer" title="Share on X">
+    <span>Share:</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2freward-is-enough%2f" target="_blank" rel="noopener noreferrer" title="Share on Facebook">
+    <span>Share:</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2freward-is-enough%2f" target="_blank" rel="noopener noreferrer" title="Share on LinkedIn">
+    <span>Share:</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+      <rect x="2" y="9" width="4" height="12"></rect>
+      <circle cx="4" cy="4" r="2"></circle>
+    </svg>
+  </a>
+</div>
+
+<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
+    <span class="text-muted">Copyright (c) 2026, Omanshu Thapliyal, created using
+        <a class="text-muted" href="https://gohugo.io/" target="_blank"> Hugo</a> > 
+        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> Avicenna </a>
+    </span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]']],  
+      inlineMath: [['$$', '$$']]                  
+    }
+  };
+</script>
+    
+</body>
+
+</html>
