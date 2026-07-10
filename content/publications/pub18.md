@@ -11,7 +11,7 @@ publication: "4th Workshop on High-dimensional Learning Dynamics (HiLD) @ ICML 2
 
 links:
     pdf: https://openreview.net/pdf?id=rGFtmR5Udg
-    # code: https://github.com/hadisinaee/avicenna
-    # slides: https://github.com/omanshuthapliyal/ICMCR-2026--OT/blob/main/ICMCR-nerf-reachability.pdf
+    code: https://github.com/omanshuthapliyal/HRM-adapter
+    slides: https://github.com/omanshuthapliyal/HRM-adapter/blob/main/SSM%20Adapters%20via%20Hankel%20Reduced-order%20Modeling%20Injection%20Site%20Determines%20Task%20Suitability%20in%20Long-Context%20Fine-Tuning.png
     # video: https://github.com/hadisinaee/avicenna
 ---

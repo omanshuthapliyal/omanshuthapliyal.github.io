@@ -1,33 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Statistics on Omanshu Thapliyal</title>
-    <link>http://localhost:1313/tags/statistics/</link>
-    <description>Recent content in Statistics on Omanshu Thapliyal</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 11:09:02 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What Hankel Spectra Reveal About Memory</title>
-      <link>http://localhost:1313/blog/hankel-singular-values/</link>
-      <pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate>
-      <guid>http://localhost:1313/blog/hankel-singular-values/</guid>
-      <description>&lt;p&gt;Suppose we are given a linear dynamical system $$G=(A,B,C,D)$$ (recall that a linear system is an input $$x$$ to output $$y$$ map such that $$y_k = Cx_k + Du_k, x_{k+1}=Ax_k+Bu_k$$), and $$G$$ has some dimension $$d$$.&#xA;Often times one has to find an &amp;ldquo;equivalent&amp;rdquo; system $$\hat{G}$$&amp;ndash; one that has an input-output behavior as close to $$G$$ as possible, while ideally having a lower dimension $$\hat{d}$$.&#xA;This very vital demand from the new system $$\hat{G}$$ to model the original (higher dimensional) system as closely as possible has many applications:  building smaller plants for controller synthesis, reduced order system modeling, compressing fluid or other PDE-derived dynamical systems into manageable surrogate models, etc.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why are Gaussian distributions present Everywhere?</title>
-      <link>http://localhost:1313/blog/gaussians-everywhere/</link>
-      <pubDate>Sun, 11 Jan 2026 11:09:02 -0700</pubDate>
-      <guid>http://localhost:1313/blog/gaussians-everywhere/</guid>
-      <description>&lt;p&gt;Well, if one were to cut to the chase, it appears to be because of the Central Limit Theorem (CLT). However, there is more underlying structure under the hood as to why the Gaussians seem to be the &amp;lsquo;chosen&amp;rsquo; distributions. In this post we will go through some in-depth analysis beyond the typical textbook to try to get some juice worth the squeeze. And hopefully it would demystify the ubiquity &amp;ndash; from statistics, to thermodynamics, to measurement errors &amp;ndash; of Gauss&amp;rsquo;s eponymous distributions. To this end, this write up is a shallow dive into Gaussian ubiquity from a few different angles.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Point Estimation Problem</title>
-      <link>http://localhost:1313/blog/pointestimate/</link>
-      <pubDate>Wed, 24 Jul 2019 01:34:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/pointestimate/</guid>
-      <description>&lt;p&gt;It might seem out of place that in the world of big data, finding a singular parameter&amp;rsquo;s estimate could be interesting. Quite the contrary &amp;ndash; &lt;strong&gt;point estimation problems&lt;/strong&gt; are one of the most ubiquitous parametric estimation problems that arise whether you are doing your Stat Inference 101 assignments, or dealing with $$10^8$$ rows in a parquet file. And so, I thought of making this post to look further into the point estimation problems, and when might one want to use which method.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Statistics on Omanshu Thapliyal</title><link>https://omanshuthapliyal.github.io/tags/statistics/</link><description>Recent content in Statistics on Omanshu Thapliyal</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 11:09:02 -0700</lastBuildDate><atom:link href="https://omanshuthapliyal.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml"/><item><title>What Hankel Spectra Reveal About Memory</title><link>https://omanshuthapliyal.github.io/blog/hankel-singular-values/</link><pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate><guid>https://omanshuthapliyal.github.io/blog/hankel-singular-values/</guid><description>&lt;p>Suppose we are given a linear dynamical system $$G=(A,B,C,D)$$ (recall that a linear system is an input $$x$$ to output $$y$$ map such that $$y_k = Cx_k + Du_k, x_{k+1}=Ax_k+Bu_k$$), and $$G$$ has some dimension $$d$$.
+Often times one has to find an &amp;ldquo;equivalent&amp;rdquo; system $$\hat{G}$$&amp;ndash; one that has an input-output behavior as close to $$G$$ as possible, while ideally having a lower dimension $$\hat{d}$$.
+This very vital demand from the new system $$\hat{G}$$ to model the original (higher dimensional) system as closely as possible has many applications: building smaller plants for controller synthesis, reduced order system modeling, compressing fluid or other PDE-derived dynamical systems into manageable surrogate models, etc.&lt;/p></description></item><item><title>Why are Gaussian distributions present Everywhere?</title><link>https://omanshuthapliyal.github.io/blog/gaussians-everywhere/</link><pubDate>Sun, 11 Jan 2026 11:09:02 -0700</pubDate><guid>https://omanshuthapliyal.github.io/blog/gaussians-everywhere/</guid><description>&lt;p>Well, if one were to cut to the chase, it appears to be because of the Central Limit Theorem (CLT). However, there is more underlying structure under the hood as to why the Gaussians seem to be the &amp;lsquo;chosen&amp;rsquo; distributions. In this post we will go through some in-depth analysis beyond the typical textbook to try to get some juice worth the squeeze. And hopefully it would demystify the ubiquity &amp;ndash; from statistics, to thermodynamics, to measurement errors &amp;ndash; of Gauss&amp;rsquo;s eponymous distributions. To this end, this write up is a shallow dive into Gaussian ubiquity from a few different angles.&lt;/p></description></item><item><title>Point Estimation Problem</title><link>https://omanshuthapliyal.github.io/blog/pointestimate/</link><pubDate>Wed, 24 Jul 2019 01:34:25 +0530</pubDate><guid>https://omanshuthapliyal.github.io/blog/pointestimate/</guid><description>&lt;p>It might seem out of place that in the world of big data, finding a singular parameter&amp;rsquo;s estimate could be interesting. Quite the contrary &amp;ndash; &lt;strong>point estimation problems&lt;/strong> are one of the most ubiquitous parametric estimation problems that arise whether you are doing your Stat Inference 101 assignments, or dealing with $$10^8$$ rows in a parquet file. And so, I thought of making this post to look further into the point estimation problems, and when might one want to use which method.&lt;/p></description></item></channel></rss>
