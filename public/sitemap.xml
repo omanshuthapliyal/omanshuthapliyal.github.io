@@ -3,27 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/hrm-part-1/</loc>
-    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+    <loc>http://localhost:1313/blog/hrm-part-2/</loc>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/controls/</loc>
-    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linear_algebra/</loc>
-    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ml/</loc>
-    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/state_space_models/</loc>
-    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/hrm-part-1/</loc>
     <lastmod>2026-07-31T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/maths/</loc>
@@ -118,8 +121,6 @@
   </url><url>
     <loc>http://localhost:1313/blog/pointestimate/</loc>
     <lastmod>2019-07-24T01:34:25+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/hrm-part-2/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url>

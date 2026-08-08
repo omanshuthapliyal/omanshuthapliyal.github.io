@@ -47,7 +47,7 @@ There are many details one can add here: gating, normalization, discretization, 
 
 The adapter is not just a function of the current token representation. It is a tiny system which has been watching the sequence unfold. 
 
-{{< scale src="images/hrm-figure-1.png" alt="A finetuning method" scale="70" >}}
+{{< scale src="hrm-figure-1.png" alt="A finetuning method" scale="30" >}}
 
 *Figure 1. Both LoRA and HRM add a small trainable residual to a frozen model. LoRA modifies a weight map. HRM adds a small dynamical system whose state persists across tokens.* 
 
@@ -67,4 +67,4 @@ The two questions can have different answers. In particular, when a downstream t
 Writing down a recurrence does not solve the memory problem. One can always add more state dimensions. This is rather like buying a larger notebook whenever one is unsure what to write down. It may work, but it is not a particularly satisfying principle. A state can be too small. It can fail to retain information which will matter later. But a state can also be unnecessarily large. It can contain directions which are not meaningfully written by the incoming representations, or which have almost no effect on the adapter output. This is exactly where the discussion from the previous post becomes useful again. If the adapter has limited memory, perhaps we should not decide what it retains by choosing an arbitrary state dimension and hoping the optimization procedure sorts things out. Perhaps we should use the same input-output notion of importance that motivated Hankel singular values in the first place. In the next post, I will describe how we do this using empirical controllability and observability Grammians, why this leads naturally to a reduced-order state-space adapter, and why the location at which we insert the adapter into a transformer matters almost as much as the adapter itself.
 
 
-> Written with [StackEdit](https://stackedit.io/).
+_Written with [StackEdit](https://stackedit.io/)._

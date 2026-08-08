@@ -6,8 +6,15 @@
     <description>Recent content in Controls on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 11:57:21 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 11:57:21 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/controls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can LLM Finetuning be Stateful? Small states for Large Models - Part 2</title>
+      <link>http://localhost:1313/blog/hrm-part-2/</link>
+      <pubDate>Fri, 07 Aug 2026 11:57:21 -0700</pubDate>
+      <guid>http://localhost:1313/blog/hrm-part-2/</guid>
+      <description>&lt;p&gt;The code for this project can be found at: &#xA;&#xA;&lt;a href=&#34;https://github.com/omanshuthapliyal/HRM-adapter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/omanshuthapliyal/HRM-adapter&lt;/a&gt;.&#xA;And the paper can be found at: &#xA;&#xA;&lt;a href=&#34;https://arxiv.org/pdf/2606.26290&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/pdf/2606.26290&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;In the &#xA;&#xA;&lt;a href=&#34;https://omanshuthapliyal.github.io/blog/hrm-part-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt;, I introduced the basic idea behind a stateful adapter. Instead of asking a small trainable module to only modify the current transformer representation, we allow it to maintain a state: $$ s_t = \bar{A}s_{t-1} + \bar{B}h_t, $$ and use that state to generate a residual correction, $$ r_t = Cs_t. $$ The important unresolved question was: if this adapter gets a small amount of memory, what should it remember? The answer I want to explore is the same one that appeared in the discussion of Hankel singular values:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Can LLM Finetuning be Stateful? Small states for Large Models - Part 1</title>
       <link>http://localhost:1313/blog/hrm-part-1/</link>
