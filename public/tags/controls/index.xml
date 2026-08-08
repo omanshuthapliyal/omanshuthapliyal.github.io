@@ -6,8 +6,15 @@
     <description>Recent content in Controls on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Oct 2025 18:57:21 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 11:57:21 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/controls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can LLM Finetuning be Stateful? Small states for Large Models - Part 1</title>
+      <link>http://localhost:1313/blog/hrm-part-1/</link>
+      <pubDate>Fri, 31 Jul 2026 11:57:21 -0700</pubDate>
+      <guid>http://localhost:1313/blog/hrm-part-1/</guid>
+      <description>&lt;p&gt;In the &#xA;&#xA;&lt;a href=&#34;https://omanshuthapliyal.github.io/blog/hankel-singular-values/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;last post&lt;/a&gt; I talked about Hankel operators of simple linear dynamical systems. Such operators, and either eigenvalues, &lt;em&gt;&amp;ldquo;can be used as a proxy for how much memory a task actually requires in a state-space model&amp;rdquo;.&lt;/em&gt; And later we tied their input-output relations empirically tie the memory requirements of a post-trained state space model (SSM) to its Hankel singular value (HSV) rates. Further, HSV-based balanced truncation can offer us to selectively choose &amp;lsquo;some&amp;rsquo; eigenvalues to keep that involve higher input-to-output signal strength over time.&#xA;And so, we used Hankel singular values to decide which states of a dynamical system are worth keeping.&#xA;However, a language model also processes a sequence of tokens over time.&#xA;We saw task-dependent HSV decay rates for various tasks for different SSM-based models.&#xA;Similarly, could we give the model a small state, one deliberately built around that same notion of &amp;ldquo;worth keeping&amp;rdquo;, without retraining the entire model?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>State Space Models: How Control Theory can echo Machine Learning</title>
       <link>http://localhost:1313/blog/state-space-models/</link>

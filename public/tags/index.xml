@@ -6,20 +6,41 @@
     <description>Recent content in Tags on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 11:09:02 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 11:57:21 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Maths</title>
-      <link>http://localhost:1313/tags/maths/</link>
-      <pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate>
-      <guid>http://localhost:1313/tags/maths/</guid>
+      <title>Controls</title>
+      <link>http://localhost:1313/tags/controls/</link>
+      <pubDate>Fri, 31 Jul 2026 11:57:21 -0700</pubDate>
+      <guid>http://localhost:1313/tags/controls/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linear_algebra</title>
+      <link>http://localhost:1313/tags/linear_algebra/</link>
+      <pubDate>Fri, 31 Jul 2026 11:57:21 -0700</pubDate>
+      <guid>http://localhost:1313/tags/linear_algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>Ml</title>
       <link>http://localhost:1313/tags/ml/</link>
-      <pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate>
+      <pubDate>Fri, 31 Jul 2026 11:57:21 -0700</pubDate>
       <guid>http://localhost:1313/tags/ml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>State_space_models</title>
+      <link>http://localhost:1313/tags/state_space_models/</link>
+      <pubDate>Fri, 31 Jul 2026 11:57:21 -0700</pubDate>
+      <guid>http://localhost:1313/tags/state_space_models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maths</title>
+      <link>http://localhost:1313/tags/maths/</link>
+      <pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate>
+      <guid>http://localhost:1313/tags/maths/</guid>
       <description></description>
     </item>
     <item>
@@ -41,27 +62,6 @@
       <link>http://localhost:1313/tags/art/</link>
       <pubDate>Fri, 31 Oct 2025 11:57:21 -0700</pubDate>
       <guid>http://localhost:1313/tags/art/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Controls</title>
-      <link>http://localhost:1313/tags/controls/</link>
-      <pubDate>Mon, 06 Oct 2025 18:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/tags/controls/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linear_algebra</title>
-      <link>http://localhost:1313/tags/linear_algebra/</link>
-      <pubDate>Mon, 06 Oct 2025 18:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/tags/linear_algebra/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>State_space_models</title>
-      <link>http://localhost:1313/tags/state_space_models/</link>
-      <pubDate>Mon, 06 Oct 2025 18:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/tags/state_space_models/</guid>
       <description></description>
     </item>
     <item>

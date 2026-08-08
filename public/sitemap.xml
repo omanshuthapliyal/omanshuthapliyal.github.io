@@ -3,21 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-05-26T11:09:02-07:00</lastmod>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/hrm-part-1/</loc>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/controls/</loc>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linear_algebra/</loc>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ml/</loc>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/state_space_models/</loc>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-31T11:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/maths/</loc>
     <lastmod>2026-05-26T11:09:02-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ml/</loc>
-    <lastmod>2026-05-26T11:09:02-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-05-26T11:09:02-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/statistics/</loc>
-    <lastmod>2026-05-26T11:09:02-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-05-26T11:09:02-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/hankel-singular-values/</loc>
@@ -35,16 +47,7 @@
     <loc>http://localhost:1313/tags/art/</loc>
     <lastmod>2025-10-31T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/controls/</loc>
-    <lastmod>2025-10-06T18:57:21-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linear_algebra/</loc>
-    <lastmod>2025-10-06T18:57:21-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/state-space-models/</loc>
-    <lastmod>2025-10-06T18:57:21-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/state_space_models/</loc>
     <lastmod>2025-10-06T18:57:21-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/transformers/</loc>
@@ -115,6 +118,8 @@
   </url><url>
     <loc>http://localhost:1313/blog/pointestimate/</loc>
     <lastmod>2019-07-24T01:34:25+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/hrm-part-2/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url>
