@@ -6,8 +6,15 @@
     <description>Recent content in Blogs on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 01:02:49 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 01:02:49 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contraction can Help Safety Classifiers keep their Promise</title>
+      <link>http://localhost:1313/blog/safety-classifier-ssm/</link>
+      <pubDate>Wed, 12 Aug 2026 01:02:49 -0400</pubDate>
+      <guid>http://localhost:1313/blog/safety-classifier-ssm/</guid>
+      <description>&lt;p&gt;A safety classifier can tell us that a prompt looks harmful.&#xA;That is useful. But it is perhaps not the question we should stop at.&#xA;Suppose a classifier sees a prompt and says that it is safe. Now suppose we change the prompt slightly. Perhaps we substitute a few words. Perhaps we phrase the same request differently. Perhaps, more abstractly, we nudge the token embeddings of the prompt by a very small amount.&#xA;Would the classifier still say safe?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>So does your Car fail? (An &#34;Uninteresting&#34; Implication of HRT Conjecture)</title>
       <link>http://localhost:1313/blog/hrt-conjecture/</link>

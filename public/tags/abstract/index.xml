@@ -6,8 +6,15 @@
     <description>Recent content in Abstract on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Oct 2025 11:57:21 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 01:02:49 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/abstract/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So does your Car fail? (An &#34;Uninteresting&#34; Implication of HRT Conjecture)</title>
+      <link>http://localhost:1313/blog/hrt-conjecture/</link>
+      <pubDate>Mon, 10 Aug 2026 01:02:49 -0400</pubDate>
+      <guid>http://localhost:1313/blog/hrt-conjecture/</guid>
+      <description>&lt;p&gt;The mathematics community has recently been effervescing with plenty of AI usage stories (notably Terence Tao, nonetheless) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. In the latest such development, a long-standing conjecture was disproved by a counterexample found using AI.&#xA;The Heil-Ramanathan-Topiwala (HRT) conjecture itself turns 30 years old next month, and while numerous interesting questions come up in my mind after its AI-assisted counterexample, for now I will contain myself to:&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;1) What is the HRT conjecture and What does it mean? And,&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Case for Abstraction</title>
       <link>http://localhost:1313/blog/abstraction/</link>
