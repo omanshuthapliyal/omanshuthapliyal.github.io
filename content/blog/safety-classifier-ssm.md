@@ -2,7 +2,7 @@
 title: "Contraction can Help Safety Classifiers keep their Promise"
 date: 2026-08-12T01:02:49-04:00
 draft: false
-tags: [ml, control]
+tags: [ml, controls]
 # links:
 #     website: "https://omanshuthapliyal.github.io/"
 #     alias : "blog/safety-classifier-ssm/"
