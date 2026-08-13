@@ -90,7 +90,7 @@ It is important to be careful with that last statement. An uncertified example i
 Instead of looking only at the final interval, we can watch the entire interval evolve as the classifier reads the prompt.
 This time-indexed collection of possible scores is sometimes called a *reach tube*.
 
-![Reach tubes for a contraction-constrained and unconstrained LTI safety classifier.](images/reach-tube-contraction.png)
+{{< scale src="reach-tube-contraction.png" alt="Reach tubes for a contraction-constrained and unconstrained LTI safety classifier" scale="50" >}}
 
 *Figure 1. The shaded region is the set of scores reachable under bounded embedding perturbations as a sequence is processed. Under contraction, the uncertainty tube settles. Without contraction, uncertainty can continue widening and eventually cross the decision boundary.*
 
