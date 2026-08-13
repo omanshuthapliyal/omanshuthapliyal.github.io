@@ -2,135 +2,132 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/</loc>
     <lastmod>2026-08-14T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://omanshuthapliyal.github.io/</loc>
     <lastmod>2026-08-14T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/safety-classifier-ssm/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/safety-classifier-ssm/</loc>
     <lastmod>2026-08-12T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/control/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/controls/</loc>
     <lastmod>2026-08-12T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ml/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/ml/</loc>
     <lastmod>2026-08-12T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/</loc>
     <lastmod>2026-08-12T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/abstract/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/abstract/</loc>
     <lastmod>2026-08-10T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/maths/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/maths/</loc>
     <lastmod>2026-08-10T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/hrt-conjecture/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/hrt-conjecture/</loc>
     <lastmod>2026-08-10T01:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/hrm-part-2/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/hrm-part-2/</loc>
     <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/controls/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/linear_algebra/</loc>
     <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linear_algebra/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/state_space_models/</loc>
     <lastmod>2026-08-07T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/state_space_models/</loc>
-    <lastmod>2026-08-07T11:57:21-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/hrm-part-1/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/hrm-part-1/</loc>
     <lastmod>2026-07-31T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/statistics/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/statistics/</loc>
     <lastmod>2026-05-26T11:09:02-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/hankel-singular-values/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/hankel-singular-values/</loc>
     <lastmod>2026-05-26T11:09:02-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/gaussians-everywhere/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/gaussians-everywhere/</loc>
     <lastmod>2026-01-11T11:09:02-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/abstraction/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/abstraction/</loc>
     <lastmod>2025-10-31T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/art/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/art/</loc>
     <lastmod>2025-10-31T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/state-space-models/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/state-space-models/</loc>
     <lastmod>2025-10-06T18:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/transformers/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/transformers/</loc>
     <lastmod>2025-09-27T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/analysis/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/analysis/</loc>
     <lastmod>2025-09-05T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/circles/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/circles/</loc>
     <lastmod>2025-09-05T11:57:21-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/research/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/research/</loc>
     <lastmod>2025-08-13T11:07:46-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/reward-is-enough/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/reward-is-enough/</loc>
     <lastmod>2025-08-13T11:07:46-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rl/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/rl/</loc>
     <lastmod>2025-08-13T11:07:46-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/autonomy/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/autonomy/</loc>
     <lastmod>2024-10-15T11:07:46-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/readiness/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/readiness/</loc>
     <lastmod>2024-10-15T11:07:46-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/data-driven-safety/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/data-driven-safety/</loc>
     <lastmod>2022-03-16T12:32:31-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://omanshuthapliyal.github.io/about/</loc>
     <lastmod>2020-10-20T17:51:47+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/split/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/split/</loc>
     <lastmod>2019-09-16T12:32:31-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/mlp-approximation/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/mlp-approximation/</loc>
     <lastmod>2019-09-12T10:27:01-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/birds-and-frogs/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/birds-and-frogs/</loc>
     <lastmod>2019-08-25T20:20:44+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/my-real-notes/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/my-real-notes/</loc>
     <lastmod>2019-08-24T23:38:20+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/ml-sota/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/ml-sota/</loc>
     <lastmod>2019-08-18T22:36:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/resource/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/resource/</loc>
     <lastmod>2019-08-18T22:36:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/compactness2/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/compactness2/</loc>
     <lastmod>2019-08-15T01:34:25+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/compactness/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/compactness/</loc>
     <lastmod>2019-08-15T01:34:25+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/real-analysis/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/real-analysis/</loc>
     <lastmod>2019-08-15T01:34:25+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/compactness/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/compactness/</loc>
     <lastmod>2019-08-10T15:44:20+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/instrumental/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/instrumental/</loc>
     <lastmod>2019-07-28T16:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/music/</loc>
+    <loc>https://omanshuthapliyal.github.io/tags/music/</loc>
     <lastmod>2019-07-28T16:02:49-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/pointestimate/</loc>
+    <loc>https://omanshuthapliyal.github.io/blog/pointestimate/</loc>
     <lastmod>2019-07-24T01:34:25+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://omanshuthapliyal.github.io/categories/</loc>
   </url>
 </urlset>
