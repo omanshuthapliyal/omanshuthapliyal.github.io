@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Art on Omanshu Thapliyal</title>
-    <link>http://localhost:1313/tags/art/</link>
+    <link>https://omanshuthapliyal.github.io/tags/art/</link>
     <description>Recent content in Art on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Oct 2025 11:57:21 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://omanshuthapliyal.github.io/tags/art/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Case for Abstraction</title>
-      <link>http://localhost:1313/blog/abstraction/</link>
+      <link>https://omanshuthapliyal.github.io/blog/abstraction/</link>
       <pubDate>Fri, 31 Oct 2025 11:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/blog/abstraction/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/abstraction/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s this common joke when studying linear algebra that goes like this.&#xA;A student asks the teacher how do you visualize 4-dimensional spaces? To which the professor replies &amp;ldquo;Oh, I just visualize an $$n$$-dimensional space, and let $$n$$ go to 4.&amp;rdquo; I read it a while back, and while it wasn&amp;rsquo;t particularly funny, I kept coming back to it as it has some kernel of lived, empirical truth.&lt;/p&gt;&#xA;&lt;p&gt;Much of what we learn, rather much of what we expect, when enrolling into engineering courses is to get elbow deep into physical problems and &amp;ldquo;making things&amp;rdquo;. To this end, this causes some friction between incoming engineering students&amp;rsquo; expectations from the curriculum, and the actual stuff on offer. I was no different as an undergrad student, but in hindsight I realized that much of what we teach students is &amp;ldquo;the art of solving problems&amp;rdquo;, while they want to learn to solve specific instances of problems. And the leap from learning to &lt;em&gt;solve a problem&lt;/em&gt; to &lt;em&gt;how to solve problems&lt;/em&gt; is a nontrivial one. While courses aim to help understand &lt;strong&gt;abstraction&lt;/strong&gt; of concepts, the instinct (at least initially) is to apply these concepts. While this deadlock often dissuades people from higher learning in mathematics, indeed, much of what it takes to transition from an engineer into doing research &lt;em&gt;in&lt;/em&gt; engineering is this abstraction.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Instrumentals v/s Vocal Music</title>
-      <link>http://localhost:1313/blog/instrumental/</link>
+      <link>https://omanshuthapliyal.github.io/blog/instrumental/</link>
       <pubDate>Sun, 28 Jul 2019 16:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/blog/instrumental/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/instrumental/</guid>
       <description>&lt;p&gt;I often talk to friends about music and musical preferences. This post is inspired by one such theme which often finds its way in most of these conversations: instrumental music v/s vocal music.&#xA;Or more precisely, &lt;em&gt;why listen to instrumental, or plain music, when you can have vocals accompanying the music&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This post is not from a musical perspective, but rather to emphasize on the entirely separate form of beauty inherent in instrumental music.&#xA;Personally, I think the term &lt;em&gt;instrumental&lt;/em&gt; music is somewhat a misnomer for this discussion. Let&amp;rsquo;s just call the two lyrical music, and lyric-less music.&lt;/p&gt;</description>
     </item>
   </channel>

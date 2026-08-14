@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Omanshu Thapliyal</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://omanshuthapliyal.github.io/tags/</link>
     <description>Recent content in Tags on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Aug 2026 01:02:49 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://omanshuthapliyal.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analysis</title>
-      <link>http://localhost:1313/tags/analysis/</link>
+      <link>https://omanshuthapliyal.github.io/tags/analysis/</link>
       <pubDate>Fri, 14 Aug 2026 01:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/analysis/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Maths</title>
-      <link>http://localhost:1313/tags/maths/</link>
+      <link>https://omanshuthapliyal.github.io/tags/maths/</link>
       <pubDate>Fri, 14 Aug 2026 01:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/maths/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/maths/</guid>
       <description></description>
     </item>
     <item>
       <title>Controls</title>
-      <link>http://localhost:1313/tags/controls/</link>
+      <link>https://omanshuthapliyal.github.io/tags/controls/</link>
       <pubDate>Wed, 12 Aug 2026 01:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/controls/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/controls/</guid>
       <description></description>
     </item>
     <item>
       <title>Ml</title>
-      <link>http://localhost:1313/tags/ml/</link>
+      <link>https://omanshuthapliyal.github.io/tags/ml/</link>
       <pubDate>Wed, 12 Aug 2026 01:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/ml/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/ml/</guid>
       <description></description>
     </item>
     <item>
       <title>Abstract</title>
-      <link>http://localhost:1313/tags/abstract/</link>
+      <link>https://omanshuthapliyal.github.io/tags/abstract/</link>
       <pubDate>Mon, 10 Aug 2026 01:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/abstract/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/abstract/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear_algebra</title>
-      <link>http://localhost:1313/tags/linear_algebra/</link>
+      <link>https://omanshuthapliyal.github.io/tags/linear_algebra/</link>
       <pubDate>Fri, 07 Aug 2026 11:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/tags/linear_algebra/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/linear_algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>State_space_models</title>
-      <link>http://localhost:1313/tags/state_space_models/</link>
+      <link>https://omanshuthapliyal.github.io/tags/state_space_models/</link>
       <pubDate>Fri, 07 Aug 2026 11:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/tags/state_space_models/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/state_space_models/</guid>
       <description></description>
     </item>
     <item>
       <title>Statistics</title>
-      <link>http://localhost:1313/tags/statistics/</link>
+      <link>https://omanshuthapliyal.github.io/tags/statistics/</link>
       <pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate>
-      <guid>http://localhost:1313/tags/statistics/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/statistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Art</title>
-      <link>http://localhost:1313/tags/art/</link>
+      <link>https://omanshuthapliyal.github.io/tags/art/</link>
       <pubDate>Fri, 31 Oct 2025 11:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/tags/art/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/art/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/tags/research/</link>
+      <link>https://omanshuthapliyal.github.io/tags/research/</link>
       <pubDate>Wed, 13 Aug 2025 11:07:46 -0700</pubDate>
-      <guid>http://localhost:1313/tags/research/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Rl</title>
-      <link>http://localhost:1313/tags/rl/</link>
+      <link>https://omanshuthapliyal.github.io/tags/rl/</link>
       <pubDate>Wed, 13 Aug 2025 11:07:46 -0700</pubDate>
-      <guid>http://localhost:1313/tags/rl/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/rl/</guid>
       <description></description>
     </item>
     <item>
       <title>Autonomy</title>
-      <link>http://localhost:1313/tags/autonomy/</link>
+      <link>https://omanshuthapliyal.github.io/tags/autonomy/</link>
       <pubDate>Tue, 15 Oct 2024 11:07:46 -0700</pubDate>
-      <guid>http://localhost:1313/tags/autonomy/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/autonomy/</guid>
       <description></description>
     </item>
     <item>
       <title>Resource</title>
-      <link>http://localhost:1313/tags/resource/</link>
+      <link>https://omanshuthapliyal.github.io/tags/resource/</link>
       <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
-      <guid>http://localhost:1313/tags/resource/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/resource/</guid>
       <description></description>
     </item>
     <item>
       <title>Compactness</title>
-      <link>http://localhost:1313/tags/compactness/</link>
+      <link>https://omanshuthapliyal.github.io/tags/compactness/</link>
       <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
-      <guid>http://localhost:1313/tags/compactness/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/compactness/</guid>
       <description></description>
     </item>
     <item>
       <title>Real Analysis</title>
-      <link>http://localhost:1313/tags/real-analysis/</link>
+      <link>https://omanshuthapliyal.github.io/tags/real-analysis/</link>
       <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
-      <guid>http://localhost:1313/tags/real-analysis/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/real-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Music</title>
-      <link>http://localhost:1313/tags/music/</link>
+      <link>https://omanshuthapliyal.github.io/tags/music/</link>
       <pubDate>Sun, 28 Jul 2019 16:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/music/</guid>
+      <guid>https://omanshuthapliyal.github.io/tags/music/</guid>
       <description></description>
     </item>
   </channel>

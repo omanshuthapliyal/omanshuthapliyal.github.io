@@ -1,5 +1,5 @@
 ---
-title: "So does your Car fail? (An \"Uninteresting\" Implication of HRT Conjecture)"
+title: "So does your Car fail? (An \"Uninteresting\" Implication of HRT Conjecture) - Part 1"
 date: 2026-08-10T01:02:49-04:00
 draft: false
 tags: [maths, abstract]
