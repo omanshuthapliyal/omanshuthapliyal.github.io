@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analysis on Omanshu Thapliyal</title>
-    <link>http://localhost:1313/tags/analysis/</link>
+    <link>https://omanshuthapliyal.github.io/tags/analysis/</link>
     <description>Recent content in Analysis on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 11:57:21 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Aug 2026 01:02:49 -0400</lastBuildDate>
+    <atom:link href="https://omanshuthapliyal.github.io/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So does your Car fail? (The Counterexample to HRT Conjecture) - Part 2</title>
+      <link>https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/</link>
+      <pubDate>Fri, 14 Aug 2026 01:02:49 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/</guid>
+      <description>&lt;p&gt;In the &#xA;&#xA;&lt;a href=&#34;INSERT-PREVIOUS-HRT-POST-LINK&#34;&gt;previous post&lt;/a&gt;, I talked about the HRT conjecture as a rather natural statement about phase space.&#xA;A signal can be moved in time. It can also be moved in frequency.&#xA;Moving it in time changes where its envelope lives. Moving it in frequency changes the pitch of its oscillations. If we do both, we obtain a time-frequency shifted version of the original signal.&lt;/p&gt;&#xA;&lt;p&gt;Using a symmetric convention, one writes this operation as&#xA;$$(\rho(x,\omega)f)(t)=e^{2\pi i\omega(t-x/2)}f(t-x).$$&#xA;The point $$(x,\omega)$$&#xA;tells us where we moved the function in time-frequency phase space.&#xA;The HRT conjecture said that distinct points in phase space should produce distinct, linearly independent copies of a nonzero function.&#xA;More explicitly, if&#xA;$$z_1,\ldots,z_N\in\mathbb{R}^2$$&#xA;are distinct, and&#xA;$$f\inL^2(\mathbb{R})$$&#xA;is nonzero, then one should never be able to find nontrivial coefficients&#xA;$$c_1,\ldots,c_N$$ for which $$\sum_{k=1}^{N}c_k \rho(z_k)f=0.$$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>On Eigenvalues, Homotopy, and Root Loci</title>
-      <link>http://localhost:1313/blog/circles/</link>
+      <link>https://omanshuthapliyal.github.io/blog/circles/</link>
       <pubDate>Fri, 05 Sep 2025 11:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/blog/circles/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/circles/</guid>
       <description>&lt;p&gt;Consider an $$n+1$$ dimensional matrix as follows:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;A = \begin{pmatrix}&#xA;\frac{\pi^2}{6} &amp; 1 &amp; \frac{1}{4} &amp; ... &amp; \frac{1}{n^2} \\&#xA;1 &amp; \frac{\pi^2}{6} &amp; \frac{1}{4} &amp; ... &amp; \frac{1}{n^2} \\&#xA;\vdots &amp; &amp; \ddots &amp; &amp; \vdots\\&#xA;1 &amp; \frac{1}{4} &amp; ... &amp; \frac{1}{n^2}  &amp;\frac{\pi^2}{6} \\&#xA;\end{pmatrix} $$&lt;/p&gt;&#xA;&lt;p&gt;Is the matrix positive-definite?&#xA;The problem itself is a dramatization of how &#xA;&#xA;&lt;a href=&#34;https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=1339&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my professor&lt;/a&gt; would ask us to write arbitrary real matrices and quickly determine its positive-definiteness (most of the times) as a trick, seemingly like in-class wizardry!&lt;/p&gt;</description>
     </item>
     <item>
       <title>MLP Approximation</title>
-      <link>http://localhost:1313/blog/mlp-approximation/</link>
+      <link>https://omanshuthapliyal.github.io/blog/mlp-approximation/</link>
       <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
-      <guid>http://localhost:1313/blog/mlp-approximation/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/mlp-approximation/</guid>
       <description>&lt;p&gt;Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).&#xA;Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator.&#xA;Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc. are &amp;lsquo;design problems&amp;rsquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Real Analysis Notes</title>
-      <link>http://localhost:1313/blog/my-real-notes/</link>
+      <link>https://omanshuthapliyal.github.io/blog/my-real-notes/</link>
       <pubDate>Sat, 24 Aug 2019 23:38:20 +0530</pubDate>
-      <guid>http://localhost:1313/blog/my-real-notes/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/my-real-notes/</guid>
       <description>&lt;p&gt;When I took the course on Real Analysis, it made me very nervous. I was having fever dreams from the past when I took undergraduate real analysis and the epsilon-delta definitions just did not make a lot of sense. In retrospect, taking MA504 has been one of the best academic decisions, especially as an engineer.&lt;/p&gt;&#xA;&lt;p&gt;It has helped me a lot in how to concretely formulate definitions, and what &amp;lsquo;approaching&amp;rsquo;, &amp;rsquo;tending&amp;rsquo;, &amp;rsquo;limiting&amp;rsquo;, and other weasel words mean in a mathematical sense.&lt;/p&gt;</description>
     </item>
   </channel>

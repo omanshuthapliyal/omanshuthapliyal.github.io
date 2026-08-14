@@ -37,7 +37,7 @@ Not using a pathological function. Not using an object which only barely belongs
 
 The conjecture, in full generality, is false.
 
-#### A lattice is too rigid
+#### 1. A lattice may be too rigid
 
 Recall the vehicle example from the previous post.
 When one is checking a lane change, the rear-view mirror does not show everything behind the car. But it does show a large and structured part of the road. A car can be nearby, perfectly real, and still fail to appear in the mirror if it sits in the narrow wedge between the regions the mirror covers.
@@ -63,12 +63,13 @@ But the geometry tells us why such a proof has somewhere to live.
 The conjecture did not fail in the middle of the rigid lattice world.
 It failed just outside its field of view.
 
-{{< scale src="gradient_distributions.gif" alt="Gradients over time" scale="75" >}}
-![A schematic of the 12-point HRT configuration. Eleven points belong to an irrationally translated half-lattice, while the origin lies outside that discrete structure.](images/hrt-12-point-configuration.png)
+{{< scale src="gabor_simulation_output.gif" alt="HRT counterexample" scale="75" >}}
 
-*Figure 1. The 11+1 geometry of the first HRT counterexample. The blue points represent eleven shifts inside an irrationally translated half-lattice. The red point is the origin. This is a schematic: its purpose is to show why the configuration lies close to the lattice regime while avoiding the exact lattice hypothesis in Linnell's theorem.*
+_Figure 1. The 11+1 geometry of the first HRT counterexample._
 
-#### Why smoothness does not save the conjecture
+_The blue points represent eleven shifts inside an irrationally translated half-lattice. The red point is the origin. This schematic's purpose is to show why the configuration lies close to the lattice regime while avoiding the exact lattice hypothesis in Linnell's theorem._
+
+#### 2. Why smoothness does not save the conjecture
 
 One might have expected that any counterexample to HRT would need to use a very strange function.
 After all, if a function has sharp discontinuities, slow decay, or some unpleasant irregularity, perhaps one can imagine exploiting that structure to create cancellation.
@@ -78,7 +79,7 @@ $$
 $$
 This means that the function is infinitely differentiable, and it decays faster than every inverse polynomial. Its derivatives do the same.
 
-For every nonnegative $m$ and $n$,
+For every nonnegative $$m$$ and $$n$$,
 $$
 \sup_{t \in \mathbb{R}}
 \left|
@@ -99,21 +100,21 @@ A Schwartz function is still extremely well behaved. But it leaves a little more
 The counterexample lives in that room!
 It is smooth enough to look harmless, but not so rigid that the geometry of its time-frequency shifts is forced to remain independent.
 
-#### The cancellation is not found directly
+#### 3. The cancellation is not found directly
 
 The authors do not begin by writing down twelve shifted functions and somehow guessing the coefficients which make them vanish.
 Instead, they package eleven time-frequency shifts into one operator:
 $$
-P_\*=\sum_{k=1}^{11}
+P_*=\sum_{k=1}^{11}
 c_k\rho(z_k).
 $$
-Then they seek a function $$f_\*$$ for which
-$$P_\*f_\*=c_\*f_\*.$$
+Then they seek a function $$f_*$$ for which
+$$P_*f_*=c_*f_*.$$
 
 In other words, they look for an eigenfunction.
 Once this is achieved, the desired twelve-term relation follows immediately:
 $$
--c_\*f_\*+\sum_{k=1}^{11} c_k\rho(z_k)f_\*=0.
+-c_*f_*+\sum_{k=1}^{11} c_k\rho(z_k)f_*=0.
 $$
 The twelfth point is the origin. It corresponds to the unshifted copy of the function.
 I find this reframing useful.
@@ -122,7 +123,7 @@ The new question is: can a specially designed combination of eleven shifts posse
 
 It is still a difficult question, but it is no longer a completely shapeless one.
 
-#### Folding the problem until it becomes visible
+#### 4. Folding the problem until it becomes visible
 
 The proof then uses something called a Zak transform.
 The Zak transform takes a function on the real line and reorganizes it into an object living on a torus. This is useful because translations and modulations, which look global and awkward on the line, become more structured after this transformation.
@@ -142,7 +143,7 @@ The irrationality is not decorative. It is doing two jobs at once.
 It breaks the lattice theorem.
 And it remains structured enough that the torus dynamics can still be solved.
 
-#### Where the computer enters
+#### 5. Where the computer enters
 
 There is a computer-assisted component to the proof, but it is worth being precise about what this means.
 The computer is not asked to search through a large list of candidate functions and announce that one seems to work.

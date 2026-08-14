@@ -2,73 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maths on Omanshu Thapliyal</title>
-    <link>http://localhost:1313/tags/maths/</link>
+    <link>https://omanshuthapliyal.github.io/tags/maths/</link>
     <description>Recent content in Maths on Omanshu Thapliyal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 01:02:49 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/maths/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Aug 2026 01:02:49 -0400</lastBuildDate>
+    <atom:link href="https://omanshuthapliyal.github.io/tags/maths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So does your Car fail? (The Counterexample to HRT Conjecture) - Part 2</title>
+      <link>https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/</link>
+      <pubDate>Fri, 14 Aug 2026 01:02:49 -0400</pubDate>
+      <guid>https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/</guid>
+      <description>&lt;p&gt;In the &#xA;&#xA;&lt;a href=&#34;INSERT-PREVIOUS-HRT-POST-LINK&#34;&gt;previous post&lt;/a&gt;, I talked about the HRT conjecture as a rather natural statement about phase space.&#xA;A signal can be moved in time. It can also be moved in frequency.&#xA;Moving it in time changes where its envelope lives. Moving it in frequency changes the pitch of its oscillations. If we do both, we obtain a time-frequency shifted version of the original signal.&lt;/p&gt;&#xA;&lt;p&gt;Using a symmetric convention, one writes this operation as&#xA;$$(\rho(x,\omega)f)(t)=e^{2\pi i\omega(t-x/2)}f(t-x).$$&#xA;The point $$(x,\omega)$$&#xA;tells us where we moved the function in time-frequency phase space.&#xA;The HRT conjecture said that distinct points in phase space should produce distinct, linearly independent copies of a nonzero function.&#xA;More explicitly, if&#xA;$$z_1,\ldots,z_N\in\mathbb{R}^2$$&#xA;are distinct, and&#xA;$$f\inL^2(\mathbb{R})$$&#xA;is nonzero, then one should never be able to find nontrivial coefficients&#xA;$$c_1,\ldots,c_N$$ for which $$\sum_{k=1}^{N}c_k \rho(z_k)f=0.$$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>So does your Car fail? (An &#34;Uninteresting&#34; Implication of HRT Conjecture)</title>
-      <link>http://localhost:1313/blog/hrt-conjecture/</link>
+      <link>https://omanshuthapliyal.github.io/blog/hrt-conjecture/</link>
       <pubDate>Mon, 10 Aug 2026 01:02:49 -0400</pubDate>
-      <guid>http://localhost:1313/blog/hrt-conjecture/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/hrt-conjecture/</guid>
       <description>&lt;p&gt;The mathematics community has recently been effervescing with plenty of AI usage stories (notably Terence Tao, nonetheless) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. In the latest such development, a long-standing conjecture was disproved by a counterexample found using AI.&#xA;The Heil-Ramanathan-Topiwala (HRT) conjecture itself turns 30 years old next month, and while numerous interesting questions come up in my mind after its AI-assisted counterexample, for now I will contain myself to:&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;1) What is the HRT conjecture and What does it mean? And,&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Hankel Spectra Reveal About Memory</title>
-      <link>http://localhost:1313/blog/hankel-singular-values/</link>
+      <link>https://omanshuthapliyal.github.io/blog/hankel-singular-values/</link>
       <pubDate>Tue, 26 May 2026 11:09:02 -0700</pubDate>
-      <guid>http://localhost:1313/blog/hankel-singular-values/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/hankel-singular-values/</guid>
       <description>&lt;p&gt;Suppose we are given a linear dynamical system $$G=(A,B,C,D)$$ (recall that a linear system is an input $$x$$ to output $$y$$ map such that $$y_k = Cx_k + Du_k, x_{k+1}=Ax_k+Bu_k$$), and $$G$$ has some dimension $$d$$.&#xA;Often times one has to find an &amp;ldquo;equivalent&amp;rdquo; system $$\hat{G}$$&amp;ndash; one that has an input-output behavior as close to $$G$$ as possible, while ideally having a lower dimension $$\hat{d}$$.&#xA;This very vital demand from the new system $$\hat{G}$$ to model the original (higher dimensional) system as closely as possible has many applications:  building smaller plants for controller synthesis, reduced order system modeling, compressing fluid or other PDE-derived dynamical systems into manageable surrogate models, etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why are Gaussian distributions present Everywhere?</title>
-      <link>http://localhost:1313/blog/gaussians-everywhere/</link>
+      <link>https://omanshuthapliyal.github.io/blog/gaussians-everywhere/</link>
       <pubDate>Sun, 11 Jan 2026 11:09:02 -0700</pubDate>
-      <guid>http://localhost:1313/blog/gaussians-everywhere/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/gaussians-everywhere/</guid>
       <description>&lt;p&gt;Well, if one were to cut to the chase, it appears to be because of the Central Limit Theorem (CLT). However, there is more underlying structure under the hood as to why the Gaussians seem to be the &amp;lsquo;chosen&amp;rsquo; distributions. In this post we will go through some in-depth analysis beyond the typical textbook to try to get some juice worth the squeeze. And hopefully it would demystify the ubiquity &amp;ndash; from statistics, to thermodynamics, to measurement errors &amp;ndash; of Gauss&amp;rsquo;s eponymous distributions. To this end, this write up is a shallow dive into Gaussian ubiquity from a few different angles.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Eigenvalues, Homotopy, and Root Loci</title>
-      <link>http://localhost:1313/blog/circles/</link>
+      <link>https://omanshuthapliyal.github.io/blog/circles/</link>
       <pubDate>Fri, 05 Sep 2025 11:57:21 -0700</pubDate>
-      <guid>http://localhost:1313/blog/circles/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/circles/</guid>
       <description>&lt;p&gt;Consider an $$n+1$$ dimensional matrix as follows:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;A = \begin{pmatrix}&#xA;\frac{\pi^2}{6} &amp; 1 &amp; \frac{1}{4} &amp; ... &amp; \frac{1}{n^2} \\&#xA;1 &amp; \frac{\pi^2}{6} &amp; \frac{1}{4} &amp; ... &amp; \frac{1}{n^2} \\&#xA;\vdots &amp; &amp; \ddots &amp; &amp; \vdots\\&#xA;1 &amp; \frac{1}{4} &amp; ... &amp; \frac{1}{n^2}  &amp;\frac{\pi^2}{6} \\&#xA;\end{pmatrix} $$&lt;/p&gt;&#xA;&lt;p&gt;Is the matrix positive-definite?&#xA;The problem itself is a dramatization of how &#xA;&#xA;&lt;a href=&#34;https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=1339&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my professor&lt;/a&gt; would ask us to write arbitrary real matrices and quickly determine its positive-definiteness (most of the times) as a trick, seemingly like in-class wizardry!&lt;/p&gt;</description>
     </item>
     <item>
       <title>MLP Approximation</title>
-      <link>http://localhost:1313/blog/mlp-approximation/</link>
+      <link>https://omanshuthapliyal.github.io/blog/mlp-approximation/</link>
       <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
-      <guid>http://localhost:1313/blog/mlp-approximation/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/mlp-approximation/</guid>
       <description>&lt;p&gt;Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).&#xA;Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator.&#xA;Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc. are &amp;lsquo;design problems&amp;rsquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Real Analysis Notes</title>
-      <link>http://localhost:1313/blog/my-real-notes/</link>
+      <link>https://omanshuthapliyal.github.io/blog/my-real-notes/</link>
       <pubDate>Sat, 24 Aug 2019 23:38:20 +0530</pubDate>
-      <guid>http://localhost:1313/blog/my-real-notes/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/my-real-notes/</guid>
       <description>&lt;p&gt;When I took the course on Real Analysis, it made me very nervous. I was having fever dreams from the past when I took undergraduate real analysis and the epsilon-delta definitions just did not make a lot of sense. In retrospect, taking MA504 has been one of the best academic decisions, especially as an engineer.&lt;/p&gt;&#xA;&lt;p&gt;It has helped me a lot in how to concretely formulate definitions, and what &amp;lsquo;approaching&amp;rsquo;, &amp;rsquo;tending&amp;rsquo;, &amp;rsquo;limiting&amp;rsquo;, and other weasel words mean in a mathematical sense.&lt;/p&gt;</description>
     </item>
     <item>
       <title>But why is Compactness important?</title>
-      <link>http://localhost:1313/blog/compactness2/</link>
+      <link>https://omanshuthapliyal.github.io/blog/compactness2/</link>
       <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/compactness2/</guid>
-      <description>&lt;p&gt;In my &#xA;&#xA;&lt;a href=&#34;http://localhost:1313/blog/compactness&#34;&gt;last post&lt;/a&gt; I touched upon the intuition behind topological compactness. We as engineers often hear about the word &amp;lsquo;compact&amp;rsquo; as a soft gatekeeping tool from doing serious mathematics. In this post we see why the understanding is very important for doing any mathematics, &lt;em&gt;especially&lt;/em&gt; as engineers.&lt;/p&gt;&#xA;&lt;p&gt;Recall the open cover definition of a compact set as the existence of a finite open subcover for any given open cover of the set. Note that the key words here are that the subcover is going to be finite, no matter which infinite cover we begin with. Let us keep that in mind. Now we often hear about compactness being a more subtle form of finiteness, or compactness abstracting the idea of being finite, or the two being related. The open cover definition lets us understand that slightly better. Open sets, being the building blocks of topology, give us a way to interact with &lt;em&gt;a specific class of sets in a finite manner&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is this class of sets that we call compact.&lt;/p&gt;</description>
+      <guid>https://omanshuthapliyal.github.io/blog/compactness2/</guid>
+      <description>&lt;p&gt;In my &#xA;&#xA;&lt;a href=&#34;https://omanshuthapliyal.github.io/blog/compactness&#34;&gt;last post&lt;/a&gt; I touched upon the intuition behind topological compactness. We as engineers often hear about the word &amp;lsquo;compact&amp;rsquo; as a soft gatekeeping tool from doing serious mathematics. In this post we see why the understanding is very important for doing any mathematics, &lt;em&gt;especially&lt;/em&gt; as engineers.&lt;/p&gt;&#xA;&lt;p&gt;Recall the open cover definition of a compact set as the existence of a finite open subcover for any given open cover of the set. Note that the key words here are that the subcover is going to be finite, no matter which infinite cover we begin with. Let us keep that in mind. Now we often hear about compactness being a more subtle form of finiteness, or compactness abstracting the idea of being finite, or the two being related. The open cover definition lets us understand that slightly better. Open sets, being the building blocks of topology, give us a way to interact with &lt;em&gt;a specific class of sets in a finite manner&lt;/em&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is this class of sets that we call compact.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compactness</title>
-      <link>http://localhost:1313/blog/compactness/</link>
+      <link>https://omanshuthapliyal.github.io/blog/compactness/</link>
       <pubDate>Sat, 10 Aug 2019 15:44:20 +0530</pubDate>
-      <guid>http://localhost:1313/blog/compactness/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/compactness/</guid>
       <description>&lt;p&gt;This is a non-mathematical note on what I understand about compactness and what it means for a set or a space to be compact.&#xA;The open cover definition is one that can be found in any textbook, but what does it &lt;em&gt;mean&lt;/em&gt; for a set to be &lt;em&gt;compact?&lt;/em&gt; Why are such sets called compact? And how do compact sets differ from those which are not?&lt;/p&gt;&#xA;&lt;p&gt;I think the terminology here is very carefully chosen. For once, mathematicians came up with a term that paints a succinct, abstract picture. To understand compactness,let us look at two other  properties: &lt;em&gt;limit points&lt;/em&gt;, and &lt;em&gt;closed sets&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Point Estimation Problem</title>
-      <link>http://localhost:1313/blog/pointestimate/</link>
+      <link>https://omanshuthapliyal.github.io/blog/pointestimate/</link>
       <pubDate>Wed, 24 Jul 2019 01:34:25 +0530</pubDate>
-      <guid>http://localhost:1313/blog/pointestimate/</guid>
+      <guid>https://omanshuthapliyal.github.io/blog/pointestimate/</guid>
       <description>&lt;p&gt;It might seem out of place that in the world of big data, finding a singular parameter&amp;rsquo;s estimate could be interesting. Quite the contrary &amp;ndash; &lt;strong&gt;point estimation problems&lt;/strong&gt; are one of the most ubiquitous parametric estimation problems that arise whether you are doing your Stat Inference 101 assignments, or dealing with $$10^8$$ rows in a parquet file. And so, I thought of making this post to look further into the point estimation problems, and when might one want to use which method.&lt;/p&gt;</description>
     </item>
   </channel>
