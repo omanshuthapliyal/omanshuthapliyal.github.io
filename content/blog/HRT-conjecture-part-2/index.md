@@ -9,7 +9,7 @@ tags: [maths, analysis]
 
 ---
 
-In the [previous post](INSERT-PREVIOUS-HRT-POST-LINK), I talked about the HRT conjecture as a rather natural statement about phase space.
+In the [previous post](https://omanshuthapliyal.github.io/blog//hrt-conjecture/), I talked about the HRT conjecture as a rather natural statement about phase space.
 A signal can be moved in time. It can also be moved in frequency.
 Moving it in time changes where its envelope lives. Moving it in frequency changes the pitch of its oscillations. If we do both, we obtain a time-frequency shifted version of the original signal.
 
@@ -37,7 +37,7 @@ Not using a pathological function. Not using an object which only barely belongs
 
 The conjecture, in full generality, is false.
 
-#### 1. A lattice may be too rigid
+#### A lattice may be too rigid
 
 Recall the vehicle example from the previous post.
 When one is checking a lane change, the rear-view mirror does not show everything behind the car. But it does show a large and structured part of the road. A car can be nearby, perfectly real, and still fail to appear in the mirror if it sits in the narrow wedge between the regions the mirror covers.
@@ -63,13 +63,21 @@ But the geometry tells us why such a proof has somewhere to live.
 The conjecture did not fail in the middle of the rigid lattice world.
 It failed just outside its field of view.
 
+Below I show a simple simulation of the Autonomous Car driving around, trying to echolocate using [radar pulses that bounce back](https://omanshuthapliyal.github.io/blog//hrt-conjecture/), from the previous post.
+The bouncing back itself is a combination of frequency-time shifts, and I try to create a scenario where (a) first the objects are placed in a lattice (in the frequency-time phase space), and (b) they are not symmetrically placed at all.
+And I show below that the linear dependence resulting from lack of symmetry causes a blind spot (where the bounded back wave _perfectly cancels out the remaining waveform sum_).
+
 {{< scale src="gabor_simulation_output.gif" alt="HRT counterexample" scale="75" >}}
 
 _Figure 1. The 11+1 geometry of the first HRT counterexample._
 
 _The blue points represent eleven shifts inside an irrationally translated half-lattice. The red point is the origin. This schematic's purpose is to show why the configuration lies close to the lattice regime while avoiding the exact lattice hypothesis in Linnell's theorem._
 
-#### 2. Why smoothness does not save the conjecture
+So the mathematical blind spot from the previous post indeed appears clearly in asymmetric waveform case!
+
+#### _Afterword_
+
+##### Why smoothness does not save the conjecture
 
 One might have expected that any counterexample to HRT would need to use a very strange function.
 After all, if a function has sharp discontinuities, slow decay, or some unpleasant irregularity, perhaps one can imagine exploiting that structure to create cancellation.
@@ -100,8 +108,6 @@ A Schwartz function is still extremely well behaved. But it leaves a little more
 The counterexample lives in that room!
 It is smooth enough to look harmless, but not so rigid that the geometry of its time-frequency shifts is forced to remain independent.
 
-#### 3. The cancellation is not found directly
-
 The authors do not begin by writing down twelve shifted functions and somehow guessing the coefficients which make them vanish.
 Instead, they package eleven time-frequency shifts into one operator:
 $$
@@ -123,7 +129,7 @@ The new question is: can a specially designed combination of eleven shifts posse
 
 It is still a difficult question, but it is no longer a completely shapeless one.
 
-#### 4. Folding the problem until it becomes visible
+##### Folding the problem until it becomes visible
 
 The proof then uses something called a Zak transform.
 The Zak transform takes a function on the real line and reorganizes it into an object living on a torus. This is useful because translations and modulations, which look global and awkward on the line, become more structured after this transformation.
@@ -143,7 +149,7 @@ The irrationality is not decorative. It is doing two jobs at once.
 It breaks the lattice theorem.
 And it remains structured enough that the torus dynamics can still be solved.
 
-#### 5. Where the computer enters
+##### Where the computer enters
 
 There is a computer-assisted component to the proof, but it is worth being precise about what this means.
 The computer is not asked to search through a large list of candidate functions and announce that one seems to work.
@@ -159,11 +165,8 @@ The computation is not the explanation.
 The geometry is the explanation.
 The computation verifies that the geometry is strong enough.
 
-#### _Afterword_
-
 It would be easy to say that the HRT conjecture failed because phase space is messy.
-But this is not really what happened.
-The counterexample is not random. It is almost too structured to be called messy.
+But this is not really what happened, and I want to emphasize that the counterexample is not random. It is almost too structured to be called messy.
 A pure lattice is too rigid. A completely arbitrary configuration gives us no traction. The 12-point construction sits in the uncomfortable region between the two.
 It has enough lattice-like structure to be folded into a tractable torus problem. It has enough irrationality to evade the theorem which protects genuine lattices. And it has a smooth enough function to prevent the counterexample from being dismissed as pathological.
 
