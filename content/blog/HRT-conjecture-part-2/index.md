@@ -21,7 +21,7 @@ The HRT conjecture said that distinct points in phase space should produce disti
 More explicitly, if
 $$z_1,\ldots,z_N\in\mathbb{R}^2$$
 are distinct, and
-$$f\inL^2(\mathbb{R})$$
+$$f\in L^2(\mathbb{R})$$
 is nonzero, then one should never be able to find nontrivial coefficients
 $$c_1,\ldots,c_N$$ for which $$\sum_{k=1}^{N}c_k \rho(z_k)f=0.$$
 
@@ -159,7 +159,7 @@ The computation is not the explanation.
 The geometry is the explanation.
 The computation verifies that the geometry is strong enough.
 
-#### What actually broke?
+#### _Afterword_
 
 It would be easy to say that the HRT conjecture failed because phase space is messy.
 But this is not really what happened.
@@ -177,12 +177,8 @@ It shows that the rigidity had a gap.
 
 > **Update.** The 12-point construction was the first explicit Schwartz-class counterexample. Further recent work claims that four points already suffice. I will return to this separately, since reducing the geometry from twelve points to four is not merely a smaller example; it changes the question of how little structure is needed before HRT can fail.[^3]
 
-## References
-
 [^1]: M. Faulhuber, P. Petersen, J. T. van Velthoven, and F. Voigtlaender, [*Linear dependence of time-frequency shifts of a Schwartz function*](https://arxiv.org/abs/2608.05044), 2026. The original 12-point counterexample.
 
 [^2]: P. A. Linnell, [*von Neumann algebras and linear independence of translates*](https://doi.org/10.1090/S0002-9939-98-04672-8), *Proceedings of the American Mathematical Society*, 127(11), 1999.
 
 [^3]: T. Tao, [*A partial digestion of the HRT counterexample*](https://terrytao.wordpress.com/2026/08/06/a-partial-digestion-of-the-hrt-counterexample/), 2026. A blog-level explanation of the original counterexample and subsequent developments.
-
-> Written with [StackEdit](https://stackedit.io/).
