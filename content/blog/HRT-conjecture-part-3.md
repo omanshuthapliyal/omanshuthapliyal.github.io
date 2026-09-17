@@ -1,8 +1,8 @@
 ---
 title: "So does your Car fail? (A Small Harness for Mathematical Exploration) - Part 3"
-date: 2026-08-16T12:02:49-04:00
+date: 2026-09-16T12:02:49-04:00
 draft: false
-tags: [maths, ai, research]
+tags: [maths, ml, research]
 # links:
 #     website: "https://omanshuthapliyal.github.io/"
 #     alias : "blog/hrt-conjecture-part-3/"
