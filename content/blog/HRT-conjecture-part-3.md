@@ -294,7 +294,7 @@ The log stores the proposed configuration, the numerical output, the configurati
 This is more useful than retaining a long agent transcript. A transcript explains what the model said. An artifact record explains what was actually run.
 The notebook also supports deterministic fixtures. This means that the entire harness can be inspected without an API key: the explorer and critic return fixed structured objects, while the verifier and policy run normally. A live model can replace the fixtures later without changing the meaning of the deterministic checks.[^3]
 
-#### A note on orchestration
+#### _Afterword: A note on orchestration_
 
 The plain Python version is the main implementation because the policy is easy to read directly.
 There is also a LangChain/LangGraph version of the same example.[^4] It represents the loop as explicit state transitions:
@@ -306,7 +306,9 @@ propose -> verify -> critique -> execute_check -> update
 This is useful when the state becomes large or the graph itself needs to be inspected. It does not alter the numerical backend, the claim boundary, or the evidence labels.
 
 The recent HRT proof is a reminder that there is a large difference between numerical exploration and a computer-assisted proof.[^1] A small harness does not bridge that difference. 
-It does something narrower: it gives exploratory models a place to be useful without letting them narrate a result into existence.
+It does something narrower: _it gives exploratory models a place to be useful without letting them narrate a result into existence._
+
+
 
 [^1]: Vignon Oussa, “An Intrinsically Subcritical Four-Point Counterexample to the HRT Conjecture,” *arXiv preprint* arXiv:2608.07604 (2026). https://arxiv.org/abs/2608.07604
 

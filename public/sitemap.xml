@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2026-08-16T12:02:49-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-08-16T12:02:49-04:00</lastmod>
+    <lastmod>2026-09-16T12:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/maths/</loc>
-    <lastmod>2026-08-16T12:02:49-04:00</lastmod>
+    <lastmod>2026-09-16T12:02:49-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ml/</loc>
+    <lastmod>2026-09-16T12:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-16T12:02:49-04:00</lastmod>
+    <lastmod>2026-09-16T12:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/research/</loc>
-    <lastmod>2026-08-16T12:02:49-04:00</lastmod>
+    <lastmod>2026-09-16T12:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/hrt-conjecture-part-3/</loc>
-    <lastmod>2026-08-16T12:02:49-04:00</lastmod>
+    <lastmod>2026-09-16T12:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-08-16T12:02:49-04:00</lastmod>
+    <lastmod>2026-09-16T12:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/analysis/</loc>
     <lastmod>2026-08-14T01:02:49-04:00</lastmod>
@@ -33,9 +33,6 @@
     <lastmod>2026-08-12T01:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/controls/</loc>
-    <lastmod>2026-08-12T01:02:49-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ml/</loc>
     <lastmod>2026-08-12T01:02:49-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/abstract/</loc>
