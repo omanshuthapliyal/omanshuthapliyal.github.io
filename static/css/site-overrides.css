@@ -1,0 +1,222 @@
+/* ============================================================
+   Site-level overrides for the Avicenna theme.
+   Kept separate from themes/avicenna/static/css/style.css so the
+   vendored theme stays untouched and easy to update.
+   Adds: an editorial serif for headings/titles (fonts are already
+   loaded in core/head.html, just unused), a real project card grid
+   with a featured "spotlight" slot, tag chips, and subtle
+   scroll-reveal motion.
+   ============================================================ */
+
+:root {
+    --accent: #8C1515;      /* existing Stanford red, kept as-is */
+    --accent-warm: #d64933; /* existing hover accent, kept as-is */
+    --ink: #071013;
+    --card-bg: #ffffff;
+    --card-border: rgba(7, 16, 19, 0.08);
+    --card-radius: 14px;
+}
+
+/* --- Editorial type pairing (no new font imports needed) --- */
+h1, h2, h3,
+.section-title,
+.about #full_name,
+.project-card .project-title,
+.project-card--featured .project-title {
+    font-family: 'Literata', 'Source Serif Pro', Georgia, serif;
+    letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+    font-family: 'Literata', serif;
+    font-style: italic;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+/* ============================================================
+   Project grid
+   ============================================================ */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    text-decoration: none !important;
+    color: inherit;
+    box-shadow: 0 1px 2px rgba(7, 16, 19, 0.04);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px -12px rgba(7, 16, 19, 0.28);
+}
+
+.project-card .cover {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-warm) 100%);
+}
+
+.project-card .cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s ease;
+}
+
+.project-card:hover .cover img {
+    transform: scale(1.05);
+}
+
+/* placeholder pattern shown when a project has no cover image yet,
+   so the grid never looks "broken" before images are added */
+.project-card .cover.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.85);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-card .body {
+    padding: 1.1rem 1.25rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
+}
+
+.project-card .project-title {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--ink);
+}
+
+.project-card .status {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+}
+
+.project-card .summary {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #3a4548;
+    margin: 0;
+}
+
+.project-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-top: auto;
+    padding-top: .5rem;
+}
+
+.project-card .tags span {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.65rem;
+    padding: .15rem .5rem;
+    border-radius: 999px;
+    background: rgba(140, 21, 21, 0.08);
+    color: var(--accent);
+}
+
+.project-card .links {
+    display: flex;
+    gap: .9rem;
+    padding-top: .4rem;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.78rem;
+}
+
+.project-card .links a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.project-card .links a:hover {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+}
+
+/* --- Featured / spotlight project --- */
+.project-card--featured {
+    grid-column: 1 / -1;
+    flex-direction: row;
+}
+
+.project-card--featured .cover {
+    aspect-ratio: auto;
+    width: 42%;
+    flex-shrink: 0;
+}
+
+.project-card--featured .body {
+    padding: 1.5rem 1.75rem;
+    justify-content: center;
+}
+
+.project-card--featured .project-title {
+    font-size: 1.5rem;
+}
+
+.project-card--featured .summary {
+    font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+    .project-card--featured {
+        flex-direction: column;
+    }
+    .project-card--featured .cover {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* ============================================================
+   Subtle scroll-reveal (see core/script.html for the JS hook)
+   ============================================================ */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+[data-reveal].in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    .project-card,
+    .project-card .cover img {
+        transition: none;
+    }
+}

@@ -1,38 +1,39 @@
+{{/*
+  Project grid partial (site override of themes/avicenna's version).
+
+  Backward compatible: existing content/projects/*.md files with only
+  title + links still render fine (they just get a placeholder cover
+  and no summary/tags). New optional front matter, all opt-in:
+
+    summary:  "One-line description of the project."
+    cover:    "cover.jpg"        (page-resource image, or an absolute /images/... path)
+    tags:     ["robotics", "verification"]
+    status:   "Ongoing" | "2023–present" | "Completed 2024"
+    featured: true               (renders as a large spotlight card, first)
+*/}}
+
 {{ $content_type := .Params.content_type }}
-{{if $content_type}}
+{{ if $content_type }}
 {{ $t := .Site.GetPage $content_type }}
-{{ $rscPages := $t.Resources.ByType "page"}}
+{{ $rscPages := $t.Resources.ByType "page" }}
 
-{{if gt (len $rscPages) 0}}
-<div class="projects row w-100">
-    <div class="col w-100">
-        {{range $page := sort $rscPages "Params.date" "desc"}}
-        <div class="project row w-100">
-            <div class="section-1 w-100">
-                <span class="project-title">
-                    {{$page.Params.title}}
-                </span>
-            </div>
+{{ if gt (len $rscPages) 0 }}
 
-            {{ $links := $page.Params.links }}
-            {{ if $links }}
-            <div class="section-2  w-100">
-                {{range $link_name, $link_url := $links}}
-                {{ if $link_url }}
-                <a class="main_color text-decoration-none rounded " href="{{$link_url}}" target="_blank">
-                    {{$link_name}}
-                </a>
-                {{end}}
-                {{end}}
-            </div>
-            {{end}}
+{{ $sorted := sort $rscPages "Params.date" "desc" }}
+{{ $featured := where $sorted "Params.featured" true }}
+{{ $rest := where $sorted "Params.featured" "!=" true }}
 
+<div class="project-grid">
 
-        </div>
-        {{end}}
+    {{ range $featured }}
+    {{ partial "projects/project-card.html" (dict "page" . "featured" true) }}
+    {{ end }}
 
+    {{ range $rest }}
+    {{ partial "projects/project-card.html" (dict "page" . "featured" false) }}
+    {{ end }}
 
-    </div>
-    {{end}}
 </div>
-{{end}}
+
+{{ end }}
+{{ end }}
