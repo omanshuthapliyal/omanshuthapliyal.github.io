@@ -50,5 +50,6 @@ The point of a state is not to preserve the past.
 
 It is to forget the past correctly.
 
+
 ---
 _Written with [StackEdit](https://stackedit.io/)._

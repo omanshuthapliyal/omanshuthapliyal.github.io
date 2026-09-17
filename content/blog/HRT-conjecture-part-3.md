@@ -8,6 +8,10 @@ tags: [maths, ml, research]
 #     alias : "blog/hrt-conjecture-part-3/"
 
 ---
+Part 1:[https://omanshuthapliyal.github.io/blog/hrt-conjecture/](https://omanshuthapliyal.github.io/blog/hrt-conjecture/)
+
+Part 2: [https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/](https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/)
+
 
 In the [(last couple)](https://omanshuthapliyal.github.io/blog/hrt-conjecture/) [(of posts)](https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/) I explained what the recently (dis-)proven HRT conjecture states, and what it implies.
 We looked at how a computer-assisted argument can turn a difficult mathematical question into a finite collection of things that can be checked. Here, we try the more mundane inverse problem: how do we set up a small AI harness such that an LLM can suggest where to look, while the things that matter are still checked deterministically?

@@ -67,6 +67,12 @@ However, now that HRT conjecture is disproven using a counterexample, _there is 
 In reality, engineers utilize multitudes of solutions such as sensing system redundancies. 
 This isn't a pathological limitation of autonomous vehicles (it was merely an interesting problem to motivate this discussion) as such, but rather a mathematical limitation.
 
+
+Part 2: [https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/](https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-2/)
+
+Part 3: [https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-3/](https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-3/)
+
+
 [^1]: https://www.reddit.com/r/math/comments/1vj9fm8/hrt_conjecture_disproven_by_ai/
 [^2]: https://math.umd.edu/~rvbalan/TEACHING/RIT2023/RemarksOnHRT_DanielStrook.pdf
 [^3]: https://terrytao.wordpress.com/2026/08/06/a-partial-digestion-of-the-hrt-counterexample/

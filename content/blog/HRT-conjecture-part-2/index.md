@@ -9,6 +9,9 @@ tags: [maths, analysis]
 
 ---
 
+Part 1:[https://omanshuthapliyal.github.io/blog/hrt-conjecture/](https://omanshuthapliyal.github.io/blog/hrt-conjecture/)
+
+
 In the [previous post](https://omanshuthapliyal.github.io/blog//hrt-conjecture/), I talked about the HRT conjecture as a rather natural statement about phase space.
 A signal can be moved in time. It can also be moved in frequency.
 Moving it in time changes where its envelope lives. Moving it in frequency changes the pitch of its oscillations. If we do both, we obtain a time-frequency shifted version of the original signal.
@@ -179,6 +182,10 @@ The counterexample does not destroy every piece of that rigidity.
 It shows that the rigidity had a gap.
 
 > **Update.** The 12-point construction was the first explicit Schwartz-class counterexample. Further recent work claims that four points already suffice. I will return to this separately, since reducing the geometry from twelve points to four is not merely a smaller example; it changes the question of how little structure is needed before HRT can fail.[^3]
+
+
+Part 3: [https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-3/](https://omanshuthapliyal.github.io/blog/hrt-conjecture-part-3/)
+
 
 [^1]: M. Faulhuber, P. Petersen, J. T. van Velthoven, and F. Voigtlaender, [*Linear dependence of time-frequency shifts of a Schwartz function*](https://arxiv.org/abs/2608.05044), 2026. The original 12-point counterexample.
 
