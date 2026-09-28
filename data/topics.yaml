@@ -1,0 +1,34 @@
+# Broad topics for the "Filter by topic" sidebar on /projects/.
+#
+# Projects keep their detailed `tags` (shown as chips on each project page).
+# Every tag listed below rolls up into its broad topic; the sidebar shows only
+# these broad topics. A tag that isn't listed anywhere still gets its own
+# sidebar chip, so nothing silently disappears; add it to a topic here to fold
+# it in. Order here = order in the sidebar.
+- name: "Safety & Reachability"
+  slug: safety-reachability
+  tags: [reachability, safe-navigation, cyberphysical-systems, koopman-operators]
+- name: "Cybersecurity"
+  slug: cybersecurity
+  tags: [cybersecurity]
+- name: "Multi-Agent & Networked Systems"
+  slug: multi-agent-networked
+  tags: [multi-agent-systems, networked-control-systems, sensor-networks]
+- name: "State Estimation"
+  slug: state-estimation
+  tags: [state-estimation, kalman-filtering]
+- name: "Learning-Based Control"
+  slug: learning-based-control
+  tags: [physics-informed-ml, reinforcement-learning, imitation-learning, generative-adversarial-networks, world-models, differentiable-mpc, neural-radiance-fields]
+- name: "Agentic AI & NLP"
+  slug: agentic-ai-nlp
+  tags: [agentic-ai, contract-analysis, information-extraction, nlp, sla-monitoring]
+- name: "Aerospace & Urban Air Mobility"
+  slug: aerospace-uam
+  tags: [urban-air-mobility, air-traffic-control]
+- name: "Energy & Data Centers"
+  slug: energy-data-centers
+  tags: [energy-systems, data-centers]
+- name: "Industrial Automation"
+  slug: industrial-automation
+  tags: [industrial-automation, scada]
