@@ -129,9 +129,10 @@ params:
     institution: "Hitachi America Ltd."
     location: ""
     image: "/images/profile.jpg"
+    email_text: "[lastname].[firstname]@gmail.com"   # shown under the contact buttons (plain text, no mailto)
     bio: |
-      I am a Senior AI/ML Researcher at Hitachi America Ltd., working on Control Theory
-      Applications in ML, Safe Control Synthesis, and Data-Driven Control. I hold a Ph.D.
+      I am a Senior AI/ML Researcher at Hitachi America Ltd., working on safe deployment
+      of Industrial AI in safety-critical situations & operations. I hold a Ph.D.
       in Aeronautics & Astronautics Engineering from Purdue University (advised by Prof.
       Inseok Hwang and Prof. Arthur Frazho), preceded by an M.S. from Purdue, a stint at
       MathWorks, and a B.Tech. in Aerospace Engineering from IIT Kanpur.
