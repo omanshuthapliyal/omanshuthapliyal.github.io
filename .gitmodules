@@ -1,0 +1,4 @@
+[submodule "themes/hugo-academia"]
+	path = themes/hugo-academia
+	url = https://github.com/omanshuthapliyal/Hugo-academia.git
+	branch = main
