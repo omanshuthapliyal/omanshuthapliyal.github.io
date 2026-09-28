@@ -1,6 +1,7 @@
 ---
 title: "Map of Controls"
 date: 2019-08-15T13:24:49+05:30
+draft: true
 tags: ["controls", "autonomy", "research"]
 ---
 
