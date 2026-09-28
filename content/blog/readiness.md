@@ -1,15 +1,9 @@
 ---
 title: "Technology Readiness Levels of AI methods"
 date: 2024-10-15T11:07:46-07:00
-draft: false
-katex: true
-tags: [controls, autonomy, ml, research]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/readiness/"
-
-
+tags: ["controls", "autonomy", "ml", "research"]
 ---
+
 Recent news of the SpaceX catching its Starship Super Heavy booster[^1] is quite discussed and marveled upon in the media, and rightly so.
 Executing what was done can perhaps be explained as trying to catch a falling stick, then balancing it vertically, all while the stick is over 200 ft tall, weighs over 150 tonnes, spews fire, and costs over tens of millions of dollars.
 One cannot but feel a little giddy as a controls engineering enthusiast over this massive success. 

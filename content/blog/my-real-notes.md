@@ -1,12 +1,7 @@
 ---
 title: "Real Analysis Notes"
 date: 2019-08-24T23:38:20+05:30
-draft: false
-tags: [maths, analysis]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-    # alias : "blog/my-real-notes/"
-
+tags: ["maths", "analysis"]
 ---
 
 When I took the course on Real Analysis, it made me very nervous. I was having fever dreams from the past when I took undergraduate real analysis and the epsilon-delta definitions just did not make a lot of sense. In retrospect, taking MA504 has been one of the best academic decisions, especially as an engineer. 

@@ -1,15 +1,8 @@
 ---
 title: "Can LLM Finetuning be Stateful? Small states for Large Models - Part 1"
 date: 2026-07-31T11:57:21-07:00
-draft: false
-katex: true
 tags: ["ml", "controls", "state_space_models", "linear_algebra"]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/HRM-part-1/"
-
 ---
-
 
 In the [last post](https://omanshuthapliyal.github.io/blog/hankel-singular-values/) I talked about Hankel operators of simple linear dynamical systems. Such operators, and either eigenvalues, _"can be used as a proxy for how much memory a task actually requires in a state-space model"._ And later we tied their input-output relations empirically tie the memory requirements of a post-trained state space model (SSM) to its Hankel singular value (HSV) rates. Further, HSV-based balanced truncation can offer us to selectively choose 'some' eigenvalues to keep that involve higher input-to-output signal strength over time. 
 And so, we used Hankel singular values to decide which states of a dynamical system are worth keeping. 
@@ -47,7 +40,7 @@ There are many details one can add here: gating, normalization, discretization, 
 
 The adapter is not just a function of the current token representation. It is a tiny system which has been watching the sequence unfold. 
 
-{{< scale src="hrm-figure-1.png" alt="A finetuning method" scale="30" >}}
+![A finetuning method](hrm-figure-1.png)
 
 *Figure 1. Both LoRA and HRM add a small trainable residual to a frozen model. LoRA modifies a weight map. HRM adds a small dynamical system whose state persists across tokens.* 
 

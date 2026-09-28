@@ -1,13 +1,7 @@
 ---
 title: "How Transformers Echo Control Theory"
 date: 2025-09-27T11:57:21-07:00
-draft: false
-katex: true
 tags: ["ml", "controls"]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/transformers/"
-
 ---
 
 Transformer models have captivated a lot of AI research in most of the past decade, and in this post my goal is to make them seem more interesting to controls people, who have much to contribute to the field. I will be making gross generalizations to draw such entry points. At least, I found transformer models more interesting after finding a few parallels in dynamical systems & controls [^1]. This post attempts to explore those parallels.
@@ -76,7 +70,7 @@ If you thought you were going to see an application of the same to trajectory pr
 
 Below is the predicted trajectory, as learned by our ```tiny transformer```. Again, the complete code to reproduce can be found here [^2].
 
-{{< scale src="predicted-trajectory.jpg" alt="Trajectory Prediction for a Dubin's Car using Transformers" scale="85" >}}
+![Trajectory Prediction for a Dubin's Car using Transformers](predicted-trajectory.jpg)
 
 This has been a very standard (non-trivial) problem of system identification and/or prediction, which a simple Kalman Filter can solve for linear systems (and an extended Kalman Filter for nonlinear systems). There are more nuanced methods such as Koopman Operator-based projections to higher-dimensional spaces. Curiously, just like the $$\mathcal{O}(n^2)$$ growth of transformer complexity with sequence length, such methods also grow quadratically, as they too take into account cross-dependency using Gramian structures.
 

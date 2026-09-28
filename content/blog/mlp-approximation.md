@@ -1,13 +1,7 @@
 ---
 title: "MLP Approximation"
 date: 2019-09-12T10:27:01-04:00
-draft: false
-katex: true
-tags: [ml, maths, analysis]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/mlp-approximation/"
-
+tags: ["ml", "maths", "analysis"]
 ---
 
 Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).

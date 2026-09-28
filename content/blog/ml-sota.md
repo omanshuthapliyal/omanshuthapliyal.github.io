@@ -1,13 +1,7 @@
 ---
 title: "ML SoTA Resources"
 date: 2019-08-18T22:36:00+05:30
-draft: false
-katex: true
-tags: [resource, ml]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/ml-sota/"
-
+tags: ["resource", "ml"]
 ---
 
 The internet is filled with machine learning resources, and one of the most annoying things about them is the sheer volume. 

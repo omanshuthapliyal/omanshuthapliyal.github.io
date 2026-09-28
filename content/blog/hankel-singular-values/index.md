@@ -1,13 +1,7 @@
 ---
 title: "What Hankel Spectra Reveal About Memory"
 date: 2026-05-26T11:09:02-07:00
-draft: false
-
-katex: true
-tags: [statistics, ml, maths]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/hsv-memory"
+tags: ["statistics", "ml", "maths"]
 ---
 
 Suppose we are given a linear dynamical system $$G=(A,B,C,D)$$ (recall that a linear system is an input $$x$$ to output $$y$$ map such that $$y_k = Cx_k + Du_k, x_{k+1}=Ax_k+Bu_k$$), and $$G$$ has some dimension $$d$$.
@@ -33,7 +27,7 @@ A steep HSV drop suggests the task is compressible into a small latent state, wh
 This makes total sense when viewed from the control theory lens, but sounds peculiar as to why an arbitrary, post-trained SSM when trained to a given task, would have its HSVs dictate how much it can remember in the deep past!
 This is primarily because even though a linear system's controllability and observability properties depend on the choice of the coordinates, the Hankel singular values are independent of the state-space coordinates!
 
-{{< scale src="HSV-decay-tasks.png" alt="HSV decay rates for various tasks" scale="70" >}}
+![HSV decay rates for various tasks](HSV-decay-tasks.png)
 ---
 The figure above is taken from a preprint currently in progress on uncovering more such properties of SSMs.
 For the purposes of this discussion, it shows 5 different tasks of varying memory requirements - and a steeper HSV decay rate signifies that the task likely has a low intrinsic memory dimension; if it decays gradually, the model may need more state capacity.

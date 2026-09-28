@@ -1,13 +1,7 @@
 ---
 title: "A Case for Abstraction"
 date: 2025-10-31T11:57:21-07:00
-draft: false
-katex: true
 tags: ["abstract", "art"]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/abstraction/"
-
 ---
 
 There's this common joke when studying linear algebra that goes like this. 

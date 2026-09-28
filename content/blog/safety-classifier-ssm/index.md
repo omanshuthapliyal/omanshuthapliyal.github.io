@@ -1,12 +1,7 @@
 ---
 title: "Contraction can Help Safety Classifiers keep their Promise"
 date: 2026-08-12T01:02:49-04:00
-draft: false
-tags: [ml, controls]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/safety-classifier-ssm/"
-
+tags: ["ml", "controls"]
 ---
 
 A safety classifier can tell us that a prompt looks harmful.
@@ -90,7 +85,7 @@ It is important to be careful with that last statement. An uncertified example i
 Instead of looking only at the final interval, we can watch the entire interval evolve as the classifier reads the prompt.
 This time-indexed collection of possible scores is sometimes called a *reach tube*.
 
-{{< scale src="reach-tube-contraction.png" alt="Reach tubes for a contraction-constrained and unconstrained LTI safety classifier" scale="50" >}}
+![Reach tubes for a contraction-constrained and unconstrained LTI safety classifier](reach-tube-contraction.png)
 
 *Figure 1. The shaded region is the set of scores reachable under bounded embedding perturbations as a sequence is processed. Under contraction, the uncertainty tube settles. Without contraction, uncertainty can continue widening and eventually cross the decision boundary.*
 

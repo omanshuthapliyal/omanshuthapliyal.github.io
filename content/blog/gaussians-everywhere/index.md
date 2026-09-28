@@ -1,14 +1,7 @@
 ---
 title: "Why are Gaussian distributions present Everywhere?"
 date: 2026-01-11T11:09:02-07:00
-draft: false
-
-katex: true
-tags: [statistics, ml, maths]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/gaussians-everywhere/"
-
+tags: ["statistics", "ml", "maths"]
 ---
 
 Well, if one were to cut to the chase, it appears to be because of the Central Limit Theorem (CLT). However, there is more underlying structure under the hood as to why the Gaussians seem to be the 'chosen' distributions. In this post we will go through some in-depth analysis beyond the typical textbook to try to get some juice worth the squeeze. And hopefully it would demystify the ubiquity -- from statistics, to thermodynamics, to measurement errors -- of Gauss's eponymous distributions. To this end, this write up is a shallow dive into Gaussian ubiquity from a few different angles.
@@ -42,20 +35,20 @@ That is, *homogeneous scaling of cumulants encodes how the underlying distributi
 The (higher order) cumulant decay property, and CLT are good checks for Gaussian distributions in random variables. We check for this _universal attractor_ property of Gaussian distributions by checking [six different distributions](https://github.com/omanshuthapliyal/blog-posts_accompanying-code/blob/main/Blog_post_Gaussian-random-variables.ipynb): Uniform, Gamma, Chi-squared, Laplace, Beta, and Triangular distributions, summed over $$10^5$$ data points. Comparing cumulants, we do observe higher order cumulants decaying, no matter which distribution we sample the random variables from, though at different rates for different distributions[^3]. 
 So no matter which distribution you start from, the sums do gravitate towards Gaussians, shown below. This not only enables parametric testing (like t-tests), even when the underlying data are not Gaussian, but also allows for confidence interval-based testing to estimate where population means may lie.
 
-{{< scale src="cumulant-decay.png" alt="Higher Order Cumulant Decay" scale="70" >}}
+![Higher Order Cumulant Decay](cumulant-decay.png)
 ---
 
 If you are thinking this foundational property would have further implications in statistical machine learning, you are correct. 
 
 The weighted sum after a linear layer $$W^Tx+b$$ (but before an activation funtion like ReLU) _should_ also sum to Gaussian distribution irrespective of the priors. In fact, that is what neural networks do in the infinite width limits [^2]. I try to demonstrate the same using a small network with 4 hidden layers [^4], and try to check for its "score" of $$\sqrt(k_3^2 + k_4^2)$$ after each layer, but before the activation function (since nonlinearities in activation functions can destroy the underlying homogeneity of cumulants). We do observe that the Gaussian nature of the pre-activation output of layers exhibits an apparent Gaussian behavior, but recall that these limits hold in the infinite width. The layer outputs tend more towards Gaussian distributions as per the defined "score" above, based on the third and fourth cumulants.
 
-{{< scale src="convergence_animation-evolution-layer1.gif" alt="Pre-activation output of Layer 1" scale="70" >}}
+![Pre-activation output of Layer 1](convergence_animation-evolution-layer1.gif)
 
 In fact, neural networks are equivalent to Gaussian processes under stochastic gradient descent with respect to Neural Tangent Kernels [^5] -- something that I might visit another day. However, this simple score calculation does not paint the complete picture; especially because of gradient clipping, activation functions, finite width, multiple layers, not capturing higher cumulants, etc. 
 This is seen in more sophisticated Gaussianity checks, e.g., a Q-Q plot against standard normal as it evolves during the training epochs shown below. Even though the gradients seem to be approaching (or remaining?) Gaussian in nature, the Q-Q plot provides a clearer picture [^6]. Nonlinear and inhomogeneous effects from gradient clips, and most importantly, finite network width mean that the theoretical Gaussian eventuality is still far, as revealed by the Q-Q plot results, when third and fourth cumulant-based score thinks otherwise. Also note that the Gaussian nature of the gradient is not increasing over time (epochs) in these experiments. Perhaps also because CLT in this case is reliant on infinite widths and ideally single layered network.
 
-{{< scale src="gradient_distributions.gif" alt="Gradients over time" scale="75" >}}
-{{< scale src="gradient_qq_plots.gif" alt="Gradients over time : Q-Q plot" scale="75" >}}
+![Gradients over time](gradient_distributions.gif)
+![Gradients over time : Q-Q plot](gradient_qq_plots.gif)
 
 ---
 ##### *Afterword*

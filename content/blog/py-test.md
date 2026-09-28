@@ -1,11 +1,8 @@
 ---
-title: Python Script Test
-date: 2025-08-13T18:07:46.000Z
-draft:  true
-katex: true
-tags: [rl, ml, research]
+title: "Python Script Test"
+date: 2025-08-13T18:07:46+00:00
+tags: ["rl", "ml", "research"]
 ---
-
 
 Reward is enough -- *when can we "reinforce" the learning?*
 

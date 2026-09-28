@@ -1,13 +1,7 @@
 ---
 title: "Compactness"
 date: 2019-08-10T15:44:20+05:30
-draft: false
-katex: true
-tags: [maths, real analysis, compactness]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/compactness/"
-    
+tags: ["maths", "real analysis", "compactness"]
 ---
 
 This is a non-mathematical note on what I understand about compactness and what it means for a set or a space to be compact. 

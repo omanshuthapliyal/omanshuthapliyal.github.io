@@ -1,14 +1,10 @@
 ---
 title: "Can LLM Finetuning be Stateful? Small states for Large Models - Part 2"
 date: 2026-08-07T11:57:21-07:00
-draft: false
-katex: true
 tags: ["ml", "controls", "state_space_models", "linear_algebra"]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/HRM-part-2/"
-
+aliases: ["/blog/hrm-part2/"]
 ---
+
 The code for this project can be found at: [https://github.com/omanshuthapliyal/HRM-adapter](https://github.com/omanshuthapliyal/HRM-adapter).
 And the paper can be found at: [https://arxiv.org/pdf/2606.26290](https://arxiv.org/pdf/2606.26290).
 
@@ -23,7 +19,7 @@ Suppose an adapter has a state direction that the input sequence can never excit
 #### A reduced state is a claim about useful forgetting 
 A language model has far more history available than any small adapter state could hope to retain. So the goal cannot be to reproduce the full sequence in $s_t$. That would be silly. The goal is to carry forward an abstraction of the sequence which remains useful. This is perhaps the most satisfying interpretation of balanced truncation in this setting. It is not merely a compression trick applied after the interesting work is done. It is a proposal for how the adapter should forget. It forgets directions which are weakly coupled to what enters it, weakly coupled to what leaves it, or both. It retains directions which can absorb relevant information from the sequence and later alter the correction supplied to the frozen transformer. 
 
-{{< scale src="DFA-figure.png" alt="A finetuning method - on a Deterministic Finite Automaton (DFA)" scale="70" >}}
+![A finetuning method - on a Deterministic Finite Automaton (DFA)](DFA-figure.png)
 
 *Figure 2. A task may permit a 32-dimensional adapter state without requiring 32 meaningful dynamical directions. In our DFA experiments, the relevant solution was intrinsically much lower dimensional.*
 

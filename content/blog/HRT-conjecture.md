@@ -1,12 +1,7 @@
 ---
-title: "So does your Car fail? (An \"Uninteresting\" Implication of HRT Conjecture) - Part 1"
+title: "So does your Car fail? (An 'Uninteresting' Implication of HRT Conjecture) - Part 1"
 date: 2026-08-10T01:02:49-04:00
-draft: false
-tags: [maths, abstract]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/hrt-conjecture/"
-
+tags: ["maths", "abstract"]
 ---
 
 The mathematics community has recently been effervescing with plenty of AI usage stories (notably Terence Tao, nonetheless) [^1]. In the latest such development, a long-standing conjecture was disproved by a counterexample found using AI. 

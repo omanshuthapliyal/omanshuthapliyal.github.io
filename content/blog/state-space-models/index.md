@@ -1,13 +1,7 @@
 ---
 title: "State Space Models: How Control Theory can echo Machine Learning"
 date: 2025-10-06T18:57:21-07:00
-draft: false
-katex: true
 tags: ["ml", "controls", "state_space_models", "linear_algebra"]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/state-space-models/"
-
 ---
 
 I wrote in a [previous post](https://omanshuthapliyal.github.io/blog/transformers/) how transformers are kind of like system identification methods applied to some sequence in a state space. In this post we try to understand if the other way round is true.
@@ -28,7 +22,7 @@ Alternatively, $$\mathrm{range}(T)$$ is often smaller than $$\mathcal{X}$$; or, 
 
 In essence, under linear dynamics, the sates that you can "hit" with the matrices $$A,B$$ is given by the range of $$W_c$$. Additionally, often times we do not observe $$x$$ itself, but some mapping of it, say, $$y(t)=Cx(t)$$. Then, the input sequence is some $$u[t_0,t_1]$$ is getting mapped to the output sequence $$y[t_0,t_1]$$ -- and if we closely observe, the output sequence is a convolution as the figure below:
 
-{{< scale src="ctrb-kernel.jpg" alt="Controllability as a convolution kernel" scale="50" >}}
+![Controllability as a convolution kernel](ctrb-kernel.jpg)
 
 
 This is where things finally start to add up. State space models (SSMs) inspired from the control problems above have been gaining a lot of traction for sequence modeling lately (see Mamba, and all its derivatives [^3][^4]). By parameterizing the controllability convolution kernel via its state space matrices $$A,B,C$$, SSMs can often efficiently model long-range dependencies with relatively fewer parameters than attention-based methods. In this way, SSMs attempt to describe the input-output sequences $$u(t), y(t)$$, by first projecting to a higher dimensional feature/hidden space $$\mathcal{X}$$, and the output sequence map is a learnable controllability convolution kernel $$W_c$$. In some flavors such as S4, this is exactly the fixed kernel $$W_c$$, while in more sophisticated selective state space methods like Mamba, it is a time-dependent kernel $$W_{c}(t)$$. The key idea is the same: to predict the sequence as $$y = W_c * u$$ as a learnable sequence-to-sequence map in the state space.
@@ -82,7 +76,7 @@ For instance, the ```tiny mamba``` takes about half the time per epoch to train.
 ```...```
 
 Additionally, both models seem to have a similar cross entropy loss in train, as well as validation datasets.
-{{< scale src="loss.jpg" alt="tiny mamba and tiny transformer loss" scale="75" >}}
+![tiny mamba and tiny transformer loss](loss.jpg)
 
 As far as their next token prediction is concerned, ```tiny mamba``` and ```tiny transformer``` have ```28864``` and ```115819``` trainable parameters, respectively. And when trained on 1% of the ```wikitext``` dataset, and presented with the input prompt: "```control theory is a field of ```", here is what both models have to say:
 
@@ -93,7 +87,7 @@ While the ```tiny mamba``` and ```tiny transformer``` both predict gibberish, bo
 In fact, SSMs are often preferred in literature over transformers in certain tasks with long-range prediction or memory requirements [^4].
 Note that for my particular training parameters, the SSM did slightly better in training, but worse in validation. SSMs are methods of choice for short to medium range sequence modeling tasks.
 
-{{< scale src="logits.jpg" alt="tiny mamba and tiny transformer comparing logits" scale="75" >}}  
+![tiny mamba and tiny transformer comparing logits](logits.jpg)  
   
 This post's aim was not to capture benefits or any particular sequence to sequence modeling method over a different one. Instead, this is a continuation of my ongoing side-quest of finding applications from one field (typically controls engineering), into other different fields. If you liked this post, a much more profound result awaits here [^3] where the inventors of mamba determine how transformer models and state space models are closely related.
 

@@ -1,13 +1,7 @@
 ---
 title: "On Eigenvalues, Homotopy, and Root Loci"
 date: 2025-09-05T11:57:21-07:00
-draft: false
-katex: true
 tags: ["analysis", "maths", "linear_algebra"]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/circles/"
-
 ---
 
 Consider an $$n+1$$ dimensional matrix as follows:
@@ -36,7 +30,7 @@ This neat complex analysis trick can help understand an alternative proof of Ger
 However, in constructing a homotopy, we saw something more important: Geršgorin's discs provide bounds for eigenvalues for the perturbed matrix $$A(t) = D + tE$$. In fact, one such realization for varying values of $$t$$ is shown in the plot below.
   
   
-{{< scale src="gersh.jpg" alt="Geršgorin's discs" scale="60" >}}
+![Geršgorin's discs](gersh.jpg)
 
 We can see that as we vary $$t$$, we are essentially observing the locus of eigenvalues of $$A(t)$$, all of them bounded by the Geršgorin's discs. This immediately reminds one of the roots of a different polynomial: $$p_K(z) = D(s) + KN(s)$$. This is the **root locus** of an open-loop transfer function $$N(s)/D(s)$$ with closed-loop feedback gain $$K$$. That is, the locus of all roots of $$p_K(s)$$ as $$K$$ varies unbounded. While this is not a homotopy at all, Geršgorin's discs play a role similar to the root locus: they bound and structure the possible trajectories, though they don’t give the exact path. While the discs provide set-based boundaries, the root locus provides geometric trajectories of the poles.
 
@@ -47,7 +41,7 @@ And yes, since $$\sum_{n=1}^\infty 1/n^2 = \pi^2/6$$ as the [Basel problem](http
 ---
 ##### *Afterword*
 I recently learned about an interesting generalization of Geršgorin's discs, called **Brauer's Cassini ovals**. These are defined as $$\{z\in\mathbb{C}: |z-a_{ii}|\cdot|z-a_{jj}|\leq r_i r_j\}$$. These provide even tighter set enclosure for the eigenvalues using 2 rows at a time, as shown in the figure below.
-{{< scale src="circle-oval-region.jpg" alt="Comparing eigenvalue localization" scale="41" >}}
+![Comparing eigenvalue localization](circle-oval-region.jpg)
 
 
 Of course, even higher order generalizations exist, hence the curious field of eigenvalue localization using ever so sharp set boundaries! One such generalization are called *Brualdi's regions*[^1], which provide even sharper bounds for eigenvalues based on the matrix entries.

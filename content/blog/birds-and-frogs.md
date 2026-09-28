@@ -1,13 +1,7 @@
 ---
 title: "Birds and Frogs in Science"
 date: 2019-08-25T20:20:44+05:30
-draft: false
-katex: true
-tags: [research]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/birds-and-frogs/"
-
+tags: ["research"]
 ---
 
 One of my fellow grad students shared a paper with me that turned out to be a great read. It was Professor Freeman Dyson's article titled [Birds and Frogs](https://www.ams.org/notices/200902/rtx090200212p.pdf), that was the invited Einstein lecture at the American Mathematical Society.

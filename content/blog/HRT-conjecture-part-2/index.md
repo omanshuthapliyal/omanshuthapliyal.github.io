@@ -1,12 +1,7 @@
 ---
 title: "So does your Car fail? (The Counterexample to HRT Conjecture) - Part 2"
 date: 2026-08-14T01:02:49-04:00
-draft: false
-tags: [maths, analysis]
-# links:
-#     website: "https://omanshuthapliyal.github.io/"
-#     alias : "blog/hrt-conjecture-part-2/"
-
+tags: ["maths", "analysis"]
 ---
 
 Part 1:[https://omanshuthapliyal.github.io/blog/hrt-conjecture/](https://omanshuthapliyal.github.io/blog/hrt-conjecture/)
@@ -70,7 +65,7 @@ Below I show a simple simulation of the Autonomous Car driving around, trying to
 The bouncing back itself is a combination of frequency-time shifts, and I try to create a scenario where (a) first the objects are placed in a lattice (in the frequency-time phase space), and (b) they are not symmetrically placed at all.
 And I show below that the linear dependence resulting from lack of symmetry causes a blind spot (where the bounded back wave _perfectly cancels out the remaining waveform sum_).
 
-{{< scale src="gabor_simulation_output.gif" alt="HRT counterexample" scale="75" >}}
+![HRT counterexample](gabor_simulation_output.gif)
 
 _Figure 1. The 11+1 geometry of the first HRT counterexample._
 
