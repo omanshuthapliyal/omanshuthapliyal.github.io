@@ -13,9 +13,9 @@ I was advised by [Prof. Inseok Hwang](https://engineering.purdue.edu/AAE/people/
 
 ## Research Interests
 
-- Control theoretic-ML & AI Safety
+- Safe Industrial AI & AI Safety
 - Data-driven Controls & Safe Autonomy
-- Distributed / Networked Control Systems
+- Distributed & Networked Control
 - System-of-Systems Engineering
 
 ## Personal Interests

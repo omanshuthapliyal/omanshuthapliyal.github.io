@@ -138,13 +138,13 @@ params:
 
   # Research areas
   research:
-    - title: "Control-theoretic ML & AI Safety"
+    - title: "Safe Industrial AI & AI Safety"
       icon: "brain"
       description: "Bringing control-theoretic guarantees to learning-based systems for safer, more reliable AI."
     - title: "Data-driven Controls & Safe Autonomy"
       icon: "chart"
       description: "Learning controllers directly from data while preserving safety and stability guarantees."
-    - title: "Distributed / Networked Control Systems"
+    - title: "Distributed & Networked Control"
       icon: "network"
       description: "Coordinating multi-agent and networked systems under communication and information constraints."
     - title: "System-of-Systems Engineering"
