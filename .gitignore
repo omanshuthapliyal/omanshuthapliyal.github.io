@@ -6,3 +6,19 @@ public/
 public/
 
 /.quarto/
+
+# Raw demo screen captures (patent pending) - keep out of the public repo
+assets/wm-gt-screenCapture.mp4
+assets/proj5-world-model-loop-capture.mp4
+assets/state-estimation/
+assets/uas-safety/
+assets/sla/
+
+# macOS / Hugo local files
+.DS_Store
+.hugo_build.lock
+
+# Local-only working folders (theme previews, pre-redesign backup, screenshots)
+_theme-previews/
+_pre-redesign-backup/
+Claude outputs/
