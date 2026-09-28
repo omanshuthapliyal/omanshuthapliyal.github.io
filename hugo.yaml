@@ -1,0 +1,213 @@
+# =============================================================================
+# Academia Theme - Example Site Configuration
+# =============================================================================
+
+baseURL: "https://omanshuthapliyal.github.io/"
+languageCode: "en"
+title: "Omanshu Thapliyal"
+theme: "hugo-academia"
+googleAnalytics: "UA/G-1GN9J4R0RF"
+
+# Build settings
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Single language site
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+# Permalinks
+# blog/tags/categories are pinned explicitly (rather than left to theme/Hugo
+# defaults) because these URLs are LIVE on the current production site and
+# must survive the theme swap unchanged - see the hard URL-preservation
+# constraint in the project's option-a-trial-strategy doc. papers/courses/
+# projects/patents have no prior live URLs, so hugo-academia's own scheme is
+# free to use as-is.
+permalinks:
+  # :contentbasename (not :slug) - none of the 26 real posts set an explicit `slug:`
+  # front matter field, so Hugo's :slug token falls back to slugifying the
+  # TITLE (e.g. "hrm-part-1" -> "can-llm-finetuning-be-stateful..."), which
+  # silently broke every one of these live URLs. :contentbasename uses the source
+  # filename/bundle-folder name instead, which already exactly matches the
+  # required slugs for all 26 posts - confirmed by diffing the build output
+  # against the real site's URL inventory.
+  blog: "/blog/:contentbasename/"
+  papers: "/papers/:slug/"
+  courses: "/courses/:slug/"
+  projects: "/projects/:slug/"
+  patents: "/patents/:slug/"
+
+# Taxonomies
+# Hugo's default taxonomy-term URLs (/tags/<term>/, /categories/<term>/)
+# already match what's live in production, so no permalink override is
+# needed here - verified against the real site's built output.
+#
+# `keyword` is a separate taxonomy from `tag`, scoped in practice to
+# Publications only (papers/list.html and publication-item.html are the
+# only templates that populate or render it). Kept separate rather than
+# reusing `tag` so publications' formal research-topic vocabulary (e.g.
+# "control systems", "machine learning") never collides - or fails to
+# collide - with the blog's own casual tag slugs ("controls", "ml"), and so
+# a keyword page can use publications-specific wording without touching the
+# tags system blog/patents/projects already depend on. See
+# layouts/keywords/term.html.
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  author: "authors"
+  keyword: "keywords"
+
+# Markup configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block: []
+          inline: [['$$', '$$'], ['\(', '\)']]
+  highlight:
+    style: "github"
+    lineNos: false
+    # noClasses: false makes Chroma emit CSS classes (.chroma .k, .chroma .s, …)
+    # instead of baking one light-only palette in as inline styles, so the
+    # separate light/dark chroma.css stylesheets can actually take effect
+    # per data-theme (see baseof.html).
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+
+# Minification
+minify:
+  minifyOutput: true
+
+# Pagination (blog/projects/papers list pages)
+pagination:
+  pagerSize: 6
+
+# =============================================================================
+# Languages
+# =============================================================================
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menus:
+      main:
+        - name: "About Me"
+          pageRef: "/about"
+          weight: 10
+        - name: "Projects"
+          pageRef: "/projects"
+          weight: 20
+        - name: "Publications"
+          pageRef: "/papers"
+          weight: 30
+        - name: "Patents"
+          pageRef: "/patents"
+          weight: 35
+        - name: "Blog"
+          pageRef: "/blog"
+          weight: 40
+
+# =============================================================================
+# Theme Parameters
+# =============================================================================
+params:
+  description: "Personal / research site of Omanshu Thapliyal"
+  author: "Omanshu Thapliyal"
+
+  # Profile settings (for home page)
+  profile:
+    name: "Omanshu Thapliyal"
+    title: "Senior AI/ML Researcher"
+    department: "Strategic Data Solutions Lab"
+    institution: "Hitachi America Ltd."
+    location: ""
+    image: "/images/profile.jpg"
+    bio: |
+      I am a Senior AI/ML Researcher at Hitachi America Ltd., working on Control Theory
+      Applications in ML, Safe Control Synthesis, and Data-Driven Control. I hold a Ph.D.
+      in Aeronautics & Astronautics Engineering from Purdue University (advised by Prof.
+      Inseok Hwang and Prof. Arthur Frazho), preceded by an M.S. from Purdue, a stint at
+      MathWorks, and a B.Tech. in Aerospace Engineering from IIT Kanpur.
+
+  # Research areas
+  research:
+    - title: "Control-theoretic ML & AI Safety"
+      icon: "brain"
+      description: "Bringing control-theoretic guarantees to learning-based systems for safer, more reliable AI."
+    - title: "Data-driven Controls & Safe Autonomy"
+      icon: "chart"
+      description: "Learning controllers directly from data while preserving safety and stability guarantees."
+    - title: "Distributed / Networked Control Systems"
+      icon: "network"
+      description: "Coordinating multi-agent and networked systems under communication and information constraints."
+    - title: "System-of-Systems Engineering"
+      icon: "cpu"
+      description: "Designing and analyzing large-scale interconnected systems as coherent, engineered wholes."
+
+  # Social/Academic links
+  social:
+    - name: "Google Scholar"
+      label: "Scholar"      # short caption under the button (defaults to name)
+      icon: "scholar"
+      url: "https://scholar.google.com/citations?user=UJOzb5MAAAAJ"
+    - name: "ORCID"
+      icon: "orcid"
+      url: "https://orcid.org/0000-0003-3847-188X"
+    - name: "GitHub"
+      icon: "github"
+      url: "https://github.com/omanshuthapliyal"
+    - name: "LinkedIn"
+      icon: "linkedin"
+      url: "https://linkedin.com/in/omanshu"
+
+  # Theme settings
+  theme:
+    defaultMode: "auto"
+    showThemeToggle: true
+    
+  # Homepage
+  # showHighlights toggles the "Currently working on" (active projects) and
+  # "Recent publications" teaser sections below the bio card. Both are
+  # fully built (see layouts/index.html) - this just switches them off
+  # while project pages get their own dedicated redesign, without deleting
+  # the code. Flip back to true to bring them back.
+  homepage:
+    showHighlights: false
+
+  # Table of Contents
+  toc:
+    enable: true
+    startLevel: 2
+    endLevel: 4
+    
+  # Date format
+  dateFormat: "January 2, 2006"
+  
+  # Footer
+  footer:
+    copyright: "© {year} Omanshu Thapliyal"
+    poweredBy: true
+    themeName: "Hugo-academia"
+    themeURL: "https://github.com/omanshuthapliyal/Hugo-academia"   # this site's fork of Academia
+    upstreamName: "Academia"
+    upstreamURL: "https://github.com/joaocarlos/Hugo-academia"      # the theme it was forked from
+
+# =============================================================================
+# Output Formats
+# =============================================================================
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
+  page:
+    - HTML
