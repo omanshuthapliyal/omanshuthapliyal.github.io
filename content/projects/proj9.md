@@ -1,6 +1,7 @@
 ---
-title: "Control-Theoretic AI in Language Models: Safety and Enhancing Memory"
+title: "Provable Safety and Efficient Memory for Language Models"
 status: "active"
+aliases: ["/projects/control-theoretic-ai-safety-for-language-models/", "/projects/control-theoretic-ai-in-language-models-safety-and-enhancing-memory/"]
 weight: 1                   # among ongoing projects with the same start date, lower weight is listed first
 start_date: 2025-01-01
 description: "Using control theory to make language-model components predictable enough for safety-critical deployment: safety classifiers that can prove their decisions, and fine-tuning adapters whose memory can be analyzed and compressed with guarantees."
