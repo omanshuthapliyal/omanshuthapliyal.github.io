@@ -32,3 +32,6 @@
 - name: "Industrial Automation"
   slug: industrial-automation
   tags: [industrial-automation, scada]
+- name: "AI Safety & Language Models"
+  slug: ai-safety-llms
+  tags: [ai-safety, jailbreak-detection, certified-robustness, state-space-models, parameter-efficient-fine-tuning, model-reduction]
