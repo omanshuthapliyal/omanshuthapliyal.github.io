@@ -10,6 +10,7 @@ theme: "hugo-academia"
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableRobotsTXT: true    # robots.txt points crawlers at sitemap.xml
 
 # Single language site
 defaultContentLanguage: "en"
@@ -123,6 +124,11 @@ params:
   # e.g. "omanshu" for https://omanshu.goatcounter.com. Empty = off.
   analytics:
     goatcounter: "omanshu"
+
+  # Google Search Console: paste the "content" value of the HTML-tag
+  # verification method here (not the whole <meta> tag).
+  seo:
+    googleSiteVerification: ""
 
   # Profile settings (for home page)
   profile:
