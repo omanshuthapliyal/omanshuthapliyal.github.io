@@ -1,18 +1,19 @@
 ---
-title: "Control-Theoretic AI Safety for Language Models"
+title: "Control-Theoretic AI in Language Models: Safety and Enhancing Memory"
 status: "active"
-start_date: 2026-01-01
+start_date: 2025-01-01
 description: "Using control theory to make language-model components predictable enough for safety-critical deployment: safety classifiers that can prove their decisions, and fine-tuning adapters whose memory can be analyzed and compressed with guarantees."
 organization: "Strategic Data Solutions Lab, Hitachi America Ltd."
+collaborators: ["Malarvizhi Sankaranarayanasamy"]
 tags: ["ai-safety", "jailbreak-detection", "certified-robustness", "reachability", "state-space-models", "parameter-efficient-fine-tuning", "model-reduction"]
-stack: ["PyTorch", "mamba-ssm", "Transformers", "PEFT", "bitsandbytes", "SciPy", "scikit-learn", "TextAttack", "JailbreakBench", "HarmBench", "LongBench"]
+stack: ["PyTorch", "mamba-ssm", "Transformers", "PEFT", "SciPy", "scikit-learn", "TextAttack", "JailbreakBench", "HarmBench", "LongBench"]
 links:
   - label: "Code: certified safety head"
     url: "https://github.com/omanshuthapliyal/contraction_constrained-safety-head"
   - label: "Code: HRM adapter"
     url: "https://github.com/omanshuthapliyal/HRM-adapter"
-image: "/images/projects/proj9-reach-tube-thumb.png"
-image_alt: "Reach tubes of a safety classifier's score over a prompt: narrow and settled for the contraction-constrained model, widening across the decision boundary for the unconstrained one"
+image: "/images/projects/proj9-hrm-vs-lora-thumb.png"
+image_alt: "Block diagrams comparing LoRA, a low-rank update beside frozen attention weights, with the HRM adapter, a small state space model beside the frozen MLP"
 hero_image: "/images/projects/proj9-reach-tube.png"
 hero_alt: "Six panels of classifier score over 64 tokens. Left column, contraction-constrained model: the shaded band of reachable scores stays narrow and two of three examples are certified. Right column, unconstrained model: the band widens over the sequence and crosses the decision boundary, so none are certified"
 image_caption: "Reach tubes: every score a safety classifier could output while reading a prompt whose token embeddings are nudged within a small bound. With contraction (left), the tube settles and the decision can be certified. Without it (right), uncertainty keeps growing until it crosses the decision boundary. From [Bounded Reachability & Jailbreak Detection via Contraction-Constrained State Space Models](/papers/bounded-reachability-jailbreak-detection-via-contraction-constrained-state-space-models/), AIMS @ COLM 2026."
