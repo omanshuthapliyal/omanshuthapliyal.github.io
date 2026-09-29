@@ -6,8 +6,6 @@ baseURL: "https://omanshuthapliyal.github.io/"
 languageCode: "en"
 title: "Omanshu Thapliyal"
 theme: "hugo-academia"
-googleAnalytics: "UA/G-1GN9J4R0RF"
-
 # Build settings
 buildDrafts: false
 buildFuture: false
@@ -120,6 +118,11 @@ languages:
 params:
   description: "Personal / research site of Omanshu Thapliyal"
   author: "Omanshu Thapliyal"
+
+  # Visitor analytics (cookieless). Put your GoatCounter site code here,
+  # e.g. "omanshu" for https://omanshu.goatcounter.com. Empty = off.
+  analytics:
+    goatcounter: "omanshu"
 
   # Profile settings (for home page)
   profile:
