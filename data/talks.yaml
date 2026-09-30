@@ -1,0 +1,61 @@
+# Talks, posters and defenses shown on /talks/.
+#
+# Each entry:
+#   kind:     talk | poster | defense
+#   paper:    "papers/pubN"  -> title, venue, year and paper link come from
+#             that publication (anything below overrides it)
+#   title / event / year:    required when there is no `paper`
+#   date:     optional exact date (YYYY-MM-DD); shown when set, and a future
+#             date lists the entry under "Upcoming"
+#   location, award:         optional
+#   slides / poster / video: optional links (fall back to the paper's own)
+#
+# Order within a year doesn't matter: the page sorts by date, then year.
+
+- kind: poster
+  paper: "papers/pub20"
+  event: "AI Measurement Science Workshop @ COLM 2026"
+  date: 2026-10-09
+  location: "San Francisco, CA"
+
+- kind: poster
+  paper: "papers/pub18"
+
+- kind: talk
+  paper: "papers/pub17"
+
+- kind: talk
+  paper: "papers/pub16"
+  location: "Tokyo, Japan"
+  award: "Best Presenter Award"
+
+- kind: poster
+  paper: "papers/pub15"
+
+- kind: talk
+  paper: "papers/pub13"
+
+- kind: talk
+  paper: "papers/pub11"
+
+- kind: talk
+  paper: "papers/pub6"
+
+- kind: talk
+  paper: "papers/pub5"
+
+- kind: talk
+  paper: "papers/pub1"
+
+# ---- Dissertations (kind: defense) -----------------------------------------
+- kind: defense
+  title: "Data-Driven Safety and Security of Cyberphysical Systems"
+  event: "Ph.D. dissertation, Purdue University"
+  year: 2023
+  slides: "/files/talks/Thapliyal_PhD-defense-slides_2023.pdf"
+
+- kind: defense
+  title: "Kalman Filtering for LTI Systems with State Dependent Packet Losses"
+  event: "M.S. thesis, Purdue University"
+  year: 2017
+  slides: "https://github.com/omanshuthapliyal/KF-MS-dissertation/blob/main/MS-dissertationSlides_Omanshu__print_friendly_.pdf"

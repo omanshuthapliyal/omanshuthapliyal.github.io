@@ -8,7 +8,7 @@ year: 2026
 type: "conference"
 pdf: "https://openreview.net/pdf?id=rGFtmR5Udg"
 code: "https://github.com/omanshuthapliyal/HRM-adapter"
-slides: "https://github.com/omanshuthapliyal/HRM-adapter/blob/main/SSM%20Adapters%20via%20Hankel%20Reduced-order%20Modeling%20Injection%20Site%20Determines%20Task%20Suitability%20in%20Long-Context%20Fine-Tuning.png"
+poster: "https://github.com/omanshuthapliyal/HRM-adapter/blob/main/SSM%20Adapters%20via%20Hankel%20Reduced-order%20Modeling%20Injection%20Site%20Determines%20Task%20Suitability%20in%20Long-Context%20Fine-Tuning.png"
 tags: []
 keywords: ["Machine Learning"]
 ---

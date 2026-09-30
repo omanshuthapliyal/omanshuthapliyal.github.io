@@ -109,6 +109,9 @@ languages:
         - name: "Patents"
           pageRef: "/patents"
           weight: 35
+        - name: "Talks"
+          pageRef: "/talks"
+          weight: 37
         - name: "Blog"
           pageRef: "/blog"
           weight: 40

@@ -10,6 +10,8 @@ stack: ["MATLAB", "Python", "CVX", "MOSEK", "MATLAB Optimization Toolbox", "CORA
 links:
   - label: "Dissertation"
     url: "https://docs.lib.purdue.edu/dissertations/AAI30499122/"
+  - label: "Defense slides"
+    url: "/files/talks/Thapliyal_PhD-defense-slides_2023.pdf"
   - label: "Code: distributed path planning"
     url: "https://github.com/omanshuthapliyal/LP-pathplan"
   - label: "Code: mixed-monotone reachability (partial)"
