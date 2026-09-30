@@ -143,14 +143,13 @@ params:
     image: "/images/profile.jpg"
     email_text: "[lastname].[firstname]@gmail.com"   # shown under the contact buttons (plain text, no mailto)
     bio: |
-      I work on making industrial AI safe to deploy where failure is costly.
-
+      I work on making industrial AI safe to deploy where failure is costly.\
       My research gives learning systems guarantees from control theory, so their
       behavior can be checked instead of merely being measured. That means AI for
       data center and energy operations, safe navigation for autonomous systems, and
       safety filters for language models that certify their own decisions.
 
-      On a journey to slowly [turn into a Frog](/blog/birds-and-frogs/).
+      On a journey to slowly [turn into a Frog.](/blog/birds-and-frogs/)
 
   # Research areas
   research:
