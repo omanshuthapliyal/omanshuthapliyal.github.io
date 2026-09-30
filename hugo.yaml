@@ -143,11 +143,14 @@ params:
     image: "/images/profile.jpg"
     email_text: "[lastname].[firstname]@gmail.com"   # shown under the contact buttons (plain text, no mailto)
     bio: |
-      I am a Senior AI/ML Researcher at Hitachi America Ltd., working on safe deployment
-      of Industrial AI in safety-critical situations & operations. I hold a Ph.D.
-      in Aeronautics & Astronautics Engineering from Purdue University (advised by Prof.
-      Inseok Hwang and Prof. Arthur Frazho), preceded by an M.S. from Purdue, a stint at
-      MathWorks, and a B.Tech. in Aerospace Engineering from IIT Kanpur.
+      I work on making industrial AI safe to deploy where failure is costly.
+
+      My research gives learning systems guarantees from control theory, so their
+      behavior can be checked instead of merely being measured. That means AI for
+      data center and energy operations, safe navigation for autonomous systems, and
+      safety filters for language models that certify their own decisions.
+
+      On a journey to slowly [turn into a Frog](/blog/birds-and-frogs/).
 
   # Research areas
   research:
