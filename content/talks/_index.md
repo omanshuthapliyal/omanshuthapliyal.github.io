@@ -1,4 +1,4 @@
 ---
-title: "Conference talks, posters and dissertations"
-description: "With slides, posters and recordings where available."
+title: "Talks"
+description: "Conference talks, posters and dissertations"
 ---
