@@ -1,0 +1,250 @@
+# BibTeX for the Cite button on Publications (and anywhere a paper's link
+# buttons appear). Keyed by the paper's file name in content/papers/
+# (pub1.md -> pub1). A paper without an entry here simply gets no Cite button.
+#
+# Sources, checked 2026-09-29:
+#   DOI papers: the publisher's Crossref record for that DOI (title, authors,
+#     venue, volume, issue, pages, year), matched against the site's title.
+#   arXiv-only / workshop papers: the arXiv record (export.arxiv.org API) and
+#     the workshop's own page.
+# Titles and author names are written as the publisher records them, so they
+# can differ slightly from how the site displays them.
+
+pub1: |
+  @inproceedings{thapliyal2017optimal,
+    title     = {Optimal state estimation for {LTI} systems with imperfect observations},
+    author    = {Thapliyal, Omanshu and Nandiganahalli, Jayaprakash Suraj and Hwang, Inseok},
+    booktitle = {2017 IEEE 56th Annual Conference on Decision and Control (CDC)},
+    pages     = {2795--2800},
+    year      = {2017},
+    month     = dec,
+    publisher = {IEEE},
+    doi       = {10.1109/CDC.2017.8264065}
+  }
+
+pub2: |
+  @article{deshmukh2018distributed,
+    title     = {Distributed state estimation for a stochastic linear hybrid system over a sensor network},
+    author    = {Deshmukh, Raj and Thapliyal, Omanshu and Kwon, Cheolhyeon and Hwang, Inseok},
+    journal   = {IET Control Theory \& Applications},
+    volume    = {12},
+    number    = {10},
+    pages     = {1456--1464},
+    year      = {2018},
+    month     = jul,
+    publisher = {Institution of Engineering and Technology},
+    doi       = {10.1049/iet-cta.2017.1208}
+  }
+
+pub3: |
+  @article{thapliyal2019kalman,
+    title     = {{Kalman} filtering with state-dependent packet losses},
+    author    = {Thapliyal, Omanshu and Nandiganahalli, Jayaprakash Suraj and Hwang, Inseok},
+    journal   = {IET Control Theory \& Applications},
+    volume    = {13},
+    number    = {2},
+    pages     = {306--312},
+    year      = {2019},
+    month     = jan,
+    publisher = {Institution of Engineering and Technology},
+    doi       = {10.1049/iet-cta.2018.5425}
+  }
+
+pub4: |
+  @inproceedings{sivaramakrishnan2019predicting,
+    title     = {Predicting Mode Confusion Through Mixed Integer Linear Programming},
+    author    = {Sivaramakrishnan, Vignesh and Thapliyal, Omanshu and Vinod, Abraham and Oishi, Meeko and Hwang, Inseok},
+    booktitle = {2019 IEEE 58th Conference on Decision and Control (CDC)},
+    pages     = {2442--2448},
+    year      = {2019},
+    month     = dec,
+    publisher = {IEEE},
+    doi       = {10.1109/CDC40024.2019.9029901}
+  }
+
+pub5: |
+  @inproceedings{thapliyal2021path,
+    title     = {Path Planning for a Network of Robots with Distributed Multi-Objective Linear Programming},
+    author    = {Thapliyal, Omanshu and Hwang, Inseok},
+    booktitle = {2021 American Control Conference (ACC)},
+    pages     = {4643--4648},
+    year      = {2021},
+    month     = may,
+    publisher = {IEEE},
+    doi       = {10.23919/ACC50511.2021.9482869}
+  }
+
+pub6: |
+  @inproceedings{thapliyal2021learning,
+    title     = {Learning based Cyberattack Design and Defense for Supervisory Control Systems},
+    author    = {Thapliyal, Omanshu and Hwang, Inseok},
+    booktitle = {2021 European Control Conference (ECC)},
+    pages     = {144--149},
+    year      = {2021},
+    month     = jun,
+    publisher = {IEEE},
+    doi       = {10.23919/ECC54610.2021.9655174}
+  }
+
+pub7: |
+  @inproceedings{clarke2022attack,
+    title     = {Attack-Resilient Distributed Optimization-based Control of Multi-Agent Systems with Dual Interaction Networks},
+    author    = {Clarke, Shanelle G. and Thapliyal, Omanshu and Hwang, Sounghwan and Hwang, Inseok},
+    booktitle = {AIAA SCITECH 2022 Forum},
+    year      = {2022},
+    month     = jan,
+    publisher = {American Institute of Aeronautics and Astronautics},
+    doi       = {10.2514/6.2022-2342}
+  }
+
+pub8: |
+  @inproceedings{shethia2021distributed,
+    title     = {Distributed Fast-Tracking Alternating Direction Method of Multipliers ({ADMM}) Algorithm with Optimal Convergence Rate},
+    author    = {Shethia, Shreyansh and Gupta, Akshita and Thapliyal, Omanshu and Hwang, Inseok},
+    booktitle = {2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+    pages     = {976--981},
+    year      = {2021},
+    month     = oct,
+    publisher = {IEEE},
+    doi       = {10.1109/SMC52423.2021.9658615}
+  }
+
+pub9: |
+  @article{thapliyal2022approximate,
+    title     = {Approximate Reachability for {Koopman} Systems Using Mixed Monotonicity},
+    author    = {Thapliyal, Omanshu and Hwang, Inseok},
+    journal   = {IEEE Access},
+    volume    = {10},
+    pages     = {84754--84760},
+    year      = {2022},
+    publisher = {IEEE},
+    doi       = {10.1109/ACCESS.2022.3194851}
+  }
+
+pub10: |
+  @misc{clarke2022direct,
+    title         = {Direct Data-Driven Discrete-time Bilinear Biquadratic Regulator},
+    author        = {Clarke, Shanelle G. and Thapliyal, Omanshu and Hwang, Inseok},
+    year          = {2022},
+    eprint        = {2208.13843},
+    archivePrefix = {arXiv},
+    primaryClass  = {eess.SY},
+    doi           = {10.48550/arXiv.2208.13843}
+  }
+
+pub11: |
+  @article{thapliyal2023data,
+    title     = {Data-driven Cyberattack Synthesis against Network Control Systems},
+    author    = {Thapliyal, Omanshu and Hwang, Inseok},
+    journal   = {IFAC-PapersOnLine},
+    volume    = {56},
+    number    = {2},
+    pages     = {8357--8362},
+    year      = {2023},
+    note      = {22nd IFAC World Congress},
+    publisher = {Elsevier},
+    doi       = {10.1016/j.ifacol.2023.10.1027}
+  }
+
+pub12: |
+  @article{clarke2023distributed,
+    title     = {Distributed Denial-of-Service Resilient Control for Urban Air Mobility Applications},
+    author    = {Clarke, Shanelle G. and Hwang, Sounghwan and Thapliyal, Omanshu and Hwang, Inseok},
+    journal   = {Journal of Aerospace Information Systems},
+    volume    = {20},
+    number    = {12},
+    pages     = {873--889},
+    year      = {2023},
+    month     = dec,
+    publisher = {American Institute of Aeronautics and Astronautics},
+    doi       = {10.2514/1.I011222}
+  }
+
+pub13: |
+  @inproceedings{thapliyal2024embedding,
+    title     = {Embedding Safety Requirements into Learning-Based Controllers for Urban Air Mobility Applications},
+    author    = {Thapliyal, Omanshu and Sankaranarayanasamy, Malarvizhi and Vennelakanti, Ravigopal},
+    booktitle = {AIAA SCITECH 2024 Forum},
+    year      = {2024},
+    month     = jan,
+    publisher = {American Institute of Aeronautics and Astronautics},
+    doi       = {10.2514/6.2024-2395}
+  }
+
+pub14: |
+  @inproceedings{zarayeneh2023colocation,
+    title     = {Colocation Datacenter Customer Power Usage Forecasting Using Synthetic Data and Integration of Macroeconomic Indicators},
+    author    = {Zarayeneh, Neda and Sankaranarayanasamy, Malarvizhi and Mavaie, Pegah and Thapliyal, Omanshu and Singh, Prasun and Vennelakanti, Ravigopal},
+    booktitle = {2023 IEEE International Conference on Big Data (BigData)},
+    pages     = {3453--3457},
+    year      = {2023},
+    month     = dec,
+    publisher = {IEEE},
+    doi       = {10.1109/BigData59044.2023.10386414}
+  }
+
+pub15: |
+  @inproceedings{thapliyal2025algorithm,
+    title     = {An Algorithm for Distributed Computation of Reachable Sets for Multi-Agent Systems},
+    author    = {Thapliyal, Omanshu and Clarke, Shanelle and Hwang, Inseok},
+    booktitle = {2025 American Control Conference (ACC)},
+    pages     = {3646--3651},
+    year      = {2025},
+    month     = jul,
+    publisher = {IEEE},
+    doi       = {10.23919/ACC63710.2025.11107680}
+  }
+
+pub16: |
+  @inproceedings{thapliyal2026safe,
+    title     = {Safe Navigation using Neural Radiance Fields via Reachable Sets},
+    author    = {Thapliyal, Omanshu and Sankaranarayanasamy, Malarvizhi and Vennelakanti, Ravigopal},
+    booktitle = {2026 4th International Conference on Mechatronics, Control and Robotics (ICMCR)},
+    pages     = {76--80},
+    year      = {2026},
+    month     = mar,
+    publisher = {IEEE},
+    doi       = {10.1109/ICMCR69541.2026.11533928}
+  }
+
+pub17: |
+  @inproceedings{thapliyal2026multi,
+    title     = {A Multi-Head Attention Approach for {SLA} Compliance Monitoring in Data Centers},
+    author    = {Thapliyal, Omanshu},
+    booktitle = {2026 IEEE 46th International Conference on Distributed Computing Systems Workshops (ICDCSW)},
+    pages     = {1--6},
+    year      = {2026},
+    month     = jun,
+    publisher = {IEEE},
+    doi       = {10.1109/ICDCSW72724.2026.00030}
+  }
+
+pub18: |
+  @inproceedings{thapliyal2026ssm,
+    title         = {{SSM} Adapters via {Hankel} Reduced-order Modeling: Injection Site Determines Task Suitability in Long-Context Fine-Tuning},
+    author        = {Thapliyal, Omanshu},
+    booktitle     = {4th Workshop on High-dimensional Learning Dynamics (HiLD) at ICML 2026},
+    year          = {2026},
+    eprint        = {2606.26290},
+    archivePrefix = {arXiv},
+    primaryClass  = {cs.LG},
+    url           = {https://openreview.net/forum?id=rGFtmR5Udg}
+  }
+
+pub19: |
+  @article{thapliyal2023approximating,
+    title     = {Approximating Reachable Sets for Neural Network-Based Models in Real Time via Optimal Control},
+    author    = {Thapliyal, Omanshu and Hwang, Inseok},
+    journal   = {IEEE Transactions on Control Systems Technology},
+    volume    = {31},
+    number    = {4},
+    pages     = {1901--1908},
+    year      = {2023},
+    month     = jul,
+    publisher = {IEEE},
+    doi       = {10.1109/TCST.2023.3234248}
+  }
+
+# pub20 (Bounded Reachability & Jailbreak Detection, AIMS @ COLM 2026) is left
+# out until its final title is confirmed: the site says "...Contraction-Constrained
+# State Space Models", the code README says "...Contraction-Constrained SSMs".
