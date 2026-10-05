@@ -10,6 +10,8 @@ collaborators: ["Malarvizhi Sankaranarayanasamy"]
 tags: ["ai-safety", "jailbreak-detection", "certified-robustness", "reachability", "state-space-models", "parameter-efficient-fine-tuning", "model-reduction"]
 stack: ["PyTorch", "mamba-ssm", "Transformers", "PEFT", "SciPy", "scikit-learn", "TextAttack", "JailbreakBench", "HarmBench", "LongBench"]
 links:
+  - label: "Paper: certified safety head (arXiv)"
+    url: "https://arxiv.org/abs/2610.02853"
   - label: "Code: certified safety head"
     url: "https://github.com/omanshuthapliyal/contraction_constrained-safety-head"
   - label: "Code: HRM adapter"

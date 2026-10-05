@@ -245,6 +245,15 @@ pub19: |
     doi       = {10.1109/TCST.2023.3234248}
   }
 
-# pub20 (Bounded Reachability & Jailbreak Detection, AIMS @ COLM 2026) is left
-# out until its final title is confirmed: the site says "...Contraction-Constrained
-# State Space Models", the code README says "...Contraction-Constrained SSMs".
+pub20: |
+  @inproceedings{thapliyal2026bounded,
+    title         = {Bounded Reachability \& Jailbreak Detection via Contraction-Constrained State Space Models},
+    author        = {Thapliyal, Omanshu},
+    booktitle     = {AI Measurement Science (AIMS) Workshop at COLM 2026},
+    year          = {2026},
+    eprint        = {2610.02853},
+    archivePrefix = {arXiv},
+    primaryClass  = {cs.AI},
+    doi           = {10.48550/arXiv.2610.02853},
+    url           = {https://arxiv.org/abs/2610.02853}
+  }
