@@ -4,6 +4,9 @@ date: 2026-08-12T01:02:49-04:00
 tags: ["ml", "controls"]
 ---
 
+The code for this project can be found at: [https://github.com/omanshuthapliyal/contraction_constrained-safety-head](https://github.com/omanshuthapliyal/contraction_constrained-safety-head).
+And the paper can be found at: [https://arxiv.org/pdf/2610.02853](https://arxiv.org/pdf/2610.02853).
+
 A safety classifier can tell us that a prompt looks harmful.
 That is useful. But it is perhaps not the question we should stop at.
 Suppose a classifier sees a prompt and says that it is safe. Now suppose we change the prompt slightly. Perhaps we substitute a few words. Perhaps we phrase the same request differently. Perhaps, more abstractly, we nudge the token embeddings of the prompt by a very small amount.
