@@ -9,6 +9,7 @@ type: "conference"
 doi: "10.48550/arXiv.2610.02853"
 pdf: "https://arxiv.org/pdf/2610.02853"
 code: "https://github.com/omanshuthapliyal/contraction_constrained-safety-head"
+poster: "https://github.com/omanshuthapliyal/contraction_constrained-safety-head/blob/main/COLM-poster-v2.png"
 tags: []
 keywords: ["Machine Learning", "Control Systems", "AI Safety"]
 ---
