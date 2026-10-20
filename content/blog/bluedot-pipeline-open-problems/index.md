@@ -15,7 +15,7 @@ What came out of it is fairly simple.
 
 To be clear, that last claim (and the title) is my rough estimate. It rests on the readings of one course: BlueDot's Technical AI Safety course, which I recently completed and which is very professionally run. A different reading list might well draw a different map.
 
-The numbers in brackets point to the references at the end. Each course reading keeps its number from my [reading spreadsheet](bluedot-reading-atlas.xlsx), from 1 to 99, so \[[4](#r4)\] always means the same METR post. Anything from outside the course is numbered from 100 onwards.
+I spent over 50 hours reading the resources, and kept [reading notes](bluedot-reading-atlas.xlsx) as I went. The numbers in brackets point to the references at the end. Each course reading keeps its number from those notes, from 1 to 99, so \[[4](#r4)\] always means the same METR post. Anything from outside the course is numbered from 100 onwards.
 
 #### Reading list - a brief EDA
 
