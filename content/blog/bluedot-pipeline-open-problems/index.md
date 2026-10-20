@@ -1,7 +1,7 @@
 ---
 title: "Most Open Problems in AI Safety are Problems of Observation"
 date: 2026-10-17
-draft: true
+draft: false
 tags: ["AI", "ML", "AI-Safety"]
 ---
 
