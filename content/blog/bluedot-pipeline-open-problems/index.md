@@ -15,7 +15,7 @@ What came out of it is fairly simple.
 
 To be clear, that last claim (and the title) is my rough estimate. It rests on the readings of one course: BlueDot's Technical AI Safety course, which I recently completed and which is very professionally run. A different reading list might well draw a different map.
 
-The numbers in brackets point to the references at the end. Each course reading keeps its number from my [reading atlas](https://claude.ai/artifact/9s8Cd5dUBhvJ96tAtDnbJ7), from 1 to 99, so \[[4](#r4)\] always means the same METR post. Anything from outside the course is numbered from 100 onwards.
+The numbers in brackets point to the references at the end. Each course reading keeps its number from my [reading spreadsheet](bluedot-reading-atlas.xlsx), from 1 to 99, so \[[4](#r4)\] always means the same METR post. Anything from outside the course is numbered from 100 onwards.
 
 #### Reading list - a brief EDA
 
@@ -63,25 +63,9 @@ I then tagged every reading with the one stage it is mainly about. The tags are 
 But the overall picture does not change much. Interpretability alone gets 15 readings \[[56](#r56), [57](#r57), [58](#r58), [59](#r59), [60](#r60), [61](#r61), [62](#r62), [63](#r63), [64](#r64), [65](#r65), [69](#r69), [70](#r70), [71](#r71), [72](#r72), [73](#r73)\].
 Thirteen of the 37 stages get no reading of their own. Six are not touched by any reading at all: data provenance, mid-training, downstream fine-tuning, inference optimisation, user feedback and model updates.
 
-#### The middle is well read
+The middle is well read. On post-training, the course covers the limits of RLHF \[[17](#r17)\], Constitutional AI \[[19](#r19)\], and two routes to scalable oversight, debate \[[27](#r27), [28](#r28)\] and weak-to-strong generalisation \[[30](#r30)\]. The failure these guard against is already here, with recent models patching tests and graders while saying they knew it was unintended \[[4](#r4)\]. Evaluation gets the most pages, from alignment faking \[[36](#r36)\] and blackmail in a simulated office \[[38](#r38)\] to a re-run of the shutdown experiments that found clearer instructions removed most of the resistance \[[34](#r34)\]. Interpretability has its findings \[[71](#r71), [72](#r72), [69](#r69)\] and its critics \[[59](#r59), [62](#r62), [63](#r63)\] side by side.
 
-Post-training is where the course starts its technical story. RLHF rewards whatever a human rater approves of, which invites sycophancy and reward hacking, and it stops working once outputs outgrow the rater \[[17](#r17)\]. Constitutional AI replaces much of the rater with written principles \[[19](#r19)\]. Scalable oversight asks how a weaker judge can still supervise a stronger model, through debate \[[27](#r27), [28](#r28)\] or by trusting the strong model to generalise past weak labels \[[30](#r30)\].
-The failure these methods guard against is already here. METR found recent models patching tests and graders while saying they knew it was unintended \[[4](#r4)\].
-
-Evaluation gets the most pages. Told it was about to be retrained, Claude 3 Opus faked alignment to protect its values \[[36](#r36)\]. Most of sixteen models chose blackmail in a simulated office \[[38](#r38)\]. Then again, a re-run of the shutdown experiments found that clearer instructions removed most of the resistance \[[34](#r34)\].
-Interpretability finds millions of features \[[71](#r71)\] and traces circuits \[[72](#r72)\]. In a blind auditing game, three of four teams found a model's hidden objective \[[69](#r69)\]. The critics are on the list too \[[59](#r59), [62](#r62)\], and Nanda now treats interpretability as one useful layer among several \[[63](#r63)\].
-
-#### Both ends are thin
-
-At the front, the course has three readings on filtering training data and one on poisoning it.
-The filtering result is strong for open weights. Models trained without biothreat text resisted thousands of steps of adversarial fine-tuning \[[12](#r12)\]. I find the poisoning result unsettling. About 250 documents planted a backdoor at every model size tested \[[14](#r14)\].
-Nothing on the list covers where the data comes from, although an audit of popular datasets found licence information missing more than 70% of the time \[[104](#r104)\].
-Pretraining has no reading of its own. The closest is a warning that models may learn to reason in latent space \[[66](#r66), [105](#r105)\] and leave no trace to read.
-
-At the back, the course covers guardrail classifiers \[[55](#r55), [77](#r77)\] and AI control \[[74](#r74), [75](#r75)\]. It says little about the parts of serving that every deployed system has.
-A handful of fine-tuning examples can strip safety training \[[106](#r106)\], and narrow fine-tuning can produce broad misalignment \[[107](#r107)\]. Retrieved documents can carry instructions an agent will follow \[[108](#r108)\]. A model can look benign in full precision and turn harmful once quantised \[[109](#r109)\].
-
-The loop also closes through users. GPT-4o became sycophantic in April 2025 after an update leaned on short-term thumbs-up feedback \[[110](#r110)\]. Between two releases three months apart, GPT-4 drifted on one simple task from 84% to 51% accuracy \[[111](#r111)\].
+The two ends are thin. At the front, there are three readings on filtering training data \[[11](#r11), [12](#r12), [13](#r13)\] and one on poisoning it, where about 250 documents planted a backdoor at every model size tested \[[14](#r14)\]. Nothing covers where the data comes from \[[104](#r104)\], and pretraining has no reading of its own. At the back, the course covers guardrails \[[55](#r55), [77](#r77)\] and AI control \[[74](#r74), [75](#r75)\], but says little about the rest of serving. A little fine-tuning can strip safety training \[[106](#r106), [107](#r107)\], retrieved documents can carry instructions an agent will follow \[[108](#r108)\], and a model can turn harmful once quantised \[[109](#r109)\]. The loop also closes through users. GPT-4o became sycophantic after an update leaned on thumbs-up feedback \[[110](#r110)\], and GPT-4 drifted on one simple task from 84% to 51% accuracy between two releases \[[111](#r111)\].
 Huyen spends two whole chapters on what happens after deployment \[[100](#r100)\].
 The course has no reading on it.
 
