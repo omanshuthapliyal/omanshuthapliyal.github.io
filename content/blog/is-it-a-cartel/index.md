@@ -2,7 +2,7 @@
 title: "When AI Agents Run the Shop - Part 1"
 date: 2026-10-27T09:00:00-07:00
 draft: false
-tags: ["AI-Safety", "controls", "research"]
+tags: ["AI", "AI-Safety", "ai-control", "research"]
 ---
 
 In April this year, a small café opened on Norrbackagatan in Stockholm with a rather unusual manager.

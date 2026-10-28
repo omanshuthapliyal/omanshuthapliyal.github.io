@@ -2,7 +2,7 @@
 title: "Does It Form a Cartel? (When AI Agents Run the Shop) - Part 2"
 date: 2026-10-28T09:00:00-07:00
 draft: false
-tags: ["AI-Safety", "controls", "research"]
+tags: ["AI", "AI-Safety", "ai-control", "research"]
 ---
 
 Part 1: [https://omanshuthapliyal.github.io/blog/is-it-a-cartel/](https://omanshuthapliyal.github.io/blog/is-it-a-cartel/)
