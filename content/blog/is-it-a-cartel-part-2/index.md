@@ -130,10 +130,6 @@ Nothing in the audit is specific to pricing. It needs only the ability to rewind
 
 *So before deciding what to do about a high price, it seems worth giving the market a gentle push first, and seeing whether anything pushes back.*
 
----
-
-The whole project took 16,141 logged model calls and $53.36. The code, analysis and drafts for this project were produced with Claude (Anthropic) as a coding and writing assistant, under my direction. All numbers come from logged runs, and all citations were checked against their sources.
-
 [^1]: Calvano, Calzolari, Denicolò and Pastorello (2020). [Artificial Intelligence, Algorithmic Pricing, and Collusion](https://doi.org/10.1257/aer.20190623). *American Economic Review* 110(10): 3267-97.
 
 [^2]: Fish, Gonczarowski and Shorrer (2024). [Algorithmic Collusion by Large Language Models](https://arxiv.org/abs/2404.00806). arXiv:2404.00806.
