@@ -88,7 +88,7 @@ Much of the safety toolkit for deployed models, from probes and monitors to acti
 For a transformer that component is usually a head, or a direction in the residual stream at some position. For the recurrent part of a hybrid model, we do not yet have an agreed equivalent, and without one it is hard to say what a probe on the state is reading, or what an edit to it has removed.
 In an [earlier post](https://omanshuthapliyal.github.io/blog/bluedot-pipeline-open-problems/) I argued that most open problems in AI safety are, at heart, problems of observation. The recurrent state of an SSM seems to me a concrete instance of that: a part of increasingly common models that we cannot yet observe in the terms our tools expect.
 
-#### Work in progress: four open questions
+#### Open problems (in progress)
 
 Below are the questions I am working on, with what I have found so far and what I expect to find. The results come from work in progress and should be read as such.
 
