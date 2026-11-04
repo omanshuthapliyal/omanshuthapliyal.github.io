@@ -15,7 +15,7 @@ I have been working on what this means for interpretability for some time, and a
 
 > Existing tools can already tell us *where* in an SSM a behaviour is computed. What they do not yet give us is a well-defined answer to *which part of the recurrent state* carries it.
 
-#### What already works
+#### Where current tools stop
 
 It is worth being clear about this first, because the question is narrower than "do interpretability tools work on SSMs".
 They do, to a good extent. Causal tracing locates factual recall in Mamba much as it does in GPT,[^3] and attribution patching recovers a partial IOI circuit in Mamba with a clear bottleneck layer.[^4] Steering and lens-style probes also transfer to recurrent models with modest changes.[^5]
@@ -26,15 +26,13 @@ Two properties of that state make it hard to open, and both can be seen in a mod
 
 *Figure 1. A three-dimensional linear SSM. Left: the state is set to zero at one step. Right: the same system in two coordinate systems.*
 
-#### An intervention at one step does not last
-
+The first property is that an intervention at a single step does not last.
 In a transformer, an ablation at one position removes that position's contribution, and later positions can only see what attention reads from it.
 In a linear SSM, the state at time $$t$$ is the only channel through which the past reaches the future, and it is rewritten at every step: $$x_{t+1} = A x_t + B u_t$$.
 Setting $$x_t$$ to zero therefore does something specific. It erases the model's memory of everything before $$t$$, but every input after $$t$$ excites the same state directions again, as the left panel of Figure 1 shows.
 So if we ask what a particular part of the state *does* for a task, an intervention at a single step answers a different question, namely what the model loses when it forgets the past at that moment. The part of the state we were interested in is still at work for the rest of the sequence.
 
-#### There is no canonical set of coordinates
-
+The second property is that there is no canonical set of coordinates.
 Suppose we would like to say that "state direction 2 stores the subject of the sentence".
 For a linear SSM, any invertible change of coordinates $$z = Px$$ gives a new system $$(PAP^{-1}, PB, CP^{-1})$$ with exactly the same input-output behaviour.
 The right panel of Figure 1 shows the consequence: the first state coordinate traces two quite different signals in two valid coordinate systems, while nothing observable about the model changes.
