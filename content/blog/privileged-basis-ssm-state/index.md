@@ -5,6 +5,8 @@ draft: false
 tags: ["AI", "AI-Safety", "state_space_models", "controls"]
 ---
 
+*This post describes ongoing research. Preliminary code is available in [ssm-interp](https://github.com/omanshuthapliyal/ssm-interp) and [ssm-interp-runs](https://github.com/omanshuthapliyal/ssm-interp-runs), and the per-layer statistics are on [Hugging Face](https://huggingface.co/xero91/ssm-mech-gramians).*
+
 Most of the tools we use to look inside language models were built for transformers.
 When we want to know where a model computes something, we patch or ablate an attention head or a direction in the residual stream at some position, and watch what changes in the output. These tools have worked remarkably well, and the indirect object identification (IOI) circuit in GPT-2 is perhaps the best known example of what they can find.[^1]
 
@@ -114,7 +116,7 @@ I suspect the averaged picture is adequate for slow, integrating layers and weak
 
 Layer knockouts suggest that the arrangement of the two components matters. In Falcon-H1, where attention and SSM run side by side within each layer, attention carries most of the IOI effect from 0.5B to 34B parameters, while in Nemotron-H-56B, where each layer is of a single type, the largest single IOI effects come from early SSM layers. The two families also differ in scale and in training data, so for now I treat this as a hypothesis for a controlled comparison at matched scale.
 
-I hope to share fuller results on these soon. In the meantime, an early version of the code is public: the analysis library and experiment scripts are in [ssm-interp](https://github.com/omanshuthapliyal/ssm-interp), the scripts for the larger runs in [ssm-interp-runs](https://github.com/omanshuthapliyal/ssm-interp-runs), and per-layer statistics of the averaged SSM parameters for Mamba models from 130M to 2.8B parameters are on [Hugging Face](https://huggingface.co/xero91/ssm-mech-gramians). The code for the toy-system figures in this post is available separately,[^10] and I would be glad to hear from anyone thinking about the same problems.
+I hope to share fuller results on these soon. In the meantime, an early version of the code is public: the analysis library and experiment scripts are in [ssm-interp](https://github.com/omanshuthapliyal/ssm-interp), the scripts for the larger runs in [ssm-interp-runs](https://github.com/omanshuthapliyal/ssm-interp-runs), and per-layer statistics of the averaged SSM parameters for Mamba models from 130M to 2.8B parameters are on [Hugging Face](https://huggingface.co/xero91/ssm-mech-gramians). I would be glad to hear from anyone thinking about the same problems.
 
 *A recurrent state remembers by being rewritten at every step, and that is precisely what makes it hard to point at.*
 
@@ -135,5 +137,3 @@ I hope to share fuller results on these soon. In the meantime, an early version 
 [^8]: Moore (1981). [Principal component analysis in linear systems: Controllability, observability, and model reduction](https://doi.org/10.1109/TAC.1981.1102568). *IEEE Transactions on Automatic Control* 26(1): 17-32.
 
 [^9]: Shokoohi, Silverman and Van Dooren (1983). Linear time-variable systems: balancing and model reduction. *IEEE Transactions on Automatic Control* 28(8): 810-822; and Sandberg and Rantzer (2004). [Balanced truncation of linear time-varying systems](https://lup.lub.lu.se/record/161419). *IEEE Transactions on Automatic Control* 49(2): 217-229.
-
-[^10]: [ssm_state_problem.py](https://github.com/omanshuthapliyal/blog-posts_accompanying-code/blob/main/ssm_state_problem.py) (Figure 1) and [ssm_unrolled_hankel.py](https://github.com/omanshuthapliyal/blog-posts_accompanying-code/blob/main/ssm_unrolled_hankel.py) (the numbers in Figures 5 and 6), in the repository of code accompanying this blog.
