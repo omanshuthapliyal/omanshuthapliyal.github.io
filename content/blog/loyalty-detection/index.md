@@ -2,7 +2,7 @@
 title: "Whose Side Is the Model On?"
 date: 2026-08-04T10:00:00-07:00
 draft: false
-tags: ["AI", "AI-Safety", "research"]
+tags: ["AI", "AI-Safety", "research", "auditing"]
 ---
 
 *Written for Apart Research's [Secret Loyalties Hackathon](https://apartresearch.com/sprints/secret-loyalties-hackathon-2026-07-24-to-2026-07-26). The code is linked at the end.*

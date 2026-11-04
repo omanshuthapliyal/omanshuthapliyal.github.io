@@ -2,7 +2,7 @@
 title: "Most Open Problems in AI Safety are Problems of Observation"
 date: 2026-10-17
 draft: false
-tags: ["AI", "ML", "AI-Safety"]
+tags: ["AI", "ML", "AI-Safety", "safety-agenda"]
 ---
 
 I recently finished BlueDot's [Technical AI Safety](https://bluedot.org/courses/technical-ai-safety) course.

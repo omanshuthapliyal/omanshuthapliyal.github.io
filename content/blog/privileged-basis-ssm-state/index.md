@@ -2,7 +2,7 @@
 title: "A Privileged Basis for the Recurrent State of SSMs"
 date: 2026-11-03T14:00:00-08:00
 draft: false
-tags: ["AI", "AI-Safety", "state_space_models", "controls"]
+tags: ["AI", "AI-Safety", "state_space_models", "controls", "interpretability"]
 ---
 
 *This post describes ongoing research. Preliminary code is available in [ssm-interp](https://github.com/omanshuthapliyal/ssm-interp) and [ssm-interp-runs](https://github.com/omanshuthapliyal/ssm-interp-runs), and the per-layer statistics are on [Hugging Face](https://huggingface.co/xero91/ssm-mech-gramians).*

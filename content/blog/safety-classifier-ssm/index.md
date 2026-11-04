@@ -1,7 +1,7 @@
 ---
 title: "Contraction can Help Safety Classifiers keep their Promise"
 date: 2026-08-12T01:02:49-04:00
-tags: ["ML", "controls"]
+tags: ["ML", "controls", "AI-Safety", "safeguards"]
 ---
 
 The code for this project can be found at: [https://github.com/omanshuthapliyal/contraction_constrained-safety-head](https://github.com/omanshuthapliyal/contraction_constrained-safety-head).

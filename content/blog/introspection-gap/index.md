@@ -2,7 +2,7 @@
 title: "A Probe Knows More Than the Model Says"
 date: 2026-08-28T10:00:00-07:00
 draft: false
-tags: ["AI", "AI-Safety", "research"]
+tags: ["AI", "AI-Safety", "research", "interpretability"]
 ---
 
 *Written for Apart Research's [Digital Minds Research Sprint](https://apartresearch.com/sprints/digital-minds-research-sprint-2026-08-14-to-2026-08-16). The report and code are linked at the end, and [Do Language Models Mean What They Choose?](/blog/preference-coherence/) covers my other project from the same sprint.*
