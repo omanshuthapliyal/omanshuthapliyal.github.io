@@ -1,7 +1,7 @@
 ---
 title: "Reward is enough — when can we 'reinforce' the learning?"
 date: 2025-08-13T11:07:46-07:00
-tags: ["rl", "ml", "research"]
+tags: ["rl", "ML", "research"]
 ---
 
 *This blog post summarizes the papers **Settling the Reward Hypothesis**[^1] and **Utility Theory for Sequential Decision Making** [^2].*

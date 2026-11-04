@@ -1,7 +1,7 @@
 ---
 title: "State Space Models: How Control Theory can echo Machine Learning"
 date: 2025-10-06T18:57:21-07:00
-tags: ["ml", "controls", "state_space_models", "linear_algebra"]
+tags: ["ML", "controls", "state_space_models", "linear_algebra"]
 ---
 
 I wrote in a [previous post](https://omanshuthapliyal.github.io/blog/transformers/) how transformers are kind of like system identification methods applied to some sequence in a state space. In this post we try to understand if the other way round is true.

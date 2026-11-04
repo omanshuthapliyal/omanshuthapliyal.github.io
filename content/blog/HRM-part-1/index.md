@@ -1,7 +1,7 @@
 ---
 title: "Can LLM Finetuning be Stateful? Small states for Large Models - Part 1"
 date: 2026-07-31T11:57:21-07:00
-tags: ["ml", "controls", "state_space_models", "linear_algebra"]
+tags: ["ML", "controls", "state_space_models", "linear_algebra"]
 ---
 
 In the [last post](https://omanshuthapliyal.github.io/blog/hankel-singular-values/) I talked about Hankel operators of simple linear dynamical systems. Such operators, and either eigenvalues, _"can be used as a proxy for how much memory a task actually requires in a state-space model"._ And later we tied their input-output relations empirically tie the memory requirements of a post-trained state space model (SSM) to its Hankel singular value (HSV) rates. Further, HSV-based balanced truncation can offer us to selectively choose 'some' eigenvalues to keep that involve higher input-to-output signal strength over time. 

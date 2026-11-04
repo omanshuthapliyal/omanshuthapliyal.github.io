@@ -1,7 +1,7 @@
 ---
 title: "How Transformers Echo Control Theory"
 date: 2025-09-27T11:57:21-07:00
-tags: ["ml", "controls"]
+tags: ["ML", "controls"]
 ---
 
 Transformer models have captivated a lot of AI research in most of the past decade, and in this post my goal is to make them seem more interesting to controls people, who have much to contribute to the field. I will be making gross generalizations to draw such entry points. At least, I found transformer models more interesting after finding a few parallels in dynamical systems & controls [^1]. This post attempts to explore those parallels.

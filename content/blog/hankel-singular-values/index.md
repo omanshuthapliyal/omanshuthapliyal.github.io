@@ -1,7 +1,7 @@
 ---
 title: "What Hankel Spectra Reveal About Memory"
 date: 2026-05-26T11:09:02-07:00
-tags: ["statistics", "ml", "maths"]
+tags: ["statistics", "ML", "maths"]
 ---
 
 Suppose we are given a linear dynamical system $$G=(A,B,C,D)$$ (recall that a linear system is an input $$x$$ to output $$y$$ map such that $$y_k = Cx_k + Du_k, x_{k+1}=Ax_k+Bu_k$$), and $$G$$ has some dimension $$d$$.

@@ -1,7 +1,7 @@
 ---
 title: "Why are Gaussian distributions present Everywhere?"
 date: 2026-01-11T11:09:02-07:00
-tags: ["statistics", "ml", "maths"]
+tags: ["statistics", "ML", "maths"]
 ---
 
 Well, if one were to cut to the chase, it appears to be because of the Central Limit Theorem (CLT). However, there is more underlying structure under the hood as to why the Gaussians seem to be the 'chosen' distributions. In this post we will go through some in-depth analysis beyond the typical textbook to try to get some juice worth the squeeze. And hopefully it would demystify the ubiquity -- from statistics, to thermodynamics, to measurement errors -- of Gauss's eponymous distributions. To this end, this write up is a shallow dive into Gaussian ubiquity from a few different angles.

@@ -1,7 +1,7 @@
 ---
 title: "Technology Readiness Levels of AI methods"
 date: 2024-10-15T11:07:46-07:00
-tags: ["controls", "autonomy", "ml", "research"]
+tags: ["controls", "autonomy", "ML", "research"]
 ---
 
 Recent news of the SpaceX catching its Starship Super Heavy booster[^1] is quite discussed and marveled upon in the media, and rightly so.

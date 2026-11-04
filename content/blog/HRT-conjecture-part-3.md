@@ -1,7 +1,7 @@
 ---
 title: "So does your Car fail? (A Small Harness for Mathematical Exploration) - Part 3"
 date: 2026-09-16T12:02:49-04:00
-tags: ["maths", "ml", "research"]
+tags: ["maths", "ML", "research"]
 ---
 
 Part 1:[https://omanshuthapliyal.github.io/blog/hrt-conjecture/](https://omanshuthapliyal.github.io/blog/hrt-conjecture/)

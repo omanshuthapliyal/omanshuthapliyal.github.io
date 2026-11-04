@@ -1,7 +1,7 @@
 ---
 title: "Can LLM Finetuning be Stateful? Small states for Large Models - Part 2"
 date: 2026-08-07T11:57:21-07:00
-tags: ["ml", "controls", "state_space_models", "linear_algebra"]
+tags: ["ML", "controls", "state_space_models", "linear_algebra"]
 aliases: ["/blog/hrm-part2/"]
 ---
 

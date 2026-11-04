@@ -1,7 +1,7 @@
 ---
 title: "MLP Approximation"
 date: 2019-09-12T10:27:01-04:00
-tags: ["ml", "maths", "analysis"]
+tags: ["ML", "maths", "analysis"]
 ---
 
 Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).
